@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import dto.promotion.PromotionDto;
-import dto.promotion.PromotionsDto;
+import dto.promotion.PromotionListDto;
 
 @Repository
 public class PromotionDao {
@@ -22,8 +22,8 @@ public class PromotionDao {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 	
-	public PromotionsDto getPromotionList() {
-		PromotionsDto promotionsDto = new PromotionsDto();
+	public PromotionListDto getPromotionList() {
+		PromotionListDto promotionsDto = new PromotionListDto();
 		
 		List<PromotionDto> promotionList = jdbcTemplate.query(
 				"SELECT promotion.id, promotion.product_id as productId, file_info.save_file_name as productImageUrl "

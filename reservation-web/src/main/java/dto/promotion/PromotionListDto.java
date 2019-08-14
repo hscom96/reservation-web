@@ -5,10 +5,10 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-public class PromotionsDto {
+public class PromotionListDto {
 	private List<PromotionDto> items;
 
-	public PromotionsDto() {
+	public PromotionListDto() {
 		items = new ArrayList();
 	}
 	

@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import dto.category.CategoriesDto;
+import dto.category.CategoryListDto;
 import dto.category.CategoryDto;
 
 @Repository
@@ -22,8 +22,8 @@ public class CategoryDao {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 
-	public CategoriesDto getCategoryList() {
-		CategoriesDto categoriesDto = new CategoriesDto();
+	public CategoryListDto getCategoryList() {
+		CategoryListDto categoriesDto = new CategoryListDto();
 		
 		List<CategoryDto> categoryList = jdbcTemplate.query(
 				"SELECT category.id, category.name, COUNT(name) AS count FROM category, product WHERE category.id = product.category_id GROUP BY name",

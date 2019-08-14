@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dto.promotion.PromotionsDto;
+import dto.promotion.PromotionListDto;
 import service.PromotionService;
 
 @RestController
@@ -14,7 +14,7 @@ public class PromotionController {
 	PromotionService promotionService;
 	
 	@GetMapping("/api/promotions")
-	public PromotionsDto promotions() {
+	public PromotionListDto promotions() {
 		return promotionService.getPromotionList();
 	}
 	

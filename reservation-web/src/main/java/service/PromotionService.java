@@ -4,14 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import dao.PromotionDao;
-import dto.promotion.PromotionsDto;
+import dto.promotion.PromotionListDto;
 
 @Service
 public class PromotionService {
 	@Autowired
 	PromotionDao promotionDao;
 	
-	public PromotionsDto getPromotionList() {
+	public PromotionListDto getPromotionList() {
 		return promotionDao.getPromotionList();
 	}
 }

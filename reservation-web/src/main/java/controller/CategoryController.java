@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dto.category.CategoriesDto;
+import dto.category.CategoryListDto;
 import service.CategoryService;
 
 @RestController
@@ -14,7 +14,7 @@ public class CategoryController {
 	CategoryService categoryService;
 	
 	@GetMapping("/api/categories")
-	public CategoriesDto categories() {
+	public CategoryListDto categories() {
 		return categoryService.getCategoryList();
 	}
 	
