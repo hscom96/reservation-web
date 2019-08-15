@@ -276,6 +276,53 @@
 			moveTo();
 		}, 2000)
 	</script>
+	
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {	
+
+		var categoryList = document.querySelector(".event .section_event_tab .event_tab_lst");
+		
+		categoryList.addEventListener("click",function(evt){
+			changeCategory(evt);
+			deleteItemAll(evt);
+			showNewItem(evt);
+		})
+		
+		function changeCategory(evt){
+			var selectedCategory = document.querySelector(".event .section_event_tab .event_tab_lst>.item .anchor.active");
+			if(evt.target.tagName == "SPAN"){
+				selectedCategory.classList.remove("active");
+				evt.target.parentNode.classList.add("active");
+			}
+			else if(evt.target.tagName === "A"){
+				selectedCategory.classList.remove("active");
+				evt.target.classList.add("active");
+			}
+		}
+
+		function deleteItemAll(evt){
+			var itemList = document.querySelectorAll(".event .wrap_event_box .lst_event_box");
+			
+			while ( itemList[0].hasChildNodes() ) { 
+				itemList[0].removeChild( itemList[0].firstChild ); 
+				}
+
+			while (  itemList[1].hasChildNodes() ) { 
+				itemList[1].removeChild( itemList[1].firstChild ); 
+				}
+		}
+		
+		function showNewItem(evt){
+			var categoryName = document.querySelector(".event .section_event_tab .event_tab_lst>.item .anchor.active").childNodes[1].innerHTML;
+			
+			
+		}
+		
+		
+	})
+	
+	
+	</script>
 </body>
 
 </html>

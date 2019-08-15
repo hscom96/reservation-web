@@ -22,9 +22,7 @@ public class CategoryDao {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 
-	public CategoryListDto getCategoryList() {
-		CategoryListDto CategoryListDto = new CategoryListDto();
-		
+	public List<CategoryDto> getCategoryList() {
 		List<CategoryDto> categoryList = jdbcTemplate.query(
 				"SELECT category.id, category.name, COUNT(name) AS count "
 				+ "FROM category INNER JOIN product ON category.id = product.category_id GROUP BY name",
@@ -36,8 +34,7 @@ public class CategoryDao {
 					}
 				});
 		
-		CategoryListDto.setItems(categoryList);
 		
-		return CategoryListDto.isEmpty() ? null : CategoryListDto;
+		return categoryList.isEmpty() ? null : categoryList;
 	}
 }

@@ -12,6 +12,10 @@ public class CategoryService {
 	CategoryDao categoryDao;
 	
 	public CategoryListDto getCategoryList(){
-		return categoryDao.getCategoryList();
+
+		CategoryListDto categoryListDto = new CategoryListDto();
+		categoryListDto.setItems(categoryDao.getCategoryList());
+		
+		return categoryListDto;
 	}
 }

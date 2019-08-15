@@ -12,6 +12,13 @@ public class ProductService {
 	private ProductDao productDao;
 	
 	public ProductListDto getProductList(int categoryId, int start) {
-		return productDao.getProductList(categoryId, start);
+		ProductListDto productListDto = new ProductListDto();
+		
+		productListDto.setProductList(productDao.getProductList(categoryId, start));
+		productListDto.setTotalCount(productDao.getTotalCount(categoryId));
+
+		
+		return productListDto;
 	}
+	
 }

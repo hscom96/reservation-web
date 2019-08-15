@@ -12,6 +12,10 @@ public class PromotionService {
 	PromotionDao promotionDao;
 	
 	public PromotionListDto getPromotionList() {
-		return promotionDao.getPromotionList();
+
+		PromotionListDto promotionListDto = new PromotionListDto();
+		promotionListDto.setItems(promotionDao.getPromotionList());
+		
+		return promotionListDto;
 	}
 }

@@ -22,10 +22,7 @@ public class ProductDao {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 	
-	public ProductListDto getProductList(int categoryId, int start) {
-		ProductListDto productListDto = new ProductListDto();
-		int totalCount;
-		
+	public List<ProductDto> getProductList(int categoryId, int start) {
 		List<ProductDto> productList = jdbcTemplate.query(
 				"select display_info.id ,display_info.product_id, product.description, "
 				+ "display_info.place_name, product.content, file_info.file_name from product "
@@ -40,12 +37,8 @@ public class ProductDao {
 							rs.getString("description"), rs.getString("place_name"), rs.getString("content"), rs.getString("file_name")); 
 					return productDto;
 				}}, categoryId, start);
-		
-		productListDto.setProductList(productList);
-		totalCount = getTotalCount(categoryId);
-		productListDto.setTotalCount(totalCount);
-		
-		return productListDto.isEmpty() ? null : productListDto;
+
+		return productList.isEmpty() ? null : productList;
 	}
 	
 	public Integer getTotalCount(int categoryId) {
