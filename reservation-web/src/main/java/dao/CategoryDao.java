@@ -23,10 +23,11 @@ public class CategoryDao {
 	}
 
 	public CategoryListDto getCategoryList() {
-		CategoryListDto categoriesDto = new CategoryListDto();
+		CategoryListDto CategoryListDto = new CategoryListDto();
 		
 		List<CategoryDto> categoryList = jdbcTemplate.query(
-				"SELECT category.id, category.name, COUNT(name) AS count FROM category, product WHERE category.id = product.category_id GROUP BY name",
+				"SELECT category.id, category.name, COUNT(name) AS count "
+				+ "FROM category INNER JOIN product ON category.id = product.category_id GROUP BY name",
 				new RowMapper<CategoryDto>() {
 					@Override
 					public CategoryDto mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -35,8 +36,8 @@ public class CategoryDao {
 					}
 				});
 		
-		categoriesDto.setItems(categoryList);
+		CategoryListDto.setItems(categoryList);
 		
-		return categoriesDto.isEmpty() ? null : categoriesDto;
+		return CategoryListDto.isEmpty() ? null : CategoryListDto;
 	}
 }

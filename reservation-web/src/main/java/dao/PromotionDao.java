@@ -23,13 +23,13 @@ public class PromotionDao {
 	}
 	
 	public PromotionListDto getPromotionList() {
-		PromotionListDto promotionsDto = new PromotionListDto();
+		PromotionListDto promotionListDto = new PromotionListDto();
 		
 		List<PromotionDto> promotionList = jdbcTemplate.query(
 				"SELECT promotion.id, promotion.product_id as productId, file_info.save_file_name as productImageUrl "
-				+ "from ((promotion JOIN product ON promotion.product_id = product.id) "
-				+ "JOIN product_image ON promotion.product_id = product_image.product_id AND product_image.type=\"th\") "
-				+ "JOIN file_info ON product_image.file_id = file_info.id",
+				+ "from promotion JOIN product ON promotion.product_id = product.id"
+				+ "INNER JOIN product_image ON promotion.product_id = product_image.product_id AND product_image.type=\"th\" "
+				+ "INNER JOIN file_info ON product_image.file_id = file_info.id",
 				new RowMapper<PromotionDto>() {
 					@Override
 					public PromotionDto mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -38,8 +38,8 @@ public class PromotionDao {
 					}
 				});
 		
-		promotionsDto.setItems(promotionList);
+		promotionListDto.setItems(promotionList);
 		
-		return promotionsDto.isEmpty() ? null : promotionsDto;
+		return promotionListDto.isEmpty() ? null : promotionListDto;
 	}
 }

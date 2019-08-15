@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 import controller.CategoryController;
 import controller.MainPageController;
+import controller.ProductController;
 import controller.PromotionController;
 
 @Configuration
@@ -22,5 +23,10 @@ public class ControllerConfig {
 	@Bean
 	PromotionController promotionController() {
 		return new PromotionController();
+	}
+	
+	@Bean
+	ProductController productController() {
+		return new ProductController();
 	}
 }
