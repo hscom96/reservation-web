@@ -33,8 +33,6 @@ public class CategoryDao {
 						return categoryDto;
 					}
 				});
-		
-		
 		return categoryList.isEmpty() ? null : categoryList;
 	}
 }
