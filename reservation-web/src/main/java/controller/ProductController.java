@@ -16,7 +16,7 @@ public class ProductController {
 	
 	@GetMapping("/api/products")
 	public ProductListDto promotions(@RequestParam(value="categoryId", required=true) int categoryId, 
-			@RequestParam(value="start", required=true) int start) {
+			@RequestParam(value="start", required=false, defaultValue="0") int start) {
 		return productService.getProductList(categoryId,start);
 	}
 	
