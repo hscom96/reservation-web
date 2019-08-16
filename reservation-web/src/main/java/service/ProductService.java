@@ -17,7 +17,7 @@ public class ProductService {
 	public ProductListDto getProductList(int categoryId, int start) {
 		ProductListDto productListDto = new ProductListDto();
 		
-		productListDto.setProductList(productDao.getProductList(categoryId, start));
+		productListDto.setitems(productDao.getProductList(categoryId, start));
 		productListDto.setTotalCount(productDao.getTotalCount(categoryId));
 		
 		return productListDto;
@@ -28,7 +28,7 @@ public class ProductService {
 	public ProductListDto getProductList(int start) {
 		ProductListDto productListDto = new ProductListDto();
 		
-		productListDto.setProductList(productDao.getProductList(start));
+		productListDto.setitems(productDao.getProductList(start));
 		productListDto.setTotalCount(productDao.getTotalCount());
 		
 		return productListDto;

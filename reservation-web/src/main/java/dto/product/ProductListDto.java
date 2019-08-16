@@ -7,10 +7,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class ProductListDto {
 	private int totalCount;
-	private List<ProductDto> productList;
+	private List<ProductDto> items;
 	
 	public ProductListDto() {
-		productList = new ArrayList();
+		items = new ArrayList();
 	}
 
 	public int getTotalCount() {
@@ -21,17 +21,11 @@ public class ProductListDto {
 		this.totalCount = totalCount;
 	}
 
-	public List<ProductDto> getProductList() {
-		return productList;
+	public List<ProductDto> getitems() {
+		return items;
 	}
 
-	public void setProductList(List<ProductDto> productList) {
-		this.productList.addAll(productList);
+	public void setitems(List<ProductDto> items) {
+		this.items.addAll(items);
 	}
-	
-	@JsonIgnore
-	public boolean isEmpty() {
-		return productList.isEmpty();
 	}
-	
-}

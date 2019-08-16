@@ -32,6 +32,16 @@ public class ProductDto {
 	public void setProductId(int productId) {
 		this.productId = productId;
 	}
+	public String getProductImgUrl() {
+		return productImgUrl;
+	}
+
+
+	public void setProductImgUrl(String productImgUrl) {
+		this.productImgUrl = productImgUrl;
+	}
+
+
 	public String getProductDescription() {
 		return productDescription;
 	}
