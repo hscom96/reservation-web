@@ -19,4 +19,6 @@ public class CategoryListDto {
 	public void setItems(List<CategoryDto> items) {
 		this.items.addAll(items);
 	}
+	
+	
 }

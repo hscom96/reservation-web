@@ -1,95 +1,95 @@
 @font-face {
-    font-family: "Naver booking Icons";
-    src: url('../font/Naver-booking-Icons.woff') format('woff');
-    font-weight: 400;
-    font-style: normal
+	font-family: "Naver booking Icons";
+	src: url('../font/Naver-booking-Icons.woff') format('woff');
+	font-weight: 400;
+	font-style: normal
 }
 
-.fn,.fn:before {
-    line-height: 1em
+.fn, .fn:before {
+	line-height: 1em
 }
 
 @font-face {
-    font-family: "Naver Icons";
-    src: url('../font/Naver-Icons.woff') format('woff');
-    font-weight: 400;
-    font-style: normal
+	font-family: "Naver Icons";
+	src: url('../font/Naver-Icons.woff') format('woff');
+	font-weight: 400;
+	font-style: normal
 }
 
 .fn {
-    display: inline-block;
-    height: 1em
+	display: inline-block;
+	height: 1em
 }
 
 .fn:before {
-    font-family: "Naver Icons";
-    font-style: normal;
-    font-weight: 400;
-    speak: none;
-    display: inline;
-    text-decoration: inherit;
-    width: 1em;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+	font-family: "Naver Icons";
+	font-style: normal;
+	font-weight: 400;
+	speak: none;
+	display: inline;
+	text-decoration: inherit;
+	width: 1em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
 }
 
 .fn-backward1:before {
-    content: "\EA12"
+	content: "\EA12"
 }
 
 .fn-call1:before {
-    content: "\EA25"
+	content: "\EA25"
 }
 
 .fn-call2:before {
-    content: "\EA26"
+	content: "\EA26"
 }
 
 .fn-down2:before {
-    content: "\EA3D"
+	content: "\EA3D"
 }
 
 .fn-forward1:before {
-    content: "\EA44"
+	content: "\EA44"
 }
 
 .fn-home1:before {
-    content: "\EA4A"
+	content: "\EA4A"
 }
 
 .fn-nbooking-calender2:before {
-    content: "\EA67"
+	content: "\EA67"
 }
 
 .fn-path-find1:before {
-    content: "\EA74"
+	content: "\EA74"
 }
 
 .fn-path-find2:before {
-    content: "\EA75"
+	content: "\EA75"
 }
 
 .fn-pin2:before {
-    content: "\EA7B"
+	content: "\EA7B"
 }
 
 .fn-share1:before {
-    content: "\EA96"
+	content: "\EA96"
 }
 
 .fn-up2:before {
-    content: "\EAC0"
+	content: "\EAC0"
 }
 
 .fn-navigation2:before {
-    content: "\EA65"
+	content: "\EA65"
 }
 
 .fn-mail1:before {
-    content: "\EA58"
+	content: "\EA58"
 }
 
 .fn-write2:before {
@@ -101,2644 +101,2795 @@
 }
 
 @font-face {
-    font-family: NanumGothicWebR;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../font/NanumGothicRegular.woff') format('woff')
+	font-family: NanumGothicWebR;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../font/NanumGothicRegular.woff') format('woff')
 }
 
 @font-face {
-    font-family: NanumGothicWebB;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../font/NanumGothicBold.woff') format('woff')
+	font-family: NanumGothicWebB;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../font/NanumGothicBold.woff') format('woff')
 }
 
-@charset "utf-8";body,html {
-    min-height: 100%
+@charset "utf-8"; 
+
+body, html {
+	min-height: 100%
 }
 
-body,button,form,h1,h2,h3,h4,input,li,p,ul {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+body, button, form, h1, h2, h3, h4, input, li, p, ul {
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
-a,body {
-    color: #000
+a, body {
+	color: #000
 }
 
 body {
-    min-width: 320px;
-    max-width: 414px
+	min-width: 320px;
+	max-width: 414px
 }
 
 .sr_only {
-    padding: 0;
-    clip: rect(0,0,0,0)
+	padding: 0;
+	clip: rect(0, 0, 0, 0)
 }
 
 .img_border {
-    vertical-align: top;
-    -webkit-box-sizing: border-box
+	vertical-align: top;
+	-webkit-box-sizing: border-box
 }
 
-.img_border,.img_btm_border {
-    opacity: .1;
-    filter: alpha(opacity=10);
-    moz-box-sizing: border-box
+.img_border, .img_btm_border {
+	opacity: .1;
+	filter: alpha(opacity = 10);
+	moz-box-sizing: border-box
 }
 
 body {
-    max-width: 414px
+	max-width: 414px
 }
 
-.bottom_common_path:after,.clearfix:after,.detail_area,.form_horizontal .inline_form:after,.group_btn_goto:after,.header:after,.pop_bottom_btnarea:after,.section_booking_agreement .agreement,.section_booking_agreement .agreement:after,.section_booking_ticket .ticket_body .qty:after,.section_info_tab .info_tab_lst:after,.section_my .my_summary .summary_board:after,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:after {
-    clear: both
+.bottom_common_path:after, .clearfix:after, .detail_area,
+	.form_horizontal .inline_form:after, .group_btn_goto:after, .header:after,
+	.pop_bottom_btnarea:after, .section_booking_agreement .agreement,
+	.section_booking_agreement .agreement:after, .section_booking_ticket .ticket_body .qty:after,
+	.section_info_tab .info_tab_lst:after, .section_my .my_summary .summary_board:after,
+	.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:after
+	{
+	clear: both
 }
 
 html {
-    height: 100%;
-    background-color: #d4dadf;
-    -webkit-font-smoothing: antialiased
+	height: 100%;
+	background-color: #d4dadf;
+	-webkit-font-smoothing: antialiased
 }
 
 body {
-    overflow-x: auto;
-    margin: 0 auto!important;
-    background-color: #e9ecef;
-    word-wrap: break-word;
-    word-break: break-word
+	overflow-x: auto;
+	margin: 0 auto !important;
+	background-color: #e9ecef;
+	word-wrap: break-word;
+	word-break: break-word
 }
 
 .top_title .title {
-    word-wrap: normal;
-    text-overflow: ellipsis
+	word-wrap: normal;
+	text-overflow: ellipsis
 }
 
-body,button,form,h1,h2,h3,h4,input,li,p,ul {
-    margin: 0;
-    padding: 0;
-    -webkit-text-size-adjust: none
+body, button, form, h1, h2, h3, h4, input, li, p, ul {
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none
 }
 
-body,button,input {
-    font-size: 16px;
-    line-height: 24px
+body, button, input {
+	font-size: 16px;
+	line-height: 24px
 }
 
 .blind {
-    font-size: 0;
-    line-height: 0
+	font-size: 0;
+	line-height: 0
 }
 
 ul {
-    list-style: none
+	list-style: none
 }
 
 img {
-    border: 0
+	border: 0
 }
 
-button,label {
-    cursor: pointer
+button, label {
+	cursor: pointer
 }
 
 button {
-    border: none
+	border: none
 }
 
 em {
-    font-style: normal
+	font-style: normal
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer
+	text-decoration: none;
+	cursor: pointer
 }
 
 hr {
-    display: none
+	display: none
 }
 
 #container {
-    min-height: 327px
+	min-height: 327px
 }
 
 .ct {
-    position: relative
+	position: relative
 }
 
 .ct .ct_wrap [class^=section_] {
-    border-top: 6px solid #e9ecef
+	border-top: 6px solid #e9ecef
 }
 
-.blind,.sr_only {
-    width: 1px;
-    height: 1px;
-    overflow: hidden
+.blind, .sr_only {
+	width: 1px;
+	height: 1px;
+	overflow: hidden
 }
 
-.img_bg_gra,.img_border,.img_btm_border {
-    z-index: 10;
-    bottom: 0;
-    right: 0
+.img_bg_gra, .img_border, .img_btm_border {
+	z-index: 10;
+	bottom: 0;
+	right: 0
 }
 
-.blind,.img_bg_gra,.img_border,.img_btm_border {
-    position: absolute;
-    top: 0;
-    left: 0
+.blind, .img_bg_gra, .img_border, .img_btm_border {
+	position: absolute;
+	top: 0;
+	left: 0
 }
 
 .sr_only {
-    position: absolute;
-    margin: -1px;
-    border: 0
+	position: absolute;
+	margin: -1px;
+	border: 0
 }
 
 .blind {
-    visibility: hidden
+	visibility: hidden
 }
 
-.clearfix:after,.clearfix:before {
-    content: " ";
-    display: table
+.clearfix:after, .clearfix:before {
+	content: " ";
+	display: table
 }
 
 .open {
-    display: block!important;
+	display: block !important;
 }
 
 .hide {
-    display: none!important;
-    height: 0!important
+	display: none !important;
+	height: 0 !important
 }
 
 .ct [class^=section_] .out_tit {
-    display: block;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+	display: block;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .img_border {
-    background-color: transparent;
-    border: 1px solid #000;
-    box-sizing: border-box
+	background-color: transparent;
+	border: 1px solid #000;
+	box-sizing: border-box
 }
 
 .img_btm_border {
-    border-bottom: 1px solid #000;
-    vertical-align: bottom;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box
+	border-bottom: 1px solid #000;
+	vertical-align: bottom;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .img_bg_gra {
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -webkit-gradient(left top,left bottom,color-stop(0,#fff),color-stop(100%,rgba(0,0,0,.5)));
-    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -o-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    zoom:1}
+	background: rgba(255, 255, 255, 0);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0, #fff),
+		color-stop(100%, rgba(0, 0, 0, .5)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr='#00ffffff', endColorstr='#a6000000');
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr='#00ffffff', endColorstr='#a6000000');
+	zoom: 1
+}
 
 .no_topline {
-    border-top: none!important
+	border-top: none !important
 }
 
 .green {
-    color: #0aba16!important
+	color: #0aba16 !important
 }
 
 .pink {
-    color: #F82222!important
+	color: #F82222 !important
 }
 
 .ct [class^=section_] {
-    border-bottom: 1px solid #e2e5e8;
-    border-top: 5px solid #e9ecef
+	border-bottom: 1px solid #e2e5e8;
+	border-top: 5px solid #e9ecef
 }
 
 .ct [class^=section_] .out_tit {
-    overflow: hidden;
-    position: relative;
-    padding: 12px 0 9px 20px;
-    background-color: #fff;
-    border-top: 1px solid #e2e5e8;
-    border-bottom: 1px solid #e2e5e8;
-    font-weight: 600;
-    font-size: 17px;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box
+	overflow: hidden;
+	position: relative;
+	padding: 12px 0 9px 20px;
+	background-color: #fff;
+	border-top: 1px solid #e2e5e8;
+	border-bottom: 1px solid #e2e5e8;
+	font-weight: 600;
+	font-size: 17px;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .bk_more {
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box
 }
 
 .in_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600
 }
 
 .in_tit {
-    font-size: 16px;
-    line-height: 24px
+	font-size: 16px;
+	line-height: 24px
 }
 
 .agreement_nessasary {
-    display: inline-block;
-    color: #989898
+	display: inline-block;
+	color: #989898
 }
 
 .agreement_nessasary {
-    font-weight: 400;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+	font-weight: 400;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .dsc {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-size: 16px;
-    line-height: 24px
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-size: 16px;
+	line-height: 24px
 }
 
 .agreement_nessasary {
-    float: right;
-    padding-top: 1px;
-    margin-bottom: 8px;
-    font-size: 14px
+	float: right;
+	padding-top: 1px;
+	margin-bottom: 8px;
+	font-size: 14px
 }
 
 .agreement_nessasary .ico_nessasary {
-    margin-top: 8px;
-    margin-right: 5px
+	margin-top: 8px;
+	margin-right: 5px
 }
 
-.spr_bi,.spr_book2 {
-    font-size: 0;
-    display: inline-block;
-    vertical-align: top;
-    text-indent: 100%;
-    white-space: nowrap
+.spr_bi, .spr_book2 {
+	font-size: 0;
+	display: inline-block;
+	vertical-align: top;
+	text-indent: 100%;
+	white-space: nowrap
 }
 
-.spr_bi,.spr_book,.spr_book2 {
-    color: transparent;
-    overflow: hidden
+.spr_bi, .spr_book, .spr_book2 {
+	color: transparent;
+	overflow: hidden
 }
 
 .spr_book {
-    display: inline-block;
-    background-image: url(../img/spr_book.png);
-    background-size: 400px 400px;
-    vertical-align: top;
-    text-indent: 100%;
-    white-space: nowrap
+	display: inline-block;
+	background-image: url(../img/spr_book.png);
+	background-size: 400px 400px;
+	vertical-align: top;
+	text-indent: 100%;
+	white-space: nowrap
 }
 
 .spr_book.ico_nessasary {
-    width: 10px;
-    height: 9px;
-    background-position: -161px -52px
+	width: 10px;
+	height: 9px;
+	background-position: -161px -52px
 }
 
 .spr_book.ico_info_nolist {
-    width: 42px;
-    height: 48px;
-    background-position: -2px -334px
+	width: 42px;
+	height: 48px;
+	background-position: -2px -334px
 }
 
 .spr_book.ico_arr_ipc2 {
-    width: 10px;
-    height: 10px;
-    background-position: -378px -187.5px
+	width: 10px;
+	height: 10px;
+	background-position: -378px -187.5px
 }
 
 .spr_book.ico_naver_s {
-    width: 21px;
-    height: 21px;
-    background-position: -226px -237px
+	width: 21px;
+	height: 21px;
+	background-position: -226px -237px
 }
 
 .spr_book.ico_evt {
-    width: 27px;
-    height: 27px;
-    background-position: -270px -150px
+	width: 27px;
+	height: 27px;
+	background-position: -270px -150px
 }
 
 .spr_book.icon_pholar {
-  width: 18px;
-  height: 18px;
-  top: 2px;
-  left: 3px;
-  background-position: -378px -235px;
+	width: 18px;
+	height: 18px;
+	top: 2px;
+	left: 3px;
+	background-position: -378px -235px;
 }
 
 .spr_book.ico_arr18 {
-  width: 6px;
-  height: 10px;
-  top: -3px;
-  left: 2px;
-  background-position: -378px -255px;
+	width: 6px;
+	height: 10px;
+	top: -3px;
+	left: 2px;
+	background-position: -378px -255px;
 }
 
 .spr_book.ico_del {
-  width: 17px;
-  height: 17px;
-  background-position: -160px -33px;
+	width: 17px;
+	height: 17px;
+	background-position: -160px -33px;
 }
 
 .spr_book2 {
-    background-image: url(../img/spr_book2.png);
-    background-size: 330px 400px
+	background-image: url(../img/spr_book2.png);
+	background-size: 330px 400px
 }
 
 .spr_book2.ico_minus3.max {
-    background-position: -84px -305px
+	background-position: -84px -305px
 }
 
 .spr_book2.ico_minus3 {
-    width: 40px;
-    height: 40px;
-    background-position: -42px -305px
+	width: 40px;
+	height: 40px;
+	background-position: -42px -305px
 }
 
 .spr_book2.ico_minus3.disabled {
-    background-position: 0 -305px
+	background-position: 0 -305px
 }
 
 .spr_book2.ico_plus3 {
-    width: 40px;
-    height: 40px;
-    background-position: -168px -305px
+	width: 40px;
+	height: 40px;
+	background-position: -168px -305px
 }
 
 .spr_book2.ico_plus3.disabled {
-    background-position: -126px -305px
+	background-position: -126px -305px
 }
 
 .spr_book2.ico_bell {
-    width: 13px;
-    height: 13px;
-    background-position: -249px -178px
+	width: 13px;
+	height: 13px;
+	background-position: -249px -178px
 }
 
 .spr_book2.ico_book2 {
-    width: 15px;
-    height: 15px;
-    background-position: -202px -284px
+	width: 15px;
+	height: 15px;
+	background-position: -202px -284px
 }
 
 .spr_book2.ico_book_ss {
-    width: 15px;
-    height: 15px;
-    background-position: -151px -284px
+	width: 15px;
+	height: 15px;
+	background-position: -151px -284px
 }
 
 .spr_book2.ico_back {
-    width: 15px;
-    height: 15px;
-    background-position: -185px -284px
+	width: 15px;
+	height: 15px;
+	background-position: -185px -284px
 }
 
 .spr_book2.ico_check {
-    width: 15px;
-    height: 15px;
-    background-position: -168px -284px
+	width: 15px;
+	height: 15px;
+	background-position: -168px -284px
 }
 
 .spr_book2.ico_clock {
-    width: 17px;
-    height: 17px;
-    background-position: -277px -46px
+	width: 17px;
+	height: 17px;
+	background-position: -277px -46px
 }
 
 .spr_book2.ico_check2 {
-    width: 17px;
-    height: 17px;
-    background-position: -277px -65px
+	width: 17px;
+	height: 17px;
+	background-position: -277px -65px
 }
 
 .spr_book2.ico_cancel {
-    width: 17px;
-    height: 17px;
-    background-position: -277px -150px
+	width: 17px;
+	height: 17px;
+	background-position: -277px -150px
 }
 
 .spr_book2.ico_mapview {
-    width: 40px;
-    height: 40px;
-    background-position: -287px -196px
+	width: 40px;
+	height: 40px;
+	background-position: -287px -196px
 }
+
 .spr_book2.ico_cls {
 	width: 16px;
 	height: 16px;
-	background-position:-281px -26px;
+	background-position: -281px -26px;
 }
 
 .spr_book2.ico_arr6_lt {
-    width: 11px;
+	width: 11px;
 	height: 20px;
-    background-position:-151px -50px;
+	background-position: -151px -50px;
 }
+
 .spr_book2.ico_arr6_rt {
 	width: 11px;
 	height: 20px;
-    background-position:-164px -50px;
+	background-position: -164px -50px;
 }
+
 .spr_book2.ico_arr6_lt.off {
 	opacity: 0.6;
 }
+
 .spr_bi {
-    background-image: url(../img/spr_bi.png);
-    background-size: 130px 120px
+	background-image: url(../img/spr_bi.png);
+	background-size: 130px 120px
 }
 
 .spr_bi.ico_n_logo {
-    width: 26px;
-    height: 26px;
-    background-position: 0 0
+	width: 26px;
+	height: 26px;
+	background-position: 0 0
 }
 
 .spr_bi.ico_bk_logo {
-    width: 40px;
-    height: 26px;
-    background-position: -26px 0
+	width: 40px;
+	height: 26px;
+	background-position: -26px 0
 }
 
 input {
-    vertical-align: middle
+	vertical-align: middle
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px #fff inset
+	-webkit-box-shadow: 0 0 0 1000px #fff inset
 }
 
-input:checked[type=checkbox],input[type=checkbox] {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    -ms-appearance: none;
-    appearance: none;
-    border: none
+input:checked[type=checkbox], input[type=checkbox] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	-ms-appearance: none;
+	appearance: none;
+	border: none
 }
 
 input[type=checkbox].chk_agree {
-    position: absolute;
-    left: -9999px
+	position: absolute;
+	left: -9999px
 }
 
 input[type=checkbox].chk_agree+.label {
-    position: relative;
-    display: inline-block;
-    height: 20px;
-    line-height: 20px
+	position: relative;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px
 }
 
 input[type=checkbox].chk_agree:focus+.label:before {
-    outline: #000 dotted 1px;
-    outline: -webkit-focus-ring-color auto 5px
+	outline: #000 dotted 1px;
+	outline: -webkit-focus-ring-color auto 5px
 }
 
 input[type=checkbox].chk_agree+.label:before {
-    content: "";
-    overflow: hidden;
-    display: inline-block;
-    color: transparent;
-    background-image: url(../img/spr_book2.png);
-    background-size: 330px 400px;
-    vertical-align: top
+	content: "";
+	overflow: hidden;
+	display: inline-block;
+	color: transparent;
+	background-image: url(../img/spr_book2.png);
+	background-size: 330px 400px;
+	vertical-align: top
 }
 
 input[type=checkbox].chk_agree+.label:before {
-    margin-right: 10px;
-    width: 26px!important;
-    height: 26px!important;
-    background-position: -47px -273px;
-    vertical-align: -8.5px
+	margin-right: 10px;
+	width: 26px !important;
+	height: 26px !important;
+	background-position: -47px -273px;
+	vertical-align: -8.5px
 }
 
 input[type=checkbox].chk_agree:checked+.label:before {
-    background-position: -75px -273px;
-    background-color: transparent
+	background-position: -75px -273px;
+	background-color: transparent
 }
 
-input[type=text],input[type=email],input[type=tel] {
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    padding-left: 10px;
-    border: 1px solid #eee;
-    border-radius: 0
+input[type=text], input[type=email], input[type=tel] {
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	padding-left: 10px;
+	border: 1px solid #eee;
+	border-radius: 0
 }
 
 input[type=text].text {
-    font-size: 15px
+	font-size: 15px
 }
 
 button {
-    -webkit-appearance: button;
-    -ms-appearance: none;
-    border-radius: 0
+	-webkit-appearance: button;
+	-ms-appearance: none;
+	border-radius: 0
 }
 
-.bk_more .bk_more_txt,.btn_review_more {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+.bk_more .bk_more_txt, .btn_review_more {
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .bk_more {
-    display: block;
-    padding: 12px 0;
-    background-color: #f4f6f7;
-    border-top: 1px solid #edf0f2;
-    text-align: center;
-    box-sizing: border-box
+	display: block;
+	padding: 12px 0;
+	background-color: #f4f6f7;
+	border-top: 1px solid #edf0f2;
+	text-align: center;
+	box-sizing: border-box
 }
 
 .bk_btn {
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box
 }
 
 .bk_more .bk_more_txt {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 24px;
-    color: #333
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333
 }
 
-.bk_more .fn-down2,.bk_more .fn-up2 {
-    vertical-align: -5px;
-    font-size: 20px;
-    color: #8f8f8f
+.bk_more .fn-down2, .bk_more .fn-up2 {
+	vertical-align: -5px;
+	font-size: 20px;
+	color: #8f8f8f
 }
 
 .bk_more .fn-up2 {
-    vertical-align: -4px
+	vertical-align: -4px
 }
 
 .bk_btn {
-    height: 47px;
-    text-align: center
+	height: 47px;
+	text-align: center
 }
 
 .header.fade {
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity .2s ease-in
+	filter: alpha(opacity = 0);
+	-webkit-transition: opacity .2s ease-in
 }
 
 .btn_review_more {
-    display: block;
-    padding: 12px 0;
-    background: #fbfbfd;
-    border-top: 1px solid #dfe3e6;
-    color: #333;
-    text-align: center
+	display: block;
+	padding: 12px 0;
+	background: #fbfbfd;
+	border-top: 1px solid #dfe3e6;
+	color: #333;
+	text-align: center
 }
 
 .bk_btn {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .btn_review_more .fn-forward1 {
-    font-size: 18px;
-    vertical-align: -4px
+	font-size: 18px;
+	vertical-align: -4px
 }
 
 .section_btn {
-    border-bottom: none!important
+	border-bottom: none !important
 }
 
 .bk_btn {
-    display: block;
-    width: 100%;
-    border: 1px solid rgba(0,0,0,.1);
-    background-color: #0aba16;
-    cursor: pointer;
-    font-size: 17px;
-    color: #fff;
-    box-sizing: border-box
+	display: block;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: #0aba16;
+	cursor: pointer;
+	font-size: 17px;
+	color: #fff;
+	box-sizing: border-box
 }
 
 .box_bk_btn {
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box
 }
 
 .bk_btn [class*=fn] {
-    font-size: 22px;
-    vertical-align: -5px
+	font-size: 22px;
+	vertical-align: -5px
 }
 
 .box_bk_btn {
-    z-index: 1200;
-    overflow: hidden;
-    position: relative;
-    display: table;
-    padding: 10px;
-    background-color: #e9ecef;
-    box-sizing: border-box
+	z-index: 1200;
+	overflow: hidden;
+	position: relative;
+	display: table;
+	padding: 10px;
+	background-color: #e9ecef;
+	box-sizing: border-box
 }
 
 .bk_btn_wrap.disable .bk_btn {
-    border: 1px solid #ccc;
-    background-color: #d1d1d1
+	border: 1px solid #ccc;
+	background-color: #d1d1d1
 }
 
 .top_title {
-    width: 100%;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    max-width: 414px
+	width: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	max-width: 414px
 }
 
 .top_title .title {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .header {
-    z-index: 9000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 414px;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0)
+	z-index: 9000;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 414px;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0)
 }
 
-.header:after,.header:before {
-    content: " ";
-    display: table
+.header:after, .header:before {
+	content: " ";
+	display: table
 }
 
 .header.fade {
-    display: none;
-    opacity: 0;
-    -moz-transition: opacity .2s ease-in;
-    -ms-transition: opacity .2s ease-in;
-    transition: opacity .2s ease-in
+	display: none;
+	opacity: 0;
+	-moz-transition: opacity .2s ease-in;
+	-ms-transition: opacity .2s ease-in;
+	transition: opacity .2s ease-in
 }
 
 .header_tit {
-    position: relative;
-    width: 100%;
-    max-width: 414px;
-    height: 48px;
-    background-color: #0aba16
+	position: relative;
+	width: 100%;
+	max-width: 414px;
+	height: 48px;
+	background-color: #0aba16
 }
 
-.btn_my,.logo {
-    position: absolute;
-    height: 48px
+.btn_my, .logo {
+	position: absolute;
+	height: 48px
 }
 
 .logo {
-    z-index: 100;
-    top: 0;
-    left: 0
+	z-index: 100;
+	top: 0;
+	left: 0
 }
 
 .logo .lnk_logo {
-    display: inline-block;
-    float: left;
-    padding: 11px 0 11px 12px
+	display: inline-block;
+	float: left;
+	padding: 11px 0 11px 12px
 }
 
 .logo .lnk_logo+.lnk_logo {
-    padding: 11px 15px 12px 0
+	padding: 11px 15px 12px 0
 }
 
-.btn_my,.top_title {
-    -webkit-box-sizing: border-box;
-    top: 0;
-    moz-box-sizing: border-box
+.btn_my, .top_title {
+	-webkit-box-sizing: border-box;
+	top: 0;
+	moz-box-sizing: border-box
 }
 
 .btn_my {
-    z-index: 100;
-    right: 0;
-    padding: 12px 17.5px 12px 0;
-    font-size: 21px;
-    color: #fff;
-    font-weight: 300;
-    box-sizing: border-box
+	z-index: 100;
+	right: 0;
+	padding: 12px 17.5px 12px 0;
+	font-size: 21px;
+	color: #fff;
+	font-weight: 300;
+	box-sizing: border-box
 }
 
 .top_title {
-    z-index: 8000;
-    position: relative;
-    height: 49px;
-    background-color: #fff;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    background-clip: padding-box;
-    box-sizing: border-box;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0)
+	z-index: 8000;
+	position: relative;
+	height: 49px;
+	background-color: #fff;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+	box-sizing: border-box;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0)
 }
 
 .top_title .btn_back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    padding: 13px 0 6px 18px
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	padding: 13px 0 6px 18px
 }
 
 .top_title .btn_back .fn-backward1 {
-    font-size: 22px
+	font-size: 22px
 }
 
 .top_title .title {
-    display: block;
-    padding: 12px 40px 12px 0;
-    margin-left: 40px;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: -1px;
-    color: #333;
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap
+	display: block;
+	padding: 12px 40px 12px 0;
+	margin-left: 40px;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: -1px;
+	color: #333;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap
 }
 
 .gototop .lnk_top {
-    color: #000;
-    text-align: center
+	color: #000;
+	text-align: center
 }
 
 .gototop {
-    z-index: 1200;
-    position: relative;
-    background-color: #e9ecef
+	z-index: 1200;
+	position: relative;
+	background-color: #e9ecef
 }
 
 .gototop .lnk_top {
-    display: block;
-    padding: 18px 0 19.5px;
-    font-size: 13px;
-    line-height: 15px
+	display: block;
+	padding: 18px 0 19.5px;
+	font-size: 13px;
+	line-height: 15px
 }
 
 .gototop .lnk_top .lnk_top_text {
-    display: inline-block;
-    position: relative;
-    padding-left: 13px
+	display: inline-block;
+	position: relative;
+	padding-left: 13px
 }
 
 .gototop .lnk_top .lnk_top_text:after {
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 9px;
-    height: 11px;
-    background-image: url(../img/spr_book2.png);
-    background-size: 330px 400px;
-    background-repeat: no-repeat;
-    background-position: -299px -26px;
-    content: ''
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 9px;
+	height: 11px;
+	background-image: url(../img/spr_book2.png);
+	background-size: 330px 400px;
+	background-repeat: no-repeat;
+	background-position: -299px -26px;
+	content: ''
 }
 
 .footer {
-    z-index: 1200;
-    overflow: hidden;
-    position: relative;
-    background: #e9ecef;
-    font: 0/0 a;
-    word-wrap: break-word;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+	z-index: 1200;
+	overflow: hidden;
+	position: relative;
+	background: #e9ecef;
+	font: 0/0 a;
+	word-wrap: break-word;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .footer .dsc_footer {
-    margin: 0 15px 11.5px;
-    font-size: 13px;
-    line-height: 18px;
-    color: #999;
-    text-align: center
+	margin: 0 15px 11.5px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999;
+	text-align: center
 }
 
 .footer .copyright {
-    display: block;
-    position: relative
+	display: block;
+	position: relative
 }
 
 .footer .copyright {
-    padding-right: 10px;
-    padding-bottom: 15px;
-    font-size: 11px;
-    line-height: 15px;
-    color: #999;
-    text-align: center
+	padding-right: 10px;
+	padding-bottom: 15px;
+	font-size: 11px;
+	line-height: 15px;
+	color: #999;
+	text-align: center
 }
 
 .pop_bottom_btnarea .btn_bottom {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .img_bg:after {
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box
 }
 
 .pop_bottom_btnarea {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-top: 1px solid #dddedf
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #dddedf
 }
 
-.pop_bottom_btnarea:after,.pop_bottom_btnarea:before {
-    content: " ";
-    display: table
+.pop_bottom_btnarea:after, .pop_bottom_btnarea:before {
+	content: " ";
+	display: table
 }
 
-.img_bg:after,.img_bg:before {
-    content: ''
+.img_bg:after, .img_bg:before {
+	content: ''
 }
 
 .pop_bottom_btnarea .btn_bottom {
-    display: block;
-    padding: 13px 0;
-    background-color: #f3f4f5;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    color: #222;
-    text-decoration: none
+	display: block;
+	padding: 13px 0;
+	background-color: #f3f4f5;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	color: #222;
+	text-decoration: none
 }
 
 .dimm_dark {
-    z-index: 9000;
-    background-color: #000;
-    opacity: .5;
-    filter: alpha(opacity=50)
+	z-index: 9000;
+	background-color: #000;
+	opacity: .5;
+	filter: alpha(opacity = 50)
 }
 
-.pagination .num.off,.preview_txt .preview_txt_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 500
+.pagination .num.off, .preview_txt .preview_txt_tit {
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 500
 }
 
-.pop_bottom_btnarea .btn_gray,.pop_bottom_btnarea .btn_green {
-    float: left;
-    width: 50%
+.pop_bottom_btnarea .btn_gray, .pop_bottom_btnarea .btn_green {
+	float: left;
+	width: 50%
 }
 
 .pop_bottom_btnarea .btn_gray+div .btn_bottom {
-    border-left: 1px solid #dddedf
+	border-left: 1px solid #dddedf
 }
 
 .pop_bottom_btnarea .btn_green .btn_bottom {
-    color: #0aba16
+	color: #0aba16
 }
 
 .popup_btn_close {
-    position: absolute;
-    top: 14.5px;
-    right: 15px;
-    font-size: 20px;
-    color: #454545
+	position: absolute;
+	top: 14.5px;
+	right: 15px;
+	font-size: 20px;
+	color: #454545
 }
 
 .dimm_dark {
-    position: fixed!important;
-    top: 0!important;
-    bottom: 0!important;
-    left: 0!important;
-    right: 0!important;
-    height: 100%
+	position: fixed !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	height: 100%
 }
 
 .dimm_dark {
-    display: none;
-    min-width: 410px
+	display: none;
+	min-width: 410px
 }
 
-.img_bg,.img_bg:after,.img_bg:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    right: 0
+.img_bg, .img_bg:after, .img_bg:before {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	right: 0
 }
 
 .img_thumb {
-    width: 100%;
-    vertical-align: top
+	width: 100%;
+	vertical-align: top
 }
 
 .img_bg {
-    left: 0;
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -webkit-gradient(left top,left bottom,color-stop(0,#fff),color-stop(100%,rgba(0,0,0,.5)));
-    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -o-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    zoom:1}
+	left: 0;
+	background: rgba(255, 255, 255, 0);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0, #fff),
+		color-stop(100%, rgba(0, 0, 0, .5)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr='#00ffffff', endColorstr='#a6000000');
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr='#00ffffff', endColorstr='#a6000000');
+	zoom: 1
+}
 
 .img_bg:before {
-    left: 0;
-    background-color: rgba(0,0,0,.3)
+	left: 0;
+	background-color: rgba(0, 0, 0, .3)
 }
 
 .img_bg:after {
-    left: 0;
-    border-bottom: 1px solid #000;
-    opacity: .1;
-    filter: alpha(opacity=10);
-    vertical-align: bottom;
-    box-sizing: border-box
+	left: 0;
+	border-bottom: 1px solid #000;
+	opacity: .1;
+	filter: alpha(opacity = 10);
+	vertical-align: bottom;
+	box-sizing: border-box
 }
 
 .pagination {
-    z-index: 100;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    text-align: center
+	z-index: 100;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	text-align: center
 }
 
 .pagination .bg_pagination {
-    display: block;
-    margin: 0 auto;
-    width: 49px;
-    height: 16px;
-    background-color: #000;
-    border: 1px solid #000;
-    border-radius: 20px;
-    opacity: .4;
-    filter: alpha(opacity=40);
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    background-clip: padding-box
+	display: block;
+	margin: 0 auto;
+	width: 49px;
+	height: 16px;
+	background-color: #000;
+	border: 1px solid #000;
+	border-radius: 20px;
+	opacity: .4;
+	filter: alpha(opacity = 40);
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background-clip: padding-box
 }
 
 .pagination .figure_pagination {
-    position: relative;
-    top: -18px;
-    line-height: 18px
+	position: relative;
+	top: -18px;
+	line-height: 18px
 }
 
 .pagination .num {
-    font-size: 14px;
-    color: #fff;
-    line-height: 16px
+	font-size: 14px;
+	color: #fff;
+	line-height: 16px
 }
 
 .pagination .num.off {
-    opacity: .4;
-    filter: alpha(opacity=40)
+	opacity: .4;
+	filter: alpha(opacity = 40)
 }
 
 .preview_txt {
-    position: absolute;
-    left: 0;
-    bottom: 13px;
-    right: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: center
+	position: absolute;
+	left: 0;
+	bottom: 13px;
+	right: 0;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: center
 }
 
 .preview_txt .preview_txt_tit {
-    margin-bottom: 6px;
-    font-size: 24px;
-    line-height: 26px;
-    color: #fff;
-    text-shadow: 0 0 1px rgba(0,0,0,.2)
+	margin-bottom: 6px;
+	font-size: 24px;
+	line-height: 26px;
+	color: #fff;
+	text-shadow: 0 0 1px rgba(0, 0, 0, .2)
 }
 
 .preview_txt_dsc {
-    display: block;
-    font-size: 16px;
-    line-height: 24px;
-    color: #f1d84d;
-    text-shadow: 0 0 1px rgba(0,0,0,.2)
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+	color: #f1d84d;
+	text-shadow: 0 0 1px rgba(0, 0, 0, .2)
 }
 
 .item_preview_thumbs {
-  overflow-y: hidden;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  word-wrap: normal;
-  position: relative;
-  display: block;
-  padding-top: 17px;
-  width: 100%;
-  box-sizing: border-box;
+	overflow-y: hidden;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	word-wrap: normal;
+	position: relative;
+	display: block;
+	padding-top: 17px;
+	width: 100%;
+	box-sizing: border-box;
 }
+
 .item_preview_thumbs .lst_thumb {
-  position: relative;
-  font: 0px/0 a;
-  white-space: nowrap;
+	position: relative;
+	font: 0px/0 a;
+	white-space: nowrap;
 }
+
 .item_preview_thumbs .lst_thumb .item {
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  margin-right: 5px;
-  width: auto;
-  height: 80px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+	width: auto;
+	height: 80px;
 }
+
 .item_preview_thumbs .lst_thumb .item .anchor {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
 }
+
 .item_preview_thumbs .lst_thumb .item .item_thumb {
-  width: auto;
-  height: 80px;
+	width: auto;
+	height: 80px;
 }
+
 .item_preview_thumbs .lst_thumb .item:last-child {
-  margin-right: 15px;
+	margin-right: 15px;
 }
 
 .form_horizontal {
-    padding: 15px 20px 0
+	padding: 15px 20px 0
 }
 
 .form_horizontal .inline_form {
-    position: relative;
-    margin-top: 5px;
-    padding-left: 95px
+	position: relative;
+	margin-top: 5px;
+	padding-left: 95px
 }
 
-.form_horizontal .inline_form:after,.form_horizontal .inline_form:before {
-    content: " ";
-    display: table
+.form_horizontal .inline_form:after, .form_horizontal .inline_form:before
+	{
+	content: " ";
+	display: table
 }
 
 .form_horizontal .inline_form.last {
-    margin-top: 7px
+	margin-top: 7px
 }
 
 .form_horizontal .inline_form.last .label {
-    padding-bottom: 0
+	padding-bottom: 0
 }
 
 .form_horizontal .inline_form>.label {
-    display: inline-block;
-    float: left;
-    margin-left: -85px;
-    padding-top: 6.5px;
-    padding-bottom: 8.5px;
-    padding-left: 6px;
-    width: 65px;
-    color: #666;
-    font-size: 16px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 500;
-    line-height: 15px
+	display: inline-block;
+	float: left;
+	margin-left: -85px;
+	padding-top: 6.5px;
+	padding-bottom: 8.5px;
+	padding-left: 6px;
+	width: 65px;
+	color: #666;
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 500;
+	line-height: 15px
 }
 
 .form_horizontal .inline_form .ico_nessasary {
-    position: absolute;
-    left: 0;
-    margin-top: 3px
+	position: absolute;
+	left: 0;
+	margin-top: 3px
 }
 
 .form_horizontal .inline_form .inline_control {
-    width: 100%;
-    display: inline-block;
-    float: left
+	width: 100%;
+	display: inline-block;
+	float: left
 }
 
-.form_horizontal .inline_form .inline_control input[type=text],.form_horizontal .inline_form .inline_control input[type=email],.form_horizontal .inline_form .inline_control input[type=tel] {
-    width: 100%;
-    height: 30px;
-    background-color: #fff;
-    font-size: 15px;
-    //color: #989898;
-    color: #000;
-    line-height: 30px;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box
+.form_horizontal .inline_form .inline_control input[type=text],
+	.form_horizontal .inline_form .inline_control input[type=email],
+	.form_horizontal .inline_form .inline_control input[type=tel] {
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+	font-size: 15px; //
+	color: #989898;
+	color: #000;
+	line-height: 30px;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .form_horizontal .inline_form .inline_control .inline_txt {
-    padding: 1.5px 0 3.5px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #989898
+	padding: 1.5px 0 3.5px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #989898
 }
 
 .form_horizontal .inline_form .inline_control .inline_txt.selected {
-    color: #333
+	color: #333
 }
 
 /* added by crong. */
 .form_horizontal .inline_form .inline_control.tel_wrap {
-    position: relative;
+	position: relative;
 }
-
 
 .form_horizontal .inline_form .inline_control.tel_wrap .warning_msg {
-    position: relative;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #ffffff;
-    visibility: hidden;
-    height: 26px;
-    line-height: 26px;
-    width: 98%;
-    color: red;
-    padding-left: 10px;
+	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	visibility: hidden;
+	height: 26px;
+	line-height: 26px;
+	width: 98%;
+	color: red;
+	padding-left: 10px;
 }
 
-
 .container_visual {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden
 }
 
 .group_visual {
-    overflow: hidden;
-    position: relative;
-    display: block;
-    word-wrap: normal;
-    cursor: pointer;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box
+	overflow: hidden;
+	position: relative;
+	display: block;
+	word-wrap: normal;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .group_visual .visual_img {
-    position: relative;
-    min-height: 210px;
-    font: 0/0 a;
-    color: #fff;
-    white-space: nowrap
+	position: relative;
+	min-height: 210px;
+	font: 0/0 a;
+	color: #fff;
+	white-space: nowrap
 }
 
 .group_visual .visual_img .item {
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    white-space: normal;
-    vertical-align: top
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top
 }
 
-.group_visual .visual_img .item .img_bg:before,.group_visual .visual_img .item .visual_txt {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0
+.group_visual .visual_img .item .img_bg:before, .group_visual .visual_img .item .visual_txt
+	{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0
 }
 
 .group_visual .visual_img .item .img_bg {
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    background: -webkit-gradient(left top,left bottom,color-stop(0,#fff),color-stop(100%,rgba(0,0,0,.3)));
-    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    background: -o-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    zoom:1}
+	background: rgba(255, 255, 255, 0);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .3) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0, #fff),
+		color-stop(100%, rgba(0, 0, 0, .3)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .3) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .3) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .3) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0,
+		rgba(0, 0, 0, .3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr='#00ffffff', endColorstr='#a6000000');
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr='#00ffffff', endColorstr='#a6000000');
+	zoom: 1
+}
 
 .group_visual .visual_img .item .img_bg:before {
-    content: '';
-    background-color: rgba(0,0,0,.2)
+	content: '';
+	background-color: rgba(0, 0, 0, .2)
 }
 
 .group_visual .visual_img .item .visual_txt:before {
-    display: inline-block;
-    width: 1px;
-    height: 100%;
-    margin-left: -5px;
-    vertical-align: middle;
-    content: ''
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	margin-left: -5px;
+	vertical-align: middle;
+	content: ''
 }
 
 .group_visual .visual_img .item .visual_txt .visual_txt_inn {
-    overflow: hidden;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .bottom_common_path {
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box
 }
 
 .group_visual .visual_img .item .visual_txt .visual_txt_tit {
-    margin-bottom: 4px;
-    padding-left: 32px;
-    padding-right: 32px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600;
-    text-shadow: 0 0 1px rgba(0,0,0,.2);
-    font-size: 35px;
-    line-height: 40px;
-    letter-spacing: -.5px;
-    display: block;
-    display: -webkit-box;
-    overflow: hidden;
-    word-wrap: break-word;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis
+	margin-bottom: 4px;
+	padding-left: 32px;
+	padding-right: 32px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600;
+	text-shadow: 0 0 1px rgba(0, 0, 0, .2);
+	font-size: 35px;
+	line-height: 40px;
+	letter-spacing: -.5px;
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	word-wrap: break-word;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis
 }
 
 @media screen and (max-width: 320px) {
-    .group_visual .visual_img .item .visual_txt .visual_txt_tit {
-        margin-bottom:6px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 24px;
-        line-height: 29px;
-        letter-spacing: 1px
-    }
+	.group_visual .visual_img .item .visual_txt .visual_txt_tit {
+		margin-bottom: 6px;
+		padding-left: 40px;
+		padding-right: 40px;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 1px
+	}
 }
 
 .group_visual .visual_img .item .visual_txt .visual_txt_dsc {
-    padding-left: 34px;
-    padding-right: 34px;
-    font-size: 18px;
-    line-height: 26px;
-    text-shadow: 0 0 2px rgba(0,0,0,.2);
-    display: block;
-    display: -webkit-box;
-    overflow: hidden;
-    word-wrap: break-word;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis
+	padding-left: 34px;
+	padding-right: 34px;
+	font-size: 18px;
+	line-height: 26px;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .2);
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	word-wrap: break-word;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis
 }
 
 @media screen and (max-width: 320px) {
-    .group_visual .visual_img .item .visual_txt .visual_txt_dsc {
-        padding-left:44px;
-        padding-right: 44px;
-        font-size: 15px;
-        line-height: 21px
-    }
+	.group_visual .visual_img .item .visual_txt .visual_txt_dsc {
+		padding-left: 44px;
+		padding-right: 44px;
+		font-size: 15px;
+		line-height: 21px
+	}
 }
 
-.group_visual .nxt:before,.group_visual .prev:before {
-    margin-left: -1px;
-    vertical-align: middle;
-    display: inline-block;
-    content: ''
+.group_visual .nxt:before, .group_visual .prev:before {
+	margin-left: -1px;
+	vertical-align: middle;
+	display: inline-block;
+	content: ''
 }
 
 .group_visual .prev {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 43px;
-    height: 100%
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 43px;
+	height: 100%
 }
 
 .group_visual .prev:before {
-    position: relative;
-    left: 0;
-    width: 1px;
-    height: 100%
+	position: relative;
+	left: 0;
+	width: 1px;
+	height: 100%
 }
 
 .group_visual .prev .prev_inn {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1px;
-    height: 50px;
-    vertical-align: middle
+	position: relative;
+	display: inline-block;
+	padding-bottom: 1px;
+	height: 50px;
+	vertical-align: middle
 }
 
 .group_visual .prev .prev_inn .btn_prev {
-    position: relative;
-    display: inline-block;
-    padding: 15px 15px 15px 12px;
-    width: 11px;
-    height: 20px
+	position: relative;
+	display: inline-block;
+	padding: 15px 15px 15px 12px;
+	width: 11px;
+	height: 20px
 }
 
 .group_visual .nxt {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 46px;
-    height: 100%
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 46px;
+	height: 100%
 }
 
 .group_visual .nxt:before {
-    width: 1px;
-    height: 100%
+	width: 1px;
+	height: 100%
 }
 
 .group_visual .nxt .nxt_inn {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1px;
-    height: 50px;
-    vertical-align: middle
+	position: relative;
+	display: inline-block;
+	padding-bottom: 1px;
+	height: 50px;
+	vertical-align: middle
 }
 
 .group_visual .nxt .nxt_inn .btn_nxt {
-    display: inline-block;
-    padding: 15px;
-    width: 11px;
-    height: 20px
+	display: inline-block;
+	padding: 15px;
+	width: 11px;
+	height: 20px
 }
 
 .bottom_common_path {
-    font-size: 15px;
-    text-align: center;
-    border: 1px solid #ececec;
-    background-color: #f5f5f5;
-    box-sizing: border-box
+	font-size: 15px;
+	text-align: center;
+	border: 1px solid #ececec;
+	background-color: #f5f5f5;
+	box-sizing: border-box
 }
 
-.bottom_common_path:after,.bottom_common_path:before {
-    content: " ";
-    display: table
+.bottom_common_path:after, .bottom_common_path:before {
+	content: " ";
+	display: table
 }
 
 .bottom_common_path a[class*=btn_] {
-    float: left;
-    position: relative;
-    display: inline-block;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 100%;
-    color: #8c8c8c
+	float: left;
+	position: relative;
+	display: inline-block;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 100%;
+	color: #8c8c8c
 }
 
 .bottom_common_path a[class*=btn_]:before {
-    position: absolute;
-    top: 13px;
-    left: 0;
-    width: 1px;
-    height: 14px;
-    background-color: #dcdcdc;
-    content: ''
+	position: absolute;
+	top: 13px;
+	left: 0;
+	width: 1px;
+	height: 14px;
+	background-color: #dcdcdc;
+	content: ''
 }
 
 .bottom_common_path a[class*=btn_]:first-child:before {
-    content: '';
-    width: 0;
-    height: 0;
-    position: static;
-    left: 0;
-    top: 0;
-    margin-top: 0;
-    background: 0 0
+	content: '';
+	width: 0;
+	height: 0;
+	position: static;
+	left: 0;
+	top: 0;
+	margin-top: 0;
+	background: 0 0
 }
 
-.bottom_common_path.column3 a[class*=btn_]:before,.bottom_common_path.column4 a[class*=btn_]:before {
-    top: 23px
+.bottom_common_path.column3 a[class*=btn_]:before, .bottom_common_path.column4 a[class*=btn_]:before
+	{
+	top: 23px
 }
 
 .bottom_common_path .fn {
-    margin-right: 2px;
-    width: 16.5px;
-    height: 18px;
-    vertical-align: -4px!important;
-    font-size: 18px;
-    color: #666
+	margin-right: 2px;
+	width: 16.5px;
+	height: 18px;
+	vertical-align: -4px !important;
+	font-size: 18px;
+	color: #666
 }
 
 .bottom_common_path.column2 a[class*=btn_] {
-    width: 50%
+	width: 50%
 }
 
 .detail_area {
-    position: relative;
-    padding-bottom: 1px
+	position: relative;
+	padding-bottom: 1px
 }
 
 .detail_area .detail_info .detail_info_group .detail_info_lst {
-    margin-top: 20px;
-    margin-bottom: 20px
+	margin-top: 20px;
+	margin-bottom: 20px
 }
 
-.detail_area .detail_info .detail_info_group .detail_info_lst:last-child {
-    margin-bottom: 0
+.detail_area .detail_info .detail_info_group .detail_info_lst:last-child
+	{
+	margin-bottom: 0
 }
 
 .detail_area .detail_info .detail_info_group .detail_info_lst .in_tit {
-    display: block;
-    margin: 22px 0;
-    padding: 0 20px;
-    font-size: 16px
+	display: block;
+	margin: 22px 0;
+	padding: 0 20px;
+	font-size: 16px
 }
 
 .detail_area .detail_info .detail_info_group .detail_info_lst .in_dsc {
-    margin: 20px 0;
-    padding: 0 20px;
-    font-size: 16px;
-    line-height: 24px
+	margin: 20px 0;
+	padding: 0 20px;
+	font-size: 16px;
+	line-height: 24px
 }
 
-.detail_area .detail_info .detail_info_group .detail_info_lst .in_img_group {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px
+.detail_area .detail_info .detail_info_group .detail_info_lst .in_img_group
+	{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px
 }
 
 .detail_area_wrap {
-    border-top: 1px solid #e2e5e8
+	border-top: 1px solid #e2e5e8
 }
 
 .refund {
-    padding: 5px 0 0;
-    color: #333;
-    line-height: 24px
+	padding: 5px 0 0;
+	color: #333;
+	line-height: 24px
 }
 
 .group_btn_goto {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 40px;
-    padding-left: 15px;
-    margin-bottom: 15px
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 40px;
+	padding-left: 15px;
+	margin-bottom: 15px
 }
 
-.group_btn_goto:after,.group_btn_goto:before {
-    content: " ";
-    display: table
+.group_btn_goto:after, .group_btn_goto:before {
+	content: " ";
+	display: table
 }
 
 .group_btn_goto .fn {
-    font-size: 22px;
-    color: #fff
+	font-size: 22px;
+	color: #fff
 }
 
-.group_btn_goto .btn_goto_home,.group_btn_goto .btn_goto_tel,.group_btn_goto .btn_goto_mail {
-    display: inline-block;
-    float: left;
-    margin-right: 5px;
-    padding: 8px;
-    width: 22px;
-    height: 22px;
-    border: 1px solid rgba(255,255,255,.8);
-    background-color: rgba(0,0,0,.4);
-    text-align: center
+.group_btn_goto .btn_goto_home, .group_btn_goto .btn_goto_tel,
+	.group_btn_goto .btn_goto_mail {
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+	padding: 8px;
+	width: 22px;
+	height: 22px;
+	border: 1px solid rgba(255, 255, 255, .8);
+	background-color: rgba(0, 0, 0, .4);
+	text-align: center
 }
 
 .group_btn_goto .btn_goto_path {
-    position: absolute;
-    top: 1px;
-    right: 57px;
-    height: 33px;
-    font: 0/0 a
+	position: absolute;
+	top: 1px;
+	right: 57px;
+	height: 33px;
+	font: 0/0 a
 }
 
 .group_btn_goto .btn_goto_path:after {
-    margin-left: 2px;
-    border-left: 1px solid #fff;
-    font-size: 17px;
-    line-height: 15px;
-    vertical-align: 5px;
-    box-shadow: 0 0 2px rgba(0,0,0,.2);
-    content: '';
-    opacity: .4;
-    filter: alpha(opacity=40)
+	margin-left: 2px;
+	border-left: 1px solid #fff;
+	font-size: 17px;
+	line-height: 15px;
+	vertical-align: 5px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+	content: '';
+	opacity: .4;
+	filter: alpha(opacity = 40)
 }
 
 .group_btn_goto .btn_goto_path .fn {
-    padding: 6px 5px 5.5px 6px;
-    color: #fff
+	padding: 6px 5px 5.5px 6px;
+	color: #fff
 }
 
 .group_btn_goto .btn_goto_path .fn.fn-path-find1 {
-    font-size: 26px
+	font-size: 26px
 }
 
 .group_btn_goto .btn_goto_share {
-    position: absolute;
-    right: 14.5px;
-    height: 33px
+	position: absolute;
+	right: 14.5px;
+	height: 33px
 }
 
 .group_btn_goto .btn_goto_share.fn {
-    padding: 5px 5px 6px 6px
+	padding: 5px 5px 6px 6px
 }
 
 .group_btn_goto .btn_goto_share.fn.fn-share1 {
-    font-size: 30px
+	font-size: 30px
 }
 
 .count_control .count_control_input {
-    background-color: #fff;
-    text-align: center;
-    line-height: 35px;
-    float: left
+	background-color: #fff;
+	text-align: center;
+	line-height: 35px;
+	float: left
 }
 
 .section_event .event_info_box {
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    overflow: hidden
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	overflow: hidden
 }
 
-.count_control .count_control_input,.section_event .event_info_box .event_info_tit .in_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+.count_control .count_control_input, .section_event .event_info_box .event_info_tit .in_tit
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .count_control {
-    display: table-cell;
-    padding: 10px 0;
-    width: 127px;
-    vertical-align: top
+	display: table-cell;
+	padding: 10px 0;
+	width: 127px;
+	vertical-align: top
 }
 
 .count_control .clearfix {
-    width: 127px
+	width: 127px
 }
 
 .count_control .btn_plus_minus {
-    display: inline-block;
-    float: left;
-    width: 40px;
-    height: 40px;
-    box-sizing: border-box
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box
 }
 
 .count_control .btn_plus_minus.disabled+.count_control_input {
-    margin-left: -1px;
-    width: 48px;
-    border-left: 1px solid #00cd33
+	margin-left: -1px;
+	width: 48px;
+	border-left: 1px solid #00cd33
 }
 
 .count_control .btn_plus_minus.disabled+.count_control_input.disabled {
-    margin-left: 0;
-    width: 47px;
-    border-left: none
+	margin-left: 0;
+	width: 47px;
+	border-left: none
 }
 
 .count_control .count_control_input {
-    overflow: hidden;
-    display: inline-block;
-    padding-left: 0;
-    width: 47px;
-    height: 40px;
-    border: 1px solid #0aba16;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-radius: 0;
-    color: #0aba16;
-    font-weight: 600;
-    box-sizing: border-box
+	overflow: hidden;
+	display: inline-block;
+	padding-left: 0;
+	width: 47px;
+	height: 40px;
+	border: 1px solid #0aba16;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-radius: 0;
+	color: #0aba16;
+	font-weight: 600;
+	box-sizing: border-box
 }
 
 .count_control .count_control_input.disabled {
-    border-color: #ccc;
-    color: #bbb
+	border-color: #ccc;
+	color: #bbb
 }
 
 .section_event .event_info_box {
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-top: 1px solid #e4e3d9;
-    box-sizing: border-box;
-    background-color: #fefdf1
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: 1px solid #e4e3d9;
+	box-sizing: border-box;
+	background-color: #fefdf1
 }
 
 .section_booking_agreement .agreement.all {
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box
 }
 
 .section_event .event_info_box .event_info_tit {
-    padding-top: 10px;
-    border-bottom: 1px solid #eeeee5;
-    color: #000
+	padding-top: 10px;
+	border-bottom: 1px solid #eeeee5;
+	color: #000
 }
 
 .section_event .event_info_box .event_info_tit .in_tit {
-    padding-bottom: 9px;
-    margin-bottom: 0;
-    font-size: 17px;
-    font-weight: 500
+	padding-bottom: 9px;
+	margin-bottom: 0;
+	font-size: 17px;
+	font-weight: 500
 }
 
 .section_event .event_info_box .event_info_tit .in_tit .ico_evt {
-    vertical-align: bottom;
-    margin-bottom: -1px
+	vertical-align: bottom;
+	margin-bottom: -1px
 }
 
 .section_event .event_info_box .event_info {
-    margin: 5px 0 12px
+	margin: 5px 0 12px
 }
 
 .section_event .event_info_box .event_info .in_dsc {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    color: #333;
-    font-size: 16px;
-    line-height: 24px
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	color: #333;
+	font-size: 16px;
+	line-height: 24px
 }
 
-.section_booking_form,.store_info {
-    background-color: #fff
+.section_booking_form, .store_info {
+	background-color: #fff
 }
 
 .store_location {
-    position: relative;
-    display: block;
-    font: 0/0 a
+	position: relative;
+	display: block;
+	font: 0/0 a
 }
 
-.store_info .lst_store_info .item_lt,.store_name {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+.store_info .lst_store_info .item_lt, .store_name {
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .store_location .store_map {
-    width: 100%;
-    height: auto
+	width: 100%;
+	height: auto
 }
 
 .store_location .btn_map {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 9px;
-    top: 10px
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 9px;
+	top: 10px
 }
 
 .box_store_info {
-    padding: 20px;
-    border-top: 1px solid #e2e5e8;
-    border-bottom: none!important
+	padding: 20px;
+	border-top: 1px solid #e2e5e8;
+	border-bottom: none !important
 }
 
 .store_name {
-    margin-right: 27px;
-    padding-top: 17px;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 21px
+	margin-right: 27px;
+	padding-top: 17px;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 21px
 }
 
 .store_info {
-    position: relative;
-    padding: 7px 0 9px
+	position: relative;
+	padding: 7px 0 9px
 }
 
 .store_info .store_addr_wrap {
-    padding-left: 23px;
-    position: relative
+	padding-left: 23px;
+	position: relative
 }
 
 .store_info .store_addr_wrap .fn-pin2 {
-    position: absolute;
-    top: 3px;
-    left: 0;
-    font-size: 18px;
-    color: #bbb
+	position: absolute;
+	top: 3px;
+	left: 0;
+	font-size: 18px;
+	color: #bbb
 }
 
 .store_info .store_addr_wrap .store_addr {
-    margin-bottom: 2px;
-    font-size: 15px;
-    color: #666;
-    line-height: 24px
+	margin-bottom: 2px;
+	font-size: 15px;
+	color: #666;
+	line-height: 24px
 }
 
 .store_info .store_addr_wrap .store_addr.store_addr_bold {
-    font-size: 16px;
-    color: #333
+	font-size: 16px;
+	color: #333
 }
 
 .store_info .store_addr_wrap .store_addr .addr_old {
-    display: inline-block;
-    margin-right: 0;
-    color: #989898;
-    font-size: 15px
+	display: inline-block;
+	margin-right: 0;
+	color: #989898;
+	font-size: 15px
 }
 
 .store_info .store_addr_wrap .store_addr .addr_old_detail {
-    color: #333
+	color: #333
 }
 
 .store_info .lst_store_info_wrap {
-    margin-bottom: 2px;
-    padding-top: 3px
+	margin-bottom: 2px;
+	padding-top: 3px
 }
 
 .store_info .lst_store_info {
-    display: table;
-    width: auto;
-    padding-top: 0
+	display: table;
+	width: auto;
+	padding-top: 0
 }
 
 .store_info .lst_store_info .item {
-    display: table-row
+	display: table-row
 }
 
 .store_info .lst_store_info .item_lt {
-    display: table-cell;
-    max-width: 120px;
-    padding-right: 5px;
-    padding-bottom: 4px;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 19px;
-    color: #444;
-    vertical-align: top
+	display: table-cell;
+	max-width: 120px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 19px;
+	color: #444;
+	vertical-align: top
 }
 
 .store_info .lst_store_info .item_lt .fn {
-    font-size: 18px;
-    color: #bbb
+	font-size: 18px;
+	color: #bbb
 }
 
 .store_info .lst_store_info .item_lt .fn.fn-call2 {
-    vertical-align: -6px
+	vertical-align: -6px
 }
 
 .store_info .lst_store_info .item_rt {
-    display: table-cell;
-    max-width: 225px;
-    padding-bottom: 6px
+	display: table-cell;
+	max-width: 225px;
+	padding-bottom: 6px
 }
 
 .store_info .lst_store_info .item_rt .store_tel {
-    display: inline-block;
-    padding-bottom: 2px;
-    color: #333
+	display: inline-block;
+	padding-bottom: 2px;
+	color: #333
 }
 
 .section_booking_agreement .agreement {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .section_booking_form {
-    position: relative;
-    border-top: none!important;
-    border-bottom: 1px solid #ededed!important
+	position: relative;
+	border-top: none !important;
+	border-bottom: 1px solid #ededed !important
 }
 
 .section_booking_form .agreement_nessasary.help_txt {
-    position: absolute;
-    top: 10px;
-    right: 19px
+	position: absolute;
+	top: 10px;
+	right: 19px
 }
 
 .section_booking_form .agreement_nessasary.help_txt .ico_nessasary {
-    margin-right: 0
+	margin-right: 0
 }
 
 .section_booking_form .booking_form_wrap {
-    position: relative;
-    padding: 0 0 17px
+	position: relative;
+	padding: 0 0 17px
 }
 
 .section_booking_form .booking_form_wrap .form_wrap {
-    position: relative;
-    border-top: 6px solid #e9ecef
+	position: relative;
+	border-top: 6px solid #e9ecef
 }
 
 .section_booking_form .booking_form_wrap .form_horizontal {
-    padding-top: 10px!important
+	padding-top: 10px !important
 }
 
 .section_booking_agreement {
-    padding-top: 2px;
-    padding-bottom: 16px;
-    border-top-width: 1px!important;
-    background-color: #fff
+	padding-top: 2px;
+	padding-bottom: 16px;
+	border-top-width: 1px !important;
+	background-color: #fff
 }
 
 .section_booking_agreement .agreement {
-    position: relative;
-    padding: 10px 20px 0;
-    font-weight: 400;
-    line-height: 20px;
-    color: #666
+	position: relative;
+	padding: 10px 20px 0;
+	font-weight: 400;
+	line-height: 20px;
+	color: #666
 }
 
-.section_booking_agreement .agreement:after,.section_booking_agreement .agreement:before {
-    content: " ";
-    display: table
+.section_booking_agreement .agreement:after, .section_booking_agreement .agreement:before
+	{
+	content: " ";
+	display: table
 }
 
 .section_booking_agreement .agreement.all {
-    display: table;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 12.5px 20px 9px;
-    width: 100%;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600;
-    border-top: none;
-    border-bottom: 1px solid #eee;
-    color: #000;
-    box-sizing: border-box
+	display: table;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 12.5px 20px 9px;
+	width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600;
+	border-top: none;
+	border-bottom: 1px solid #eee;
+	color: #000;
+	box-sizing: border-box
 }
 
-.section_booking_agreement .agreement .btn_agreement,.section_booking_agreement .agreement .useragreement_details,.section_booking_agreement .agreement .useragreement_details.custom_details_wrap .custom_details {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400
+.section_booking_agreement .agreement .btn_agreement,
+	.section_booking_agreement .agreement .useragreement_details,
+	.section_booking_agreement .agreement .useragreement_details.custom_details_wrap .custom_details
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400
 }
 
 .section_booking_agreement .agreement .chk_txt_span {
-    position: relative;
-    display: block;
-    margin-right: 56px;
-    padding-left: 35px
+	position: relative;
+	display: block;
+	margin-right: 56px;
+	padding-left: 35px
 }
 
 .section_booking_agreement .agreement .agreement_nessasary {
-    display: table-cell;
-    float: none;
-    margin-bottom: 0;
-    margin-left: 10px;
-    padding-top: 0;
-    text-align: right;
-    vertical-align: middle;
-    white-space: nowrap
+	display: table-cell;
+	float: none;
+	margin-bottom: 0;
+	margin-left: 10px;
+	padding-top: 0;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap
 }
 
 .section_booking_agreement .agreement .chk_txt_label {
-    display: table-cell;
-    padding: 1px 0 2px 35px;
-    font-size: 17px;
-    word-break: keep-all
+	display: table-cell;
+	padding: 1px 0 2px 35px;
+	font-size: 17px;
+	word-break: keep-all
 }
 
 .section_booking_agreement .agreement .chk_txt_label::before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -14px
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -14px
 }
 
 .section_booking_agreement .agreement:last-child {
-    border-bottom-width: 0
+	border-bottom-width: 0
 }
 
 .section_booking_agreement .agreement.open {
-    border-bottom-width: 0;
-    padding-bottom: 0
+	border-bottom-width: 0;
+	padding-bottom: 0
 }
 
 .section_booking_agreement .agreement.open .useragreement_details {
-    display: block
+	display: block
 }
 
 .section_booking_agreement .agreement .ico_arr_ipc2 {
-    position: absolute;
-    top: 3px;
-    left: 12px
+	position: absolute;
+	top: 3px;
+	left: 12px
 }
 
 .section_booking_agreement .agreement .useragreement_details {
-    display: none;
-    overflow: auto;
-    margin-top: 8px;
-    margin-left: 12px;
-    padding: 10px 15px;
-    height: 170px;
-    border: 1px solid #eee;
-    font-size: 15px;
-    color: #666;
-    line-height: 23px;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: #fcfcfc
+	display: none;
+	overflow: auto;
+	margin-top: 8px;
+	margin-left: 12px;
+	padding: 10px 15px;
+	height: 170px;
+	border: 1px solid #eee;
+	font-size: 15px;
+	color: #666;
+	line-height: 23px;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fcfcfc
 }
 
-.section_booking_agreement .agreement .useragreement_details.custom_details_wrap {
-    overflow: auto;
-    padding: 0;
-    height: auto;
-    border: none;
-    background: 0 0
+.section_booking_agreement .agreement .useragreement_details.custom_details_wrap
+	{
+	overflow: auto;
+	padding: 0;
+	height: auto;
+	border: none;
+	background: 0 0
 }
 
-.section_booking_agreement .agreement .useragreement_details.custom_details_wrap .custom_details {
-    overflow: auto;
-    padding: 11px 10px;
-    margin-bottom: 4px;
-    height: 170px;
-    border: 1px solid #eee;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: #fcfcfc
+.section_booking_agreement .agreement .useragreement_details.custom_details_wrap .custom_details
+	{
+	overflow: auto;
+	padding: 11px 10px;
+	margin-bottom: 4px;
+	height: 170px;
+	border: 1px solid #eee;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fcfcfc
 }
 
 .section_booking_agreement .agreement .btn_agreement .btn_text {
-    text-decoration: underline
+	text-decoration: underline
 }
 
 .section_booking_agreement .agreement .btn_agreement {
-    position: absolute;
-    top: 0;
-    right: 21.5px;
-    padding: 11px 0 2px;
-    font-size: 15px;
-    color: #989898;
-    line-height: 15px
+	position: absolute;
+	top: 0;
+	right: 21.5px;
+	padding: 11px 0 2px;
+	font-size: 15px;
+	color: #989898;
+	line-height: 15px
 }
 
 .section_booking_agreement .agreement .btn_agreement .fn {
-    font-size: 17px;
-    color: #8f8f8f
+	font-size: 17px;
+	color: #8f8f8f
 }
 
 .section_booking_agreement .agreement .btn_agreement .fn-down2 {
-    vertical-align: -4px
+	vertical-align: -4px
 }
 
 .err {
-    background-color: #fff
+	background-color: #fff
 }
 
 .err .tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400
 }
 
 .err {
-    padding: 104px 20px;
-    text-align: center
+	padding: 104px 20px;
+	text-align: center
 }
 
 .err .tit {
-    padding-top: 17px;
-    padding-bottom: 7px;
-    font-size: 20px;
-    color: #333
+	padding-top: 17px;
+	padding-bottom: 7px;
+	font-size: 20px;
+	color: #333
 }
 
 .section_visual {
-    position: relative;
-    border-top: none!important;
-    border-bottom: none!important
+	position: relative;
+	border-top: none !important;
+	border-bottom: none !important
 }
 
 .section_store_details {
-    position: relative;
-    padding: 18px 0 0;
-    background-color: #fff;
-    border-top: none!important
+	position: relative;
+	padding: 18px 0 0;
+	background-color: #fff;
+	border-top: none !important
 }
 
 .section_store_details .in_tit {
-    margin-bottom: 6px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 16px
+	margin-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 16px
 }
 
 .section_store_details .store_details {
-    margin-bottom: 5px;
-    background-color: #fff
+	margin-bottom: 5px;
+	background-color: #fff
 }
 
 .section_store_details .store_details.close3 {
-    height: 73px;
-    overflow: hidden;
-    word-wrap: break-word;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    display: -webkit-box!important
+	height: 73px;
+	overflow: hidden;
+	word-wrap: break-word;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	display: -webkit-box !important
 }
 
 .section_store_details .store_details .dsc {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    word-break: normal
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	word-break: normal
 }
 
 .section_info_tab {
-    background-color: #fff
+	background-color: #fff
 }
 
 .section_info_tab .info_tab_lst {
-    border-top: 1px solid #e2e5e8
+	border-top: 1px solid #e2e5e8
 }
 
-.section_info_tab .info_tab_lst:after,.section_info_tab .info_tab_lst:before {
-    content: " ";
-    display: table
+.section_info_tab .info_tab_lst:after, .section_info_tab .info_tab_lst:before
+	{
+	content: " ";
+	display: table
 }
 
 .section_info_tab .info_tab_lst .item {
-    display: inline-block;
-    float: left;
-    width: 50%;
-    text-align: center
+	display: inline-block;
+	float: left;
+	width: 50%;
+	text-align: center
 }
 
 .section_info_tab .info_tab_lst .item>.anchor {
-    display: inline-block;
-    padding: 10px 6px;
-    white-space: nowrap
+	display: inline-block;
+	padding: 10px 6px;
+	white-space: nowrap
 }
 
 .section_info_tab .info_tab_lst .item>.anchor.active {
-    padding: 10px 6px 11px;
-    margin-bottom: -1px;
-    border-bottom: 2px solid #0aba16;
-    color: #0aba16;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600
+	padding: 10px 6px 11px;
+	margin-bottom: -1px;
+	border-bottom: 2px solid #0aba16;
+	color: #0aba16;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600
 }
 
 .section_booking_ticket {
-    border-top-width: 5px;
-    background-color: #fff
+	border-top-width: 5px;
+	background-color: #fff
 }
 
 .section_booking_ticket .ticket_body {
-    padding-left: 20px;
-    padding-right: 20px;
-    border-top: 1px solid #f0f0f0
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: 1px solid #f0f0f0
 }
 
 .section_booking_ticket .ticket_body .qty {
-    padding: 16px 0 10px
+	padding: 16px 0 10px
 }
 
-.section_booking_ticket .ticket_body .qty:after,.section_booking_ticket .ticket_body .qty:before {
-    content: " ";
-    display: table
+.section_booking_ticket .ticket_body .qty:after, .section_booking_ticket .ticket_body .qty:before
+	{
+	content: " ";
+	display: table
 }
 
 .section_booking_ticket .ticket_body .qty+.qty {
-    margin-top: -5px;
-    padding-top: 12px;
-    border-top: 1px solid #f0f0f0
+	margin-top: -5px;
+	padding-top: 12px;
+	border-top: 1px solid #f0f0f0
 }
 
 .section_booking_ticket .ticket_body .qty .count_control {
-    position: relative;
-    z-index: 10;
-    display: block;
-    float: right;
-    padding: 0
+	position: relative;
+	z-index: 10;
+	display: block;
+	float: right;
+	padding: 0
 }
 
-.section_booking_ticket .ticket_body .qty .count_control .individual_price {
-    padding-top: 4px;
-    text-align: right;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600;
-    color: #bbb
+.section_booking_ticket .ticket_body .qty .count_control .individual_price
+	{
+	padding-top: 4px;
+	text-align: right;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600;
+	color: #bbb
 }
 
-.section_booking_ticket .ticket_body .qty .count_control .individual_price .price_type {
-    margin-left: 1px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400
+.section_booking_ticket .ticket_body .qty .count_control .individual_price .price_type
+	{
+	margin-left: 1px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400
 }
 
-.section_booking_ticket .ticket_body .qty .product_amount,.section_booking_ticket .ticket_body .qty .product_price {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600;
-    font-size: 16px
+.section_booking_ticket .ticket_body .qty .product_amount,
+	.section_booking_ticket .ticket_body .qty .product_price {
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600;
+	font-size: 16px
 }
 
-.section_booking_ticket .ticket_body .qty .count_control .individual_price.on_color {
-    color: #000
+.section_booking_ticket .ticket_body .qty .count_control .individual_price.on_color
+	{
+	color: #000
 }
 
-.section_booking_ticket .ticket_body .qty .product_amount,.section_booking_ticket .ticket_body .qty .product_price {
-    display: block;
-    margin-top: -2px;
-    margin-bottom: 2px;
-    line-height: 24px
+.section_booking_ticket .ticket_body .qty .product_amount,
+	.section_booking_ticket .ticket_body .qty .product_price {
+	display: block;
+	margin-top: -2px;
+	margin-bottom: 2px;
+	line-height: 24px
 }
 
-.section_booking_ticket .ticket_body .qty .product_amount+.product_price {
-    margin-top: 0
+.section_booking_ticket .ticket_body .qty .product_amount+.product_price
+	{
+	margin-top: 0
 }
 
-.section_booking_ticket .ticket_body .qty .qty_info_icon .product_amount,.section_booking_ticket .ticket_body .qty .qty_info_icon .product_price {
-    margin-bottom: 0
+.section_booking_ticket .ticket_body .qty .qty_info_icon .product_amount,
+	.section_booking_ticket .ticket_body .qty .qty_info_icon .product_price
+	{
+	margin-bottom: 0
 }
 
-.section_booking_ticket .ticket_body .qty .qty_info_icon .product_amount+.product_price {
-    margin-top: -3px
+.section_booking_ticket .ticket_body .qty .qty_info_icon .product_amount+.product_price
+	{
+	margin-top: -3px
 }
 
 .section_booking_ticket .ticket_body .qty .product_dsc {
-    display: block;
-    color: #989898;
-    font-size: 16px;
-    line-height: 24px
+	display: block;
+	color: #989898;
+	font-size: 16px;
+	line-height: 24px
 }
 
 .section_booking_ticket .ticket_body .qty .price_type {
-    font-size: 16px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400
 }
 
-.popup_booking .pop_tit,.popup_booking .pop_tit .sm {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400
-}
-
-.popup_booking_wrapper {
-    bottom: -40px;
-    left: 0;
-    right: 0;
-    height: 100%;
-    overflow-x: hidden;
-    z-index: 9000
+.popup_booking .pop_tit, .popup_booking .pop_tit .sm {
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400
 }
 
 .popup_booking_wrapper {
-    position: fixed;
-    top: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch
+	bottom: -40px;
+	left: 0;
+	right: 0;
+	height: 100%;
+	overflow-x: hidden;
+	z-index: 9000
+}
+
+.popup_booking_wrapper {
+	position: fixed;
+	top: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch
 }
 
 .popup_booking_wrapper .refund {
-    position: relative;
-    top: 60px
+	position: relative;
+	top: 60px
 }
 
 .popup_booking {
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box
 }
 
 .popup_booking {
-    z-index: 9000;
-    left: 50%;
-    top: 60px;
-    width: 310px;
-    margin-left: -155px;
-    padding: 36.5px 25px 49px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-sizing: border-box
+	z-index: 9000;
+	left: 50%;
+	top: 60px;
+	width: 310px;
+	margin-left: -155px;
+	padding: 36.5px 25px 49px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	box-sizing: border-box
 }
 
 .popup_booking.refund {
-    left: 0;
-    width: 310px;
-    margin: 0 auto 40px
+	left: 0;
+	width: 310px;
+	margin: 0 auto 40px
 }
 
 .popup_booking .pop_tit {
-    padding: 0 2px 12px;
-    border-bottom: 1px solid #5d5d5d
+	padding: 0 2px 12px;
+	border-bottom: 1px solid #5d5d5d
 }
 
 .popup_booking .pop_tit {
-    font-size: 23px;
-    line-height: 28px;
-    color: #000
+	font-size: 23px;
+	line-height: 28px;
+	color: #000
 }
 
 .popup_booking .pop_tit .sm {
-    display: block;
-    font-size: 16px;
-    line-height: 24px;
-    color: #666
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+	color: #666
 }
 
 .popup_booking .nomember_alert {
-    padding: 14px 0 15px;
-    border-top: 1px solid #f0f0f0;
-    font-size: 16px;
-    color: #444;
-    line-height: 23px;
-    text-align: center
+	padding: 14px 0 15px;
+	border-top: 1px solid #f0f0f0;
+	font-size: 16px;
+	color: #444;
+	line-height: 23px;
+	text-align: center
 }
 
 .section_review_list .review_box {
-    position: relative;
-    padding: 18px 20px 0;
-    background: #fff;
-    border-top: 1px solid #e2e5e8;
-    font-size: 16px;
-    line-height: 1.25em
+	position: relative;
+	padding: 18px 20px 0;
+	background: #fff;
+	border-top: 1px solid #e2e5e8;
+	font-size: 16px;
+	line-height: 1.25em
 }
 
 .section_review_list .review_box .title_h3 {
-    position: relative;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600;
-    font-size: 17px;
-    letter-spacing: -.15px
+	position: relative;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600;
+	font-size: 17px;
+	letter-spacing: -.15px
 }
 
-.section_review_list .review_box .guide,.section_review_list .short_review_area .grade_area .text_value {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+.section_review_list .review_box .guide, .section_review_list .short_review_area .grade_area .text_value
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .section_review_list .review_box .guide {
-    position: relative;
-    padding: 13px 0 13px 20px;
-    border-top: 1px solid #eceded;
-    font-weight: 400;
-    font-size: 13px;
-    color: #888;
-    word-break: keep-all;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box
+	position: relative;
+	padding: 13px 0 13px 20px;
+	border-top: 1px solid #eceded;
+	font-weight: 400;
+	font-size: 13px;
+	color: #888;
+	word-break: keep-all;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .section_review_list .review_box .guide .ico_bell {
-    position: absolute;
-    top: 17px;
-    left: 0
+	position: absolute;
+	top: 17px;
+	left: 0
 }
 
-.section_review_list .grade_area .graph_mask,.section_review_list .grade_area .graph_value,.section_review_list .short_review_area .review_info .grade:before {
-    background-image: url(../img/spr_comment.png);
-    background-repeat: no-repeat;
-    background-size: 90px 130px
+.section_review_list .grade_area .graph_mask, .section_review_list .grade_area .graph_value,
+	.section_review_list .short_review_area .review_info .grade:before {
+	background-image: url(../img/spr_comment.png);
+	background-repeat: no-repeat;
+	background-size: 90px 130px
 }
 
 .section_review_list .short_review_area .grade_area {
-    margin-bottom: 0;
-    padding: 8px 0 11px;
-    border-bottom: 1px solid #d9d9d9
+	margin-bottom: 0;
+	padding: 8px 0 11px;
+	border-bottom: 1px solid #d9d9d9
 }
 
 .section_review_list .short_review_area .grade_area .graph_mask {
-    display: inline-block;
-    width: 78px;
-    height: 14px;
-    background-position: 0 -61px
+	display: inline-block;
+	width: 78px;
+	height: 14px;
+	background-position: 0 -61px
 }
 
 .section_review_list .short_review_area .grade_area .graph_value {
-    display: inline-block;
-    width: 78px;
-    height: 14px;
-    background-position: 0 -76px;
-    vertical-align: top
+	display: inline-block;
+	width: 78px;
+	height: 14px;
+	background-position: 0 -76px;
+	vertical-align: top
 }
 
 .section_review_list .short_review_area .grade_area .text_value {
-    display: inline-block;
-    margin-left: 7px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #000;
-    vertical-align: 2px
+	display: inline-block;
+	margin-left: 7px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #000;
+	vertical-align: 2px
 }
 
 .section_review_list .short_review_area .grade_area .text_value .total {
-    margin-left: 5px;
-    font-family: HelveticaNeue-Light;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400;
-    color: #888
+	margin-left: 5px;
+	font-family: HelveticaNeue-Light;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400;
+	color: #888
 }
 
-.section_review_list .short_review_area .grade_area .text_value .total:before {
-    display: inline-block;
-    margin-right: 5px;
-    content: '/'
+.section_review_list .short_review_area .grade_area .text_value .total:before
+	{
+	display: inline-block;
+	margin-right: 5px;
+	content: '/'
 }
 
 .section_review_list .short_review_area .grade_area .join_count {
-    float: right;
-    margin-top: 1px;
-    color: #888;
-    font-size: 15px
+	float: right;
+	margin-top: 1px;
+	color: #888;
+	font-size: 15px
 }
 
 .section_review_list .short_review_area .list_short_review {
-    padding: 2px 0
+	padding: 2px 0
 }
 
 .section_review_list .short_review_area .list_short_review .list_item {
-    padding: 15px 0;
-    border-top: 1px solid #eceded
+	padding: 15px 0;
+	border-top: 1px solid #eceded
 }
 
-.section_review_list .short_review_area .list_short_review .list_item:first-child {
-    padding: 13px 0 15px;
-    border-top: 0
+.section_review_list .short_review_area .list_short_review .list_item:first-child
+	{
+	padding: 13px 0 15px;
+	border-top: 0
 }
 
 .section_review_list .short_review_area .review_area {
-    padding-bottom: 3px;
-    min-height: 90px
+	padding-bottom: 3px;
+	min-height: 90px
 }
 
 .section_review_list .short_review_area .review_area.no_img {
-    min-height: 0
+	min-height: 0
 }
 
 .section_review_list .short_review_area .thumb_area {
-    float: right;
-    position: relative;
-    margin: 0 0 8px 14px
+	float: right;
+	position: relative;
+	margin: 0 0 8px 14px
 }
 
 .section_review_list .short_review_area .thumb_area .thumb {
-    display: block;
-    position: relative
+	display: block;
+	position: relative
 }
 
-.section_review_list .short_review_area .thumb_area .thumb .img_vertical_top {
-    vertical-align: top
+.section_review_list .short_review_area .thumb_area .thumb .img_vertical_top
+	{
+	vertical-align: top
 }
 
 .section_review_list .short_review_area .thumb_area .thumb:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 1px solid rgba(0,0,0,.1);
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box;
-    content: ''
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 1px solid rgba(0, 0, 0, .1);
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box;
+	content: ''
 }
 
 .section_review_list .short_review_area .thumb_area .thumb:after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 24px;
-    height: 24px;
-    background-color: rgba(0,0,0,.5);
-    vertical-align: bottom;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box;
-    content: ''
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 24px;
+	height: 24px;
+	background-color: rgba(0, 0, 0, .5);
+	vertical-align: bottom;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box;
+	content: ''
 }
 
 .section_review_list .short_review_area .thumb_area .img_count {
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 24px;
-    height: 24px;
-    font-family: HelveticaNeue-Medium;
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff;
-    text-align: center
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 24px;
+	height: 24px;
+	font-family: HelveticaNeue-Medium;
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	text-align: center
 }
 
 .section_review_list .short_review_area .resoc_name {
-    margin-bottom: 3px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #333
+	margin-bottom: 3px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #333
 }
 
 .section_review_list .short_review_area .review {
-    color: #333;
-    letter-spacing: -.3px;
-    line-height: 23px
+	color: #333;
+	letter-spacing: -.3px;
+	line-height: 23px
 }
 
 .section_review_list .short_review_area .info_area {
-    overflow: hidden;
-    margin-top: 8px
+	overflow: hidden;
+	margin-top: 8px
 }
 
 .section_review_list .short_review_area .review_info {
-    margin-right: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: normal
+	margin-right: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal
 }
 
-.section_review_list .short_review_area .review_info .date:before,.section_review_list .short_review_area .review_info .name:before {
-    margin: 0 8px 0 6px;
-    width: 1px;
-    height: 11px;
-    background: #e5e5e5;
-    vertical-align: -1px;
-    display: inline-block;
-    content: ''
+.section_review_list .short_review_area .review_info .date:before,
+	.section_review_list .short_review_area .review_info .name:before {
+	margin: 0 8px 0 6px;
+	width: 1px;
+	height: 11px;
+	background: #e5e5e5;
+	vertical-align: -1px;
+	display: inline-block;
+	content: ''
 }
 
 .section_review_list .short_review_area .review_info .grade {
-    font-family: HelveticaNeue-Medium;
-    font-size: 15px;
-    color: #000
+	font-family: HelveticaNeue-Medium;
+	font-size: 15px;
+	color: #000
 }
 
 .section_review_list .short_review_area .review_info .name {
-    color: #666;
-    font-size: 15px
+	color: #666;
+	font-size: 15px
 }
 
 .section_review_list .short_review_area .review_info .date {
-    color: #888;
-    font-size: 13px
+	color: #888;
+	font-size: 13px
 }
 
 .section_my {
-    min-height: 325px
+	min-height: 325px
 }
 
 .section_my .my_summary {
-    padding: 62px 0 10px;
-    background-color: #00bb38;
-    border-bottom: 1px solid #00a832;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box
+	padding: 62px 0 10px;
+	background-color: #00bb38;
+	border-bottom: 1px solid #00a832;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .section_my .my_summary .summary_board {
-    min-width: 320px;
-    max-width: 414px;
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap
+	min-width: 320px;
+	max-width: 414px;
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap
 }
 
-.section_my .my_summary .summary_board:after,.section_my .my_summary .summary_board:before {
-    content: " ";
-    display: table
+.section_my .my_summary .summary_board:after, .section_my .my_summary .summary_board:before
+	{
+	content: " ";
+	display: table
 }
 
 .section_my .my_summary .summary_board .item {
-    display: inline-block;
-    float: left;
-    width: 25%;
-    border-right: 1px solid #00b436;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box
+	display: inline-block;
+	float: left;
+	width: 25%;
+	border-right: 1px solid #00b436;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .section_my .my_summary .summary_board .item:last-child {
-    border-right: none
+	border-right: none
 }
 
 .section_my .my_summary .summary_board .item .link_summary_board {
-    display: block;
-    line-height: 18px
+	display: block;
+	line-height: 18px
 }
 
-.section_my .my_summary .summary_board .item .link_summary_board .spr_book2 {
-    vertical-align: middle!important
+.section_my .my_summary .summary_board .item .link_summary_board .spr_book2
+	{
+	vertical-align: middle !important
 }
 
-.section_my .my_summary .summary_board .item .link_summary_board.on .tit {
-    color: #bcff85
+.section_my .my_summary .summary_board .item .link_summary_board.on .tit
+	{
+	color: #bcff85
 }
 
 @media screen and (max-width: 320px) {
-    .section_my .my_summary .summary_board .item .link_summary_board .spr_book2 {
-        display:block;
-        margin: 0 auto
-    }
+	.section_my .my_summary .summary_board .item .link_summary_board .spr_book2
+		{
+		display: block;
+		margin: 0 auto
+	}
 }
 
-.section_my .my_summary .summary_board .item .link_summary_board.on .ico_book2 {
-    width: 15px;
-    height: 15px;
-    background-position: -219px -284px
+.section_my .my_summary .summary_board .item .link_summary_board.on .ico_book2
+	{
+	width: 15px;
+	height: 15px;
+	background-position: -219px -284px
 }
 
-.section_my .my_summary .summary_board .item .link_summary_board.on .figure {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 500;
-    color: #bcff85
+.section_my .my_summary .summary_board .item .link_summary_board.on .figure
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 500;
+	color: #bcff85
 }
 
-.section_my .my_summary .summary_board .item .figure,.section_my .my_summary .summary_board .item .tit,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400
+.section_my .my_summary .summary_board .item .figure, .section_my .my_summary .summary_board .item .tit,
+	.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_tit
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400
 }
 
 .section_my .my_summary .summary_board .item .tit {
-    display: inline-block;
-    margin-bottom: 8px;
-    font-size: 13px;
-    line-height: 1;
-    color: #fff
+	display: inline-block;
+	margin-bottom: 8px;
+	font-size: 13px;
+	line-height: 1;
+	color: #fff
 }
 
 .section_my .my_summary .summary_board .item .figure {
-    display: block;
-    margin-top: -4px;
-    font-size: 25px;
-    line-height: 1.1em;
-    color: #fff
+	display: block;
+	margin-top: -4px;
+	font-size: 25px;
+	line-height: 1.1em;
+	color: #fff
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .tit,.section_my .wrap_mylist .list_cards .card .card_header .middle .tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .tit,
+	.section_my .wrap_mylist .list_cards .card .card_header .middle .tit {
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif
 }
 
 .section_my .wrap_mylist {
-    background: #e9ecef;
-    padding-top: 1px;
-    padding-left: 11px;
-    padding-right: 11px
+	background: #e9ecef;
+	padding-top: 1px;
+	padding-left: 11px;
+	padding-right: 11px
 }
 
 .section_my .wrap_mylist .list_cards {
-    padding-bottom: 14px
+	padding-bottom: 14px
 }
 
 .section_my .wrap_mylist .list_cards .card {
 	position: relative;
-    margin-top: 13px
+	margin-top: 13px
 }
 
 .section_my .wrap_mylist .list_cards .card .link_booking_details {
-    display: table;
-    table-layout: fixed;
-    width: 100%
+	display: table;
+	table-layout: fixed;
+	width: 100%
 }
 
 .section_my .wrap_mylist .list_cards .card .card_header {
-    display: table-row
+	display: table-row
 }
 
 .section_my .wrap_mylist .list_cards .card .card_header .left {
-    overflow: hidden;
-    display: table-cell;
-    background-image: url(../img/bg_card_hl.png);
-    background-size: 12px 54px;
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 54px;
-    vertical-align: top
+	overflow: hidden;
+	display: table-cell;
+	background-image: url(../img/bg_card_hl.png);
+	background-size: 12px 54px;
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 54px;
+	vertical-align: top
 }
 
 .section_my .wrap_mylist .list_cards .card .card_header .middle {
-    position: relative;
-    overflow: hidden;
-    display: table-cell;
-    background-image: url(../img/bg_card_hm.gif);
-    background-size: auto 54px;
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 54px;
-    max-height: 54px;
-    vertical-align: top
+	position: relative;
+	overflow: hidden;
+	display: table-cell;
+	background-image: url(../img/bg_card_hm.gif);
+	background-size: auto 54px;
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 54px;
+	max-height: 54px;
+	vertical-align: top
 }
 
-.section_my .wrap_mylist .list_cards .card .card_header .middle i[class*=ico_] {
-    position: absolute;
-    top: 15px;
-    left: 12px
+.section_my .wrap_mylist .list_cards .card .card_header .middle i[class*=ico_]
+	{
+	position: absolute;
+	top: 15px;
+	left: 12px
 }
 
 .section_my .wrap_mylist .list_cards .card .card_header .middle .tit {
-    position: absolute;
-    top: 11px;
-    left: 36px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff
+	position: absolute;
+	top: 11px;
+	left: 36px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff
 }
 
 .section_my .wrap_mylist .list_cards .card .card_header .right {
-    overflow: hidden;
-    display: table-cell;
-    background-image: url(../img/bg_card_hr.png);
-    background-size: 12px 54px;
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 54px;
-    vertical-align: top
+	overflow: hidden;
+	display: table-cell;
+	background-image: url(../img/bg_card_hr.png);
+	background-size: 12px 54px;
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 54px;
+	vertical-align: top
 }
 
 .section_my .wrap_mylist .list_cards .card .card_item {
 	position: relative;
 }
 
-.section_my .wrap_mylist .list_cards .card .card_item + .card_item .card_body .middle {
+.section_my .wrap_mylist .list_cards .card .card_item+.card_item .card_body .middle
+	{
 	padding-top: 15px;
 }
 
@@ -2750,561 +2901,623 @@ button {
 	font-size: 19px;
 	padding: 5px;
 	background-color: #eee;
-	border:1px solid #ddd;
+	border: 1px solid #ddd;
 	border-radius: 30px;
 }
-.section_my .wrap_mylist .list_cards .card .card_item + .card_item .btn_goto_share {
+
+.section_my .wrap_mylist .list_cards .card .card_item+.card_item .btn_goto_share
+	{
 	top: 35px;
 }
 
 .section_my .wrap_mylist .list_cards .card .card_body {
-    display: table-row
+	display: table-row
 }
 
 .section_my .wrap_mylist .list_cards .card .card_body .left {
-    overflow: hidden;
-    display: table-cell;
-    background-image: url(../img/bg_card_bl.png);
-    background-size: 12px 2px;
-    background-repeat: repeat-y;
-    width: 12px;
-    height: 100%;
-    vertical-align: top
+	overflow: hidden;
+	display: table-cell;
+	background-image: url(../img/bg_card_bl.png);
+	background-size: 12px 2px;
+	background-repeat: repeat-y;
+	width: 12px;
+	height: 100%;
+	vertical-align: top
 }
 
 .section_my .wrap_mylist .list_cards .card .card_body .middle {
-    overflow: hidden;
-    display: table-cell;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    vertical-align: top
+	overflow: hidden;
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	vertical-align: top
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail {
-    padding: 4px 22px 18px
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail
+	{
+	padding: 4px 22px 18px
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .booking_number {
-    font-weight: 500;
-    font-size: 14px;
-    color: #333
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .booking_number
+	{
+	font-weight: 500;
+	font-size: 14px;
+	color: #333
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .tit {
-    display: block;
-    margin-top: 2px;
-    font-weight: 500;
-    font-size: 22px;
-    color: #000;
-    line-height: 27px
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .tit
+	{
+	display: block;
+	margin-top: 2px;
+	font-weight: 500;
+	font-size: 22px;
+	color: #000;
+	line-height: 27px
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail {
-    display: table;
-    width: 100%;
-    margin-top: 9px;
-    padding-top: 9px;
-    border-top: 1px solid #e7e9ed
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail
+	{
+	display: table;
+	width: 100%;
+	margin-top: 9px;
+	padding-top: 9px;
+	border-top: 1px solid #e7e9ed
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item {
-    display: table-row
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item
+	{
+	display: table-row
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_tit {
-    display: table-cell;
-    padding-top: 3px;
-    padding-bottom: 2px;
-    padding-right: 12px;
-    font-size: 16px;
-    color: #999;
-    line-height: 20px;
-    vertical-align: top;
-    white-space: nowrap
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_tit
+	{
+	display: table-cell;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-right: 12px;
+	font-size: 16px;
+	color: #999;
+	line-height: 20px;
+	vertical-align: top;
+	white-space: nowrap
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_dsc,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #333
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_dsc,
+	.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_tit
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_dsc {
-    display: table-cell;
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 2px;
-    line-height: 20px;
-    vertical-align: top
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_dsc
+	{
+	display: table-cell;
+	width: 100%;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	line-height: 20px;
+	vertical-align: top
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary {
-    margin-top: 9px;
-    border-top: 1px solid #f2f2f2
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary
+	{
+	margin-top: 9px;
+	border-top: 1px solid #f2f2f2
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:after,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:before {
-    content: " ";
-    display: table
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:after,
+	.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:before
+	{
+	content: " ";
+	display: table
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_tit {
-    float: left;
-    padding-top: 8px;
-    padding-bottom: 3px;
-    vertical-align: middle;
-    word-break: keep-all
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_tit
+	{
+	float: left;
+	padding-top: 8px;
+	padding-bottom: 3px;
+	vertical-align: middle;
+	word-break: keep-all
 }
 
-.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_tit,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_amount {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_tit,
+	.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_amount
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_amount {
-    float: right;
-    padding-top: 8px;
-    padding-bottom: 3px;
-    font-size: 17px;
-    color: #F82222;
-    text-align: right;
-    vertical-align: middle;
-    word-break: keep-all
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_amount
+	{
+	float: right;
+	padding-top: 8px;
+	padding-bottom: 3px;
+	font-size: 17px;
+	color: #F82222;
+	text-align: right;
+	vertical-align: middle;
+	word-break: keep-all
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_amount .unit {
-    display: inline-block;
-    padding-left: 4px;
-    font-size: 16px
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_amount .unit
+	{
+	display: inline-block;
+	padding-left: 4px;
+	font-size: 16px
 }
 
 .section_my .wrap_mylist .list_cards .card .card_body .right {
-    overflow: hidden;
-    display: table-cell;
-    background-image: url(../img/bg_card_br.png);
-    background-size: 12px 2px;
-    background-repeat: repeat-y;
-    width: 12px;
-    height: 100%;
-    vertical-align: top
+	overflow: hidden;
+	display: table-cell;
+	background-image: url(../img/bg_card_br.png);
+	background-size: 12px 2px;
+	background-repeat: repeat-y;
+	width: 12px;
+	height: 100%;
+	vertical-align: top
 }
 
 .section_my .wrap_mylist .list_cards .card .card_footer {
-    display: table-row
+	display: table-row
 }
 
 .section_my .wrap_mylist .list_cards .card .card_footer .left {
-    overflow: hidden;
-    display: table-cell;
-    background-image: url(../img/bg_card_fl.png);
-    background-size: 12px 2px;
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 2px;
-    vertical-align: top
+	overflow: hidden;
+	display: table-cell;
+	background-image: url(../img/bg_card_fl.png);
+	background-size: 12px 2px;
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 2px;
+	vertical-align: top
 }
 
 .section_my .wrap_mylist .list_cards .card .card_footer .middle {
-    overflow: hidden;
-    display: table-cell;
-    background-image: url(../img/bg_card_fm.png);
-    background-size: 100% 2px;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 2px;
-    vertical-align: top
+	overflow: hidden;
+	display: table-cell;
+	background-image: url(../img/bg_card_fm.png);
+	background-size: 100% 2px;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 2px;
+	vertical-align: top
 }
 
 .section_my .wrap_mylist .list_cards .card .card_footer .right {
-    overflow: hidden;
-    display: table-cell;
-    background-image: url(../img/bg_card_fr.png);
-    background-size: 12px 2px;
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 2px;
-    vertical-align: top
+	overflow: hidden;
+	display: table-cell;
+	background-image: url(../img/bg_card_fr.png);
+	background-size: 12px 2px;
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 2px;
+	vertical-align: top
 }
 
-.section_my .wrap_mylist .list_cards .card.confirmed .card_header,.section_my .wrap_mylist .list_cards .card.used .card_header {
-    display: table-row
+.section_my .wrap_mylist .list_cards .card.confirmed .card_header,
+	.section_my .wrap_mylist .list_cards .card.used .card_header {
+	display: table-row
 }
 
-.section_my .wrap_mylist .list_cards .card.confirmed .card_header .left {
-    background-image: url(../img/bg_card2_hl.png)
+.section_my .wrap_mylist .list_cards .card.confirmed .card_header .left
+	{
+	background-image: url(../img/bg_card2_hl.png)
 }
 
-.section_my .wrap_mylist .list_cards .card.confirmed .card_header .middle {
-    background-image: url(../img/bg_card2_hm.gif)
+.section_my .wrap_mylist .list_cards .card.confirmed .card_header .middle
+	{
+	background-image: url(../img/bg_card2_hm.gif)
 }
 
-.section_my .wrap_mylist .list_cards .card.confirmed .card_header .right {
-    background-image: url(../img/bg_card2_hr.png)
+.section_my .wrap_mylist .list_cards .card.confirmed .card_header .right
+	{
+	background-image: url(../img/bg_card2_hr.png)
 }
 
 .section_my .wrap_mylist .list_cards .card.used .card_header .left {
-    background-image: url(../img/bg_card3_hl.png)
+	background-image: url(../img/bg_card3_hl.png)
 }
 
 .section_my .wrap_mylist .list_cards .card.used .card_header .middle {
-    background-image: url(../img/bg_card3_hm.gif)
+	background-image: url(../img/bg_card3_hm.gif)
 }
 
 .section_my .wrap_mylist .list_cards .card.used .card_header .right {
-    background-image: url(../img/bg_card3_hr.png)
+	background-image: url(../img/bg_card3_hr.png)
 }
 
 .event {
-    position: relative;
-    background-color: #fff
+	position: relative;
+	background-color: #fff
 }
 
 .event .section_visual {
-    margin-top: 40px
+	margin-top: 40px
 }
 
 .event .section_visual .group_visual {
-    position: relative
+	position: relative
 }
 
 .event .section_visual .group_visual .container_visual {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden
 }
 
 .event .section_visual .group_visual .container_visual .visual_img {
-    position: relative;
-    min-height: 177px
+	position: relative;
+	min-height: 177px
 }
 
-.event .section_visual .group_visual .container_visual .visual_img .item {
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    width: 100.0%;
-    height: 177px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    box-sizing: border-box
+.event .section_visual .group_visual .container_visual .visual_img .item
+	{
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	width: 100.0%;
+	height: 177px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	box-sizing: border-box
 }
 
 @media screen and (max-width: 320px) {
-    .event .section_visual .group_visual .container_visual .visual_img .item {
-        height:177px
-    }
+	.event .section_visual .group_visual .container_visual .visual_img .item
+		{
+		height: 177px
+	}
 }
 
-.event .section_visual .group_visual .container_visual .visual_img .item .event_txt {
-    position: absolute;
-    bottom: 12px;
-    left: 15px;
-    z-index: 10;
-    width: 205px;
-    color: #fff
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt
+	{
+	position: absolute;
+	bottom: 12px;
+	left: 15px;
+	z-index: 10;
+	width: 205px;
+	color: #fff
 }
 
-.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_tit {
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 10px
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_tit
+	{
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 10px
 }
 
-.event .section_event_tab .event_tab_lst>.item .anchor,.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_adr,.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_dsc {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400;
-    white-space: nowrap
+.event .section_event_tab .event_tab_lst>.item .anchor, .event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_adr,
+	.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_dsc
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400;
+	white-space: nowrap
 }
 
-.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_adr,.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_dsc {
-    font-size: 16px;
-    line-height: 24px;
-    overflow: hidden;
-    text-overflow: ellipsis
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_adr,
+	.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_dsc
+	{
+	font-size: 16px;
+	line-height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis
 }
 
-.event .section_visual .group_visual .container_visual .visual_img .item .img_right_border {
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-right: 1px solid #000;
-    opacity: .1;
-    filter: alpha(opacity=10);
-    vertical-align: bottom;
-    -webkit-box-sizing: border-box;
-    moz-box-sizing: border-box;
-    box-sizing: border-box
+.event .section_visual .group_visual .container_visual .visual_img .item .img_right_border
+	{
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-right: 1px solid #000;
+	opacity: .1;
+	filter: alpha(opacity = 10);
+	vertical-align: bottom;
+	-webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .event .section_visual .group_visual .container_visual .prev_e {
-    position: absolute;
-    right: 15.6%;
-    width: 35px;
-    height: 100%;
-    z-index: 15
+	position: absolute;
+	right: 15.6%;
+	width: 35px;
+	height: 100%;
+	z-index: 15
 }
 
 @media screen and (max-width: 320px) {
-    .event .section_visual .group_visual .container_visual .prev_e {
-        left:235px
-    }
+	.event .section_visual .group_visual .container_visual .prev_e {
+		left: 235px
+	}
 }
 
-.event .section_visual .group_visual .container_visual .prev_e .prev_inn {
-    height: 35px;
-    position: absolute;
-    bottom: 15px
+.event .section_visual .group_visual .container_visual .prev_e .prev_inn
+	{
+	height: 35px;
+	position: absolute;
+	bottom: 15px
 }
 
-.event .section_visual .group_visual .container_visual .prev_e .prev_inn .btn_pre_e {
-    position: relative;
-    display: block;
-    z-index: 1
+.event .section_visual .group_visual .container_visual .prev_e .prev_inn .btn_pre_e
+	{
+	position: relative;
+	display: block;
+	z-index: 1
 }
 
-.event .section_visual .group_visual .container_visual .prev_e .prev_inn .btn_pre_e .spr_event_pre {
-    width: 35px;
-    height: 35px;
-    background-position: 0 0
+.event .section_visual .group_visual .container_visual .prev_e .prev_inn .btn_pre_e .spr_event_pre
+	{
+	width: 35px;
+	height: 35px;
+	background-position: 0 0
 }
 
 .event .section_visual .group_visual .container_visual .nxt_e {
-    position: absolute;
-    left: 84.4%;
-    width: 35px;
-    height: 100%;
-    z-index: 15
+	position: absolute;
+	left: 84.4%;
+	width: 35px;
+	height: 100%;
+	z-index: 15
 }
 
 @media screen and (max-width: 320px) {
-    .event .section_visual .group_visual .container_visual .nxt_e {
-        left:270px
-    }
+	.event .section_visual .group_visual .container_visual .nxt_e {
+		left: 270px
+	}
 }
 
 .event .section_visual .group_visual .container_visual .nxt_e .nxt_inn {
-    height: 35px;
-    position: absolute;
-    bottom: 15px
+	height: 35px;
+	position: absolute;
+	bottom: 15px
 }
 
-.event .section_visual .group_visual .container_visual .nxt_e .nxt_inn .btn_nxt_e {
-    position: relative;
-    z-index: 1
+.event .section_visual .group_visual .container_visual .nxt_e .nxt_inn .btn_nxt_e
+	{
+	position: relative;
+	z-index: 1
 }
 
-.event .section_visual .group_visual .container_visual .nxt_e .nxt_inn .btn_nxt_e .spr_event_nxt {
-    width: 35px;
-    height: 35px;
-    background-position: -35px 0
+.event .section_visual .group_visual .container_visual .nxt_e .nxt_inn .btn_nxt_e .spr_event_nxt
+	{
+	width: 35px;
+	height: 35px;
+	background-position: -35px 0
 }
 
 .event .section_visual .group_visual .container_visual .nxt_fix {
-    background-color: #000;
-    opacity: .5;
-    filter: alpha(opacity=50);
-    moz-box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 84.4%;
-    right: 0;
-    z-index: 10;
-    width: 15.6%;
-    vertical-align: top;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box
+	background-color: #000;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	moz-box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 84.4%;
+	right: 0;
+	z-index: 10;
+	width: 15.6%;
+	vertical-align: top;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box
 }
 
 .event .section_event_tab {
-    position: relative
+	position: relative
 }
 
 .event .section_event_tab:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 8px;
-    width: 25px;
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(left,rgba(255,255,255,0) 0,#fff 100%);
-    background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,#fff 100%);
-    background: -o-linear-gradient(left,rgba(255,255,255,0) 0,#fff 100%);
-    background: -ms-linear-gradient(left,rgba(255,255,255,0) 0,#fff 100%);
-    background: linear-gradient(to right,rgba(255,255,255,0) 0,#fff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#a6000000', GradientType=1);
-    zoom:1}
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 8px;
+	width: 25px;
+	background: rgba(255, 255, 255, 0);
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff
+		100%);
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff
+		100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 100%);
+	background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff
+		100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff
+		100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',
+		endColorstr='#ffffff', GradientType=1);
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',
+		endColorstr='#a6000000', GradientType=1);
+	zoom: 1
+}
 
 .event .section_event_tab .event_tab_lst {
-    overflow-y: hidden;
-    overflow-x: auto;
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    white-space: nowrap;
-    word-wrap: normal;
-    -webkit-overflow-scrolling: touch
+	overflow-y: hidden;
+	overflow-x: auto;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	white-space: nowrap;
+	word-wrap: normal;
+	-webkit-overflow-scrolling: touch
 }
 
 .event .section_event_tab .event_tab_lst>.item {
-    display: inline-block;
-    font-size: 16px;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-tap-highlight-color: transparent
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-tap-highlight-color: transparent
 }
 
 .event .section_event_tab .event_tab_lst>.item .anchor {
-    display: inline-block;
-    margin-right: 13px;
-    padding: 10px 4.5px 10px 4px;
-    color: #000;
-    box-sizing: border-box;
-    line-height: 20px
+	display: inline-block;
+	margin-right: 13px;
+	padding: 10px 4.5px 10px 4px;
+	color: #000;
+	box-sizing: border-box;
+	line-height: 20px
 }
 
 .event .section_event_tab .event_tab_lst>.item .anchor.active {
-    padding: 10px 4.5px 9px 4px;
-    color: #0aba16;
-    border-bottom: 2px solid #0aba16;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600
+	padding: 10px 4.5px 9px 4px;
+	color: #0aba16;
+	border-bottom: 2px solid #0aba16;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600
 }
 
 .event .section_event_tab .event_tab_lst>.item .anchor.last {
-    color: #F82222!important
+	color: #F82222 !important
 }
 
 .event .section_event_tab .event_tab_lst>.item:last-child {
-    margin-right: 0
+	margin-right: 0
 }
 
 .event .section_event_lst {
-    margin-top: -6px;
-    border-top: 1px solid #e7e7e7
+	margin-top: -6px;
+	border-top: 1px solid #e7e7e7
 }
 
 .event .section_event_lst .event_lst_txt {
-    padding: 9px 20px 7px;
-    text-align: center;
-    background-color: #fff;
-    font-size: 13px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400;
-    color: #666
+	padding: 9px 20px 7px;
+	text-align: center;
+	background-color: #fff;
+	font-size: 13px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400;
+	color: #666
 }
 
 .event .wrap_event_box {
-    overflow: hidden;
-    padding-left: 2.5px;
-    padding-right: 2px;
-    border-top: 1px solid #e5e8eb;
-    background-color: #e9ecef
+	overflow: hidden;
+	padding-left: 2.5px;
+	padding-right: 2px;
+	border-top: 1px solid #e5e8eb;
+	background-color: #e9ecef
 }
 
 .event .wrap_event_box .lst_event_box {
-    width: 50%;
-    float: left;
-    padding-top: 10px;
-    padding-left: 2.5px;
-    padding-right: 3.5px;
-    box-sizing: border-box
+	width: 50%;
+	float: left;
+	padding-top: 10px;
+	padding-left: 2.5px;
+	padding-right: 3.5px;
+	box-sizing: border-box
 }
 
 .event .wrap_event_box .lst_event_box .item {
-    width: 100%;
-    overflow: hidden;
-    display: inline-block;
-    float: left;
-    margin-bottom: 6px;
-    box-sizing: border-box
+	width: 100%;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	margin-bottom: 6px;
+	box-sizing: border-box
 }
 
 .event .wrap_event_box .lst_event_box .item .item_book {
-    display: block
+	display: block
 }
 
 .event .wrap_event_box .lst_event_box .item .item_book .item_preview {
-    overflow: hidden;
-    position: relative;
-    display: block
+	overflow: hidden;
+	position: relative;
+	display: block
 }
 
 .event .wrap_event_box .lst_event_box .item .event_txt {
-    position: relative;
-    padding: 11px 11.5px 12.5px;
-    border-left: 1px solid #e1e4e7;
-    border-right: 1px solid #e1e4e7;
-    border-bottom: 1px solid #e1e4e7;
-    background-color: #fff
+	position: relative;
+	padding: 11px 11.5px 12.5px;
+	border-left: 1px solid #e1e4e7;
+	border-right: 1px solid #e1e4e7;
+	border-bottom: 1px solid #e1e4e7;
+	background-color: #fff
 }
 
 .event .wrap_event_box .lst_event_box .item .event_txt .event_txt_tit {
-    margin-bottom: 8px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    color: #000
+	margin-bottom: 8px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	color: #000
 }
 
-.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_dsc,.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_tit .sm {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'留묒�怨좊뵓',MalgunGothic,'�룍��',Dotum,sans-serif;
-    font-weight: 400;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis
+.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_dsc,
+	.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_tit .sm
+	{
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+		Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '留묒�怨좊뵓',
+		MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-weight: 400;
+	overflow: hidden;
+	height:48px;
+	text-overflow: ellipsis display: inline-block;
 }
 
-.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_tit .sm {
-    padding-top: 3px;
-    padding-bottom: 9.5px;
-    margin-left: .5px;
-    border-bottom: 1px solid #e7e7e7;
-    font-size: 14px;
-    text-indent: -.5px;
-    line-height: 14px;
-    white-space: nowrap
+.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_tit .sm
+	{
+	padding-top: 3px;
+	padding-bottom: 9.5px;
+	margin-left: .5px;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 14px;
+	text-indent: -.5px;
+	line-height: 14px;
+	white-space: nowrap
 }
 
 .event .wrap_event_box .lst_event_box .item .event_txt .event_txt_dsc {
-    margin-left: 2px;
-    margin-right: 2px;
-    font-size: 16px;
-    line-height: 24px;
-    display: -webkit-box;
-    word-wrap: break-word;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    color: #999
+	margin-left: 2px;
+	margin-right: 2px;
+	font-size: 16px;
+	line-height: 24px;
+	display: -webkit-box;
+	word-wrap: break-word;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	color: #999
 }
 
 .event .spr_book_event {
-    overflow: hidden;
-    display: inline-block;
-    color: transparent;
-    background-image: url(../img/spr_book_event.png);
-    background-size: 150px 50px;
-    -webkit-background-size: 150px 50px;
-    vertical-align: top;
-    text-indent: 100%;
-    white-space: nowrap;
-    font-size: 0
+	overflow: hidden;
+	display: inline-block;
+	color: transparent;
+	background-image: url(../img/spr_book_event.png);
+	background-size: 150px 50px;
+	-webkit-background-size: 150px 50px;
+	vertical-align: top;
+	text-indent: 100%;
+	white-space: nowrap;
+	font-size: 0
 }
 
 .more {
 	padding: 3px;
 }
+
 .more .btn {
 	margin: 5px 0;
 	width: 100%;
@@ -3312,6 +3525,7 @@ button {
 	border: 1px solid #ccc;
 	background-color: #fff;
 }
+
 .booking_cancel .btn {
 	margin: 20px 0 10px;
 	width: 100%;
@@ -3320,260 +3534,333 @@ button {
 	background-color: #f4f4f4;
 }
 
-
 /* Page - Confirm */
 .section_confirm {
-  margin: 0 auto -3px;
-  max-width: 414px;
-  font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic, '�룍��', Dotum, sans-serif;
-  border-bottom: none !important;
+	margin: 0 auto -3px;
+	max-width: 414px;
+	font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular',
+		'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic,
+		'�룍��', Dotum, sans-serif;
+	border-bottom: none !important;
 }
-.section_confirm .spr_book2,
-.section_confirm .spr_book,
-.section_confirm .fn {
-  vertical-align: -2px;
-  position: relative;
-  margin-right: 3px;
+
+.section_confirm .spr_book2, .section_confirm .spr_book,
+	.section_confirm .fn {
+	vertical-align: -2px;
+	position: relative;
+	margin-right: 3px;
 }
+
 .section_confirm .detail_info {
-  padding-top: 8px;
-  margin-bottom: 5px;
+	padding-top: 8px;
+	margin-bottom: 5px;
 }
+
 .section_confirm .detail_info .info_lst {
-  display: table;
-  width: 100%;
-  border-spacing: 0;
-  font-family: 'Helveticaneue-light', helvetica, 'AppleSDGothicNeo-Light', 'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic, '�룍��', Dotum, sans-serif;
+	display: table;
+	width: 100%;
+	border-spacing: 0;
+	font-family: 'Helveticaneue-light', helvetica, 'AppleSDGothicNeo-Light',
+		'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic,
+		'�룍��', Dotum, sans-serif;
 }
+
 .section_confirm .detail_info .info_lst .info_item {
-  display: table-row;
+	display: table-row;
 }
+
 .section_confirm .detail_info .info_lst .info_item .item_tit,
-.section_confirm .detail_info .info_lst .info_item .item_desc {
-  display: table-cell;
-  font-size: 16px;
-  text-align: left;
-  line-height: 23px;
-  vertical-align: top;
-  padding: 1px 0;
-  font-weight: normal;
+	.section_confirm .detail_info .info_lst .info_item .item_desc {
+	display: table-cell;
+	font-size: 16px;
+	text-align: left;
+	line-height: 23px;
+	vertical-align: top;
+	padding: 1px 0;
+	font-weight: normal;
 }
-.section_confirm .detail_info .info_lst .info_item .item_desc .booked_date {
-  margin-right: 10px;
+
+.section_confirm .detail_info .info_lst .info_item .item_desc .booked_date
+	{
+	margin-right: 10px;
 }
+
 .section_confirm .detail_info .info_lst .info_item .item_tit {
-  color: #999;
-  padding-left: 1.5px;
-  padding-right: 12px;
-  white-space: nowrap;
+	color: #999;
+	padding-left: 1.5px;
+	padding-right: 12px;
+	white-space: nowrap;
 }
+
 .section_confirm .detail_info .info_lst .info_item .item_desc {
-  width: 100%;
-  color: #333;
+	width: 100%;
+	color: #333;
 }
+
 .section_confirm .confirm_item_top {
-  position: relative;
-  margin: 9px 8px -2px;
-  padding-bottom: 4px;
+	position: relative;
+	margin: 9px 8px -2px;
+	padding-bottom: 4px;
 }
-.section_confirm .confirm_item_top:before,
-.section_confirm .confirm_item_top:after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 4px;
-  background-size: 374px 4px;
-  background-repeat: no-repeat;
-  z-index: 10;
+
+.section_confirm .confirm_item_top:before, .section_confirm .confirm_item_top:after
+	{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 4px;
+	background-size: 374px 4px;
+	background-repeat: no-repeat;
+	z-index: 10;
 }
+
 .section_confirm .confirm_item_top:before {
-  bottom: 0;
-  left: 0;
-  background-image: url('../img/bg_confirm_check_bottom_left.png');
-  background-position: 0 0;
+	bottom: 0;
+	left: 0;
+	background-image: url('../img/bg_confirm_check_bottom_left.png');
+	background-position: 0 0;
 }
+
 .section_confirm .confirm_item_top:after {
-  bottom: 0;
-  right: 0;
-  background-image: url('../img/bg_confirm_check_bottom_right.png');
-  background-position: 100% 0;
+	bottom: 0;
+	right: 0;
+	background-image: url('../img/bg_confirm_check_bottom_right.png');
+	background-position: 100% 0;
 }
-.section_confirm .confirm_item_top .common_bottom_buttongroup .fn-write2 {
-  vertical-align: -1px;
+
+.section_confirm .confirm_item_top .common_bottom_buttongroup .fn-write2
+	{
+	vertical-align: -1px;
 }
-.section_confirm .confirm_item_top .common_bottom_buttongroup .fn-write2:before {
-  font-size: 17px;
-  color: #14cb4b;
+
+.section_confirm .confirm_item_top .common_bottom_buttongroup .fn-write2:before
+	{
+	font-size: 17px;
+	color: #14cb4b;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left {
-  padding-left: 14px;
-  background-image: none;
-  background-position: 0 0;
-  background-size: 14px 1800px;
-  background-repeat: no-repeat;
+	padding-left: 14px;
+	background-image: none;
+	background-position: 0 0;
+	background-size: 14px 1800px;
+	background-repeat: no-repeat;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right {
-  padding-right: 14px;
-  background-image: none;
-  background-position: 100% 0;
-  background-size: 14px 1800px;
-  background-repeat: no-repeat;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right
+	{
+	padding-right: 14px;
+	background-image: none;
+	background-position: 100% 0;
+	background-size: 14px 1800px;
+	background-repeat: no-repeat;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title {
-  position: relative;
-  padding: 15px 7.5px 0 7.5px;
-  height: 34px;
-  background-image: none;
-  background-position: 0 0;
-  background-size: 4px 49px;
-  background-repeat: repeat-x;
-  font-size: 17px;
-  color: #fff;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title
+	{
+	position: relative;
+	padding: 15px 7.5px 0 7.5px;
+	height: 34px;
+	background-image: none;
+	background-position: 0 0;
+	background-size: 4px 49px;
+	background-repeat: repeat-x;
+	font-size: 17px;
+	color: #fff;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title .spr_book2 {
-  width: 20.5px;
-  height: 20.5px;
-  background-position: -297px -85px;
-  position: relative;
-  vertical-align: -4px;
-  margin-right: 7px;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title .spr_book2
+	{
+	width: 20.5px;
+	height: 20.5px;
+	background-position: -297px -85px;
+	position: relative;
+	vertical-align: -4px;
+	margin-right: 7px;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content {
-  position: relative;
-  padding: 16px 18px 19.5px;
-  background-color: #fff;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content
+	{
+	position: relative;
+	padding: 16px 18px 19.5px;
+	background-color: #fff;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info {
-  padding-top: 10px;
-  border-top: 1px solid #eee;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info
+	{
+	padding-top: 10px;
+	border-top: 1px solid #eee;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info .info_lst {
-  margin: 0 -0.5px;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info .info_lst
+	{
+	margin: 0 -0.5px;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info .item_tit,
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info .item_desc {
-  padding-bottom: 2px;
-  height: 24px;
+	.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info .item_desc
+	{
+	padding-bottom: 2px;
+	height: 24px;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .confirm_number {
-  min-height: 23px;
-  padding-bottom: 6px;
-  font-size: 16px;
-  font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', helvetica, 'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic, '�룍��', Dotum, sans-serif;
-  color: #333;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .confirm_number
+	{
+	min-height: 23px;
+	padding-bottom: 6px;
+	font-size: 16px;
+	font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', helvetica,
+		'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic,
+		'�룍��', Dotum, sans-serif;
+	color: #333;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .tit {
-  min-height: 27.5px;
-  padding-bottom: 7.5px;
-  font-size: 22px;
-  font-family: helvetica, 'AppleSDGothicNeo', sans-serif;
-  line-height: 28px;
-  color: #333;
-  font-weight: normal;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .tit
+	{
+	min-height: 27.5px;
+	padding-bottom: 7.5px;
+	font-size: 22px;
+	font-family: helvetica, 'AppleSDGothicNeo', sans-serif;
+	line-height: 28px;
+	color: #333;
+	font-weight: normal;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review {
-  margin: 0 -12px;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review
+	{
+	margin: 0 -12px;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_font {
-  color: #6f6cf7;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_font
+	{
+	color: #6f6cf7;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_landing_tit {
-  border-bottom: 1px solid #e7e9ed;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_landing_tit
+	{
+	border-bottom: 1px solid #e7e9ed;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_landing_tit .pholar_landing_link {
-  display: block;
-  padding: 20px 0 15px;
-  margin: -2px 0 0 -3px;
-  font-family: 'Helveticaneue-light', helvetica, 'AppleSDGothicNeo-SemiBold', 'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic, '�룍��', Dotum, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: #000;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_landing_tit .pholar_landing_link
+	{
+	display: block;
+	padding: 20px 0 15px;
+	margin: -2px 0 0 -3px;
+	font-family: 'Helveticaneue-light', helvetica,
+		'AppleSDGothicNeo-SemiBold', 'AppleSDGothicNeo', '�굹�닎怨좊뵓',
+		NanumGothic, '留묒�怨좊뵓', MalgunGothic, '�룍��', Dotum, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt {
-  padding: 17px 0 0;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt
+	{
+	padding: 17px 0 0;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt .pholar_text_tit {
-  padding: 0 0 6px;
-  font-size: 15px;
-  color: #000;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt .pholar_text_tit
+	{
+	padding: 0 0 6px;
+	font-size: 15px;
+	color: #000;
 }
-.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt .pholar_text_con {
-  padding: 0 0 5px;
-  font-size: 13px;
-  color: #666;
-  line-height: 20px;
+
+.section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt .pholar_text_con
+	{
+	padding: 0 0 5px;
+	font-size: 13px;
+	color: #666;
+	line-height: 20px;
 }
+
 .section_confirm.used .confirm_item_top .item_top_inside_left {
-  background-image: url('../img/bg_confirm_check_gray_used_left.png');
+	background-image: url('../img/bg_confirm_check_gray_used_left.png');
 }
-.section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right {
-  background-image: url('../img/bg_confirm_check_gray_used_right.png');
+
+.section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right
+	{
+	background-image: url('../img/bg_confirm_check_gray_used_right.png');
 }
-.section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title {
-  background-image: url('../img/bg_confirm_check_gray_used_center.png');
-  background-size: 4px 53px;
-  height: 38px;
+
+.section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title
+	{
+	background-image: url('../img/bg_confirm_check_gray_used_center.png');
+	background-size: 4px 53px;
+	height: 38px;
 }
-.section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title .ico_clock {
-  background-position: -297px -154px;
+
+.section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title .ico_clock
+	{
+	background-position: -297px -154px;
 }
 
 .common_bottom_buttongroup_wrap {
-  margin: 13px -12px 0.5px;
+	margin: 13px -12px 0.5px;
 }
+
 .common_bottom_buttongroup {
-  position: relative;
-  display: table;
-  width: 100%;
-  background-color: #fbfcfd;
-  border: solid 1px #d5d9dd;
-  text-align: center;
+	position: relative;
+	display: table;
+	width: 100%;
+	background-color: #fbfcfd;
+	border: solid 1px #d5d9dd;
+	text-align: center;
 }
+
 .common_bottom_buttongroup .common_bottom_btn {
-  display: table-cell;
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 11px;
-  width: 100%;
-  text-decoration: none;
-  color: #333;
-  font-size: 15px;
-  font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic, '�룍��', Dotum, sans-serif;
-  vertical-align: middle;
+	display: table-cell;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	width: 100%;
+	text-decoration: none;
+	color: #333;
+	font-size: 15px;
+	font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular',
+		'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic,
+		'�룍��', Dotum, sans-serif;
+	vertical-align: middle;
 }
+
 .common_bottom_buttongroup .common_bottom_btn .fn-nbooking-calender2 {
-  font-size: 16px;
-  vertical-align: -2px;
-  color: #0ec645;
+	font-size: 16px;
+	vertical-align: -2px;
+	color: #0ec645;
 }
+
 .common_bottom_buttongroup .common_bottom_btn:before {
-  content: '';
-  width: 1px;
-  height: 14px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -7px;
-  background-color: #dde0e3;
+	content: '';
+	width: 1px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -7px;
+	background-color: #dde0e3;
 }
+
 .common_bottom_buttongroup .common_bottom_btn:first-child:before {
-  content: '';
-  width: 0;
-  height: 0;
-  position: static;
-  left: 0;
-  top: 0;
-  margin-top: 0;
-  background: none;
+	content: '';
+	width: 0;
+	height: 0;
+	position: static;
+	left: 0;
+	top: 0;
+	margin-top: 0;
+	background: none;
 }
+
 .common_bottom_buttongroup.column2 .common_bottom_btn {
-  width: 50%;
+	width: 50%;
 }
+
 .common_bottom_buttongroup.column2 .common_bottom_btn2 {
-  width: 40%;
+	width: 40%;
 }
+
 .common_bottom_buttongroup.column2 .common_bottom_btn2:last-child {
-  width: 60%;
+	width: 60%;
 }
 
 .pholar_text_con span {
@@ -3582,247 +3869,287 @@ button {
 
 /* Page - Review */
 .write_act {
-  position: relative;
-  margin-top: 7px;
-  border-top: 1px solid #e2e5e8;
-  background-color: #fff;
+	position: relative;
+	margin-top: 7px;
+	border-top: 1px solid #e2e5e8;
+	background-color: #fff;
 }
+
 .write_act .title_star {
-  padding: 16px 0 14.5px;
-  font-size: 17px;
-  color: #000;
-  font-weight: normal;
-  text-align: center;
+	padding: 16px 0 14.5px;
+	font-size: 17px;
+	color: #000;
+	font-weight: normal;
+	text-align: center;
 }
+
 .write_act .review_rating {
-  padding-bottom: 9px;
-  text-align: center;
+	padding-bottom: 9px;
+	text-align: center;
 }
+
 .write_act .review_rating .rating {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  height: 32px;
-  margin-top: -2px;
-  padding: 2px 0;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	height: 32px;
+	margin-top: -2px;
+	padding: 2px 0;
 }
+
 .write_act .review_rating .rating .rating_rdo {
-  position: relative;
-  display: inline-block;
-  z-index: 20;
-  opacity: 0.001;
-  width: 35px;
-  height: 32px;
-  background-color: #fff;
-  cursor: pointer;
-  vertical-align: top;
+	position: relative;
+	display: inline-block;
+	z-index: 20;
+	opacity: 0.001;
+	width: 35px;
+	height: 32px;
+	background-color: #fff;
+	cursor: pointer;
+	vertical-align: top;
 }
+
 .write_act .review_rating .rating .rating_rdo.first_star {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  left: -20px;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: -20px;
 }
-.write_act .review_rating .rating .rating_rdo + .span {
-  position: relative;
-  display: inline-block;
-  z-index: 10;
-  width: 35px;
-  height: 32px;
-  margin-left: -38px;
-  background-image: url('../img/spr_comment.png');
-  background-repeat: no-repeat;
-  background-size: 90px 130px;
-  background-position: 0 -92px;
-  cursor: pointer;
+
+.write_act .review_rating .rating .rating_rdo+.span {
+	position: relative;
+	display: inline-block;
+	z-index: 10;
+	width: 35px;
+	height: 32px;
+	margin-left: -38px;
+	background-image: url('../img/spr_comment.png');
+	background-repeat: no-repeat;
+	background-size: 90px 130px;
+	background-position: 0 -92px;
+	cursor: pointer;
 }
-.write_act .review_rating .rating .rating_rdo:checked + .span,
-.write_act .review_rating .rating .rating_rdo.checked + .span {
-  background-position: -37px -92px;
+
+.write_act .review_rating .rating .rating_rdo:checked+.span, .write_act .review_rating .rating .rating_rdo.checked+.span
+	{
+	background-position: -37px -92px;
 }
+
 .write_act .review_rating .rating .star_rank {
-  display: inline-block;
-  height: 26px;
-  padding-left: 3.5px;
-  font-size: 37px;
-  font-weight: normal;
-  color: #000;
-  vertical-align: 2px;
+	display: inline-block;
+	height: 26px;
+	padding-left: 3.5px;
+	font-size: 37px;
+	font-weight: normal;
+	color: #000;
+	vertical-align: 2px;
 }
+
 .write_act .review_rating .rating .star_rank.gray_star {
-  color: #ddd;
+	color: #ddd;
 }
+
 .review_contents {
-  position: relative;
-  padding: 12px 15px 21px;
-  background-color: #fff;
-  box-sizing: border-box;
+	position: relative;
+	padding: 12px 15px 21px;
+	background-color: #fff;
+	box-sizing: border-box;
 }
+
 .review_contents.write {
-  padding: 6px 20px 0;
-  background-color: #fff;
-  font: 0px/0 a;
+	padding: 6px 20px 0;
+	background-color: #fff;
+	font: 0px/0 a;
 }
+
 .review_contents .review_write_info {
-  overflow-y: auto;
-  position: absolute;
-  top: 6px;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  padding: 7px 10px;
-  border: 1px solid #e8e8e8;
-  background-color: #fff;
-  font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic, '�룍��', Dotum, sans-serif;
-  font-size: 15px;
-  color: #989898;
-  line-height: 23px;
-  cursor: text;
+	overflow-y: auto;
+	position: absolute;
+	top: 6px;
+	left: 20px;
+	right: 20px;
+	bottom: 0;
+	padding: 7px 10px;
+	border: 1px solid #e8e8e8;
+	background-color: #fff;
+	font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular',
+		'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic,
+		'�룍��', Dotum, sans-serif;
+	font-size: 15px;
+	color: #989898;
+	line-height: 23px;
+	cursor: text;
 }
-.review_contents .review_write_info:hover,
-.review_contents .review_write_info:focus {
-  text-decoration: none;
-  color: #989898;
+
+.review_contents .review_write_info:hover, .review_contents .review_write_info:focus
+	{
+	text-decoration: none;
+	color: #989898;
 }
+
 .review_contents .review_write_info .left_space {
-  position: relative;
-  display: inline-block;
-  padding-left: 7.5px;
+	position: relative;
+	display: inline-block;
+	padding-left: 7.5px;
 }
+
 .review_contents .review_textarea {
-  overflow: auto;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 7px 10px;
-  border: 1px solid #e8e8e8;
-  border-radius: 0;
-  font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic, '�룍��', Dotum, sans-serif;
-  font-size: 16px;
-  color: #777;
-  line-height: 20px;
-  box-sizing: border-box;
+	overflow: auto;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 7px 10px;
+	border: 1px solid #e8e8e8;
+	border-radius: 0;
+	font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular',
+		'AppleSDGothicNeo', '�굹�닎怨좊뵓', NanumGothic, '留묒�怨좊뵓', MalgunGothic,
+		'�룍��', Dotum, sans-serif;
+	font-size: 16px;
+	color: #777;
+	line-height: 20px;
+	box-sizing: border-box;
 }
+
 .review_contents .review_textarea::-moz-placeholder {
-  color: #989898;
-  opacity: 1;
-  font-size: 15px;
+	color: #989898;
+	opacity: 1;
+	font-size: 15px;
 }
+
 .review_contents .review_textarea:-ms-input-placeholder {
-  color: #989898;
-  font-size: 15px;
+	color: #989898;
+	font-size: 15px;
 }
+
 .review_contents .review_textarea::-webkit-input-placeholder {
-  color: #989898;
-  font-size: 15px;
+	color: #989898;
+	font-size: 15px;
 }
+
 .review_contents .review_textarea:focus {
-  outline: none;
+	outline: none;
 }
+
 .review_photos {
-  padding-bottom: 20px;
-  background-color: #fff;
+	padding-bottom: 20px;
+	background-color: #fff;
 }
+
 .review_photos .item_preview_thumbs {
-  padding-top: 0;
-  padding-left: 15px;
+	padding-top: 0;
+	padding-left: 15px;
 }
+
 .review_photos .item_preview_thumbs .lst_thumb .item {
-  width: auto;
-  height: 160px;
+	width: auto;
+	height: 160px;
 }
+
 .review_photos .item_preview_thumbs .lst_thumb .item .item_thumb {
-  width: auto;
-  height: 160px;
+	width: auto;
+	height: 160px;
 }
+
 .review_write_footer_wrap {
-  padding: 0 20px 15px;
-  background-color: #fff;
+	padding: 0 20px 15px;
+	background-color: #fff;
 }
+
 .review_write_footer {
-  position: relative;
-  border: solid #e8e8e8;
-  border-width: 0 1px 1px;
-  box-sizing: border-box;
+	position: relative;
+	border: solid #e8e8e8;
+	border-width: 0 1px 1px;
+	box-sizing: border-box;
 }
+
 .review_write_footer .btn_upload {
-  display: inline-block;
-  padding: 8px 8.5px 11px;
+	display: inline-block;
+	padding: 8px 8.5px 11px;
 }
+
 .review_write_footer .btn_upload .fn-image1 {
-  font-size: 25px;
-  color: #000;
-  vertical-align: middle;
+	font-size: 25px;
+	color: #000;
+	vertical-align: middle;
 }
+
 .review_write_footer .btn_upload .text_add_photo {
-  font-size: 16px;
-  color: #000;
-  vertical-align: -1.5px;
+	font-size: 16px;
+	color: #000;
+	vertical-align: -1.5px;
 }
+
 .review_write_footer .hidden_input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 30%;
-  opacity: 0;
-  z-index: 1;
-  cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 30%;
+	opacity: 0;
+	z-index: 1;
+	cursor: pointer;
 }
+
 .review_write_footer .guide_review {
-  position: absolute;
-  top: 12px;
-  right: 8.5px;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 19px;
-  color: #999;
-  text-align: right;
-  box-sizing: border-box;
+	position: absolute;
+	top: 12px;
+	right: 8.5px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 19px;
+	color: #999;
+	text-align: right;
+	box-sizing: border-box;
 }
+
 .review_photos_write {
-  margin-bottom: 0;
-  padding-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
+
 .review_photos_write .item_preview_thumbs {
-  padding: 10px 0;
-  overflow-x: auto;
+	padding: 10px 0;
+	overflow-x: auto;
 }
+
 .review_photos_write .item_preview_thumbs .lst_thumb .item {
-  width: auto;
-  height: 80px;
+	width: auto;
+	height: 80px;
 }
+
 .review_photos_write .item_preview_thumbs .lst_thumb .item .anchor {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 17px;
-  height: 17px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 17px;
+	height: 17px;
 }
-.review_photos_write .item_preview_thumbs .lst_thumb .item .anchor .ico_del {
-  z-index: 200;
-  position: absolute;
-  right: 0;
+
+.review_photos_write .item_preview_thumbs .lst_thumb .item .anchor .ico_del
+	{
+	z-index: 200;
+	position: absolute;
+	right: 0;
 }
+
 .review_photos_write .item_preview_thumbs .lst_thumb .item .item_thumb {
-  width: auto;
-  height: 80px;
+	width: auto;
+	height: 80px;
 }
 
 .middot {
-  position: relative;
-  display: inline-block;
-  padding-left: 7.5px;
+	position: relative;
+	display: inline-block;
+	padding-left: 7.5px;
 }
 
 .middot:before {
-  content: "��";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 10px;
+	content: "��";
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 10px;
 }
-
 
 #promotion {
 	margin-top: 40px;

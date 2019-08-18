@@ -90,19 +90,6 @@
 		</div>
 	</footer>
 
-
-	<script type="rv-template" id="promotionItem">
-    <li class="item" style="background-image: ${ImageLocation}">
-        <a href="#"> <span class="img_btm_border"></span> <span class="img_right_border"></span> <span class="img_bg_gra"></span>
-            <div class="event_txt">
-                <h4 class="event_txt_tit"></h4>
-                <p class="event_txt_adr"></p>
-                <p class="event_txt_dsc"></p>
-            </div>
-        </a>
-    </li>
-    </script>
-
 	<script type="rv-template" id="itemList">
         <li class="item">
             <a href="detail.html?id=${id}" class="item_book">
