@@ -1,4 +1,4 @@
-package dto.category;
+package or.connect.reservationweb.dto.category;
 
 public class CategoryDto {
 	private int id;
@@ -11,7 +11,7 @@ public class CategoryDto {
 		this.name = name;
 		this.count = count;
 	}
-	
+
 	public int getId() {
 		return id;
 	}

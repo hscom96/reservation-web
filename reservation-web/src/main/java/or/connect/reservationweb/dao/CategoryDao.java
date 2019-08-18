@@ -1,4 +1,4 @@
-package dao;
+package or.connect.reservationweb.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,8 +10,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import dto.category.CategoryListDto;
-import dto.category.CategoryDto;
+import or.connect.reservationweb.dto.category.CategoryDto;
+import or.connect.reservationweb.dto.category.CategoryListDto;
 
 @Repository
 public class CategoryDao {
@@ -23,13 +23,14 @@ public class CategoryDao {
 	}
 
 	public List<CategoryDto> getCategoryList() {
-		List<CategoryDto> categoryList = jdbcTemplate.query(
-				"SELECT category.id, category.name, COUNT(name) AS count "
-				+ "FROM category INNER JOIN product ON category.id = product.category_id GROUP BY name",
-				new RowMapper<CategoryDto>() {
+		List<CategoryDto> categoryList = jdbcTemplate.query("SELECT category.id, category.name ,COUNT(*) AS count "
+				+ "FROM category INNER JOIN product ON category.id = product.category_id "
+				+ "INNER JOIN display_info ON product.id = display_info.product_id "
+				+ "group by category.id, category.name;", new RowMapper<CategoryDto>() {
 					@Override
 					public CategoryDto mapRow(ResultSet rs, int rowNum) throws SQLException {
-						CategoryDto categoryDto = new CategoryDto(rs.getInt("id"), rs.getString("name"),rs.getInt("count"));
+						CategoryDto categoryDto = new CategoryDto(rs.getInt("id"), rs.getString("name"),
+								rs.getInt("count"));
 						return categoryDto;
 					}
 				});

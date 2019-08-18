@@ -3832,7 +3832,7 @@ button {
 	overflow: hidden;
 }
 
-#images {
+#imageBox {
 	position: absolute;
 	height: 177px;
 	width: 5000px;

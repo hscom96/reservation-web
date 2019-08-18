@@ -1,4 +1,4 @@
-package dto.promotion;
+package or.connect.reservationweb.dto.promotion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,17 +11,12 @@ public class PromotionListDto {
 	public PromotionListDto() {
 		items = new ArrayList();
 	}
-	
+
 	public void setItems(List<PromotionDto> items) {
 		this.items.addAll(items);
 	}
 
 	public List<PromotionDto> getItems() {
 		return items;
-	}
-	
-	@JsonIgnore
-	public boolean isEmpty() {
-		return items.isEmpty();
 	}
 }

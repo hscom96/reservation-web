@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
+<head>	
 <meta charset="utf-8">
 <meta name="description"
 	content="네이버 예약, 네이버 예약이 연동된 곳 어디서나 바로 예약하고, 네이버 예약 홈(나의예약)에서 모두 관리할 수 있습니다.">
@@ -11,7 +11,7 @@
 	content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 <title>네이버 예약</title>
 <link href="resources/css/style.css" rel="stylesheet" />
-<script src="resources/js/mainpage.js" type="text/javascript"></script>
+<script src="resources/js/mainpage.js" type="text/javascript" charset="UTF-8"></script>
 
 </head>
 
@@ -34,7 +34,7 @@
 		<hr>
 		<div class="event">
 			<div id="promotion">
-				<div id="images">
+				<div id="imageBox">
 					<img src="resources/img/2_th_3.png" class="image"> <img
 						src="resources/img/4_th_11.png" class="image"> <img
 						src="resources/img/20_th_50.png" class="image"> <img
@@ -60,7 +60,7 @@
 			</div>
 			<div class="section_event_lst">
 				<p class="event_lst_txt">
-					바로 예매 가능한 행사가 <span id="itemCount" class="pink">10개</span> 있습니다
+					바로 예매 가능한 행사가 <span id="categoryItemSum" class="pink">0</span> 있습니다
 				</p>
 				<div class="wrap_event_box">
 					<!-- [D] lst_event_box 가 2컬럼으로 좌우로 나뉨, 더보기를 클릭할때마다 좌우 ul에 li가 추가됨 -->
@@ -107,7 +107,7 @@
         <li class="item">
             <a href="detail.html?id=${id}" class="item_book">
                 <div class="item_preview">
-                    <img alt="${description}" class="img_thumb" src="/reservationWeb/resources/img/${imgUrl}">
+                    <img alt="${description}" class="img_thumb" src="/reservation-web/resources/img/${imgUrl}">
                     <span class="img_border"></span>
                 </div>
                 <div class="event_txt">

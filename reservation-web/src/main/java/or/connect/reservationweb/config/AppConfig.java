@@ -1,4 +1,4 @@
-package config;
+package or.connect.reservationweb.config;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan(basePackages = {"dao", "service"})
+@ComponentScan(basePackages = {"or.connect.reservationweb.dao", "or.connect.reservationweb.service"})
 public class AppConfig {
 	
 	@Bean(destroyMethod = "close")

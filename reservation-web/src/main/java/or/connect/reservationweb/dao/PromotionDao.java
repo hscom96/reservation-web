@@ -1,4 +1,4 @@
-package dao;
+package or.connect.reservationweb.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,8 +10,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import dto.promotion.PromotionDto;
-import dto.promotion.PromotionListDto;
+import or.connect.reservationweb.dto.promotion.PromotionDto;
+import or.connect.reservationweb.dto.promotion.PromotionListDto;
 
 @Repository
 public class PromotionDao {
@@ -21,22 +21,23 @@ public class PromotionDao {
 	public PromotionDao(DataSource dataSource) {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
-	
+
 	public List<PromotionDto> getPromotionList() {
-		
+
 		List<PromotionDto> promotionList = jdbcTemplate.query(
 				"SELECT promotion.id, promotion.product_id as productId, file_info.save_file_name as productImageUrl "
-				+ "from promotion JOIN product ON promotion.product_id = product.id "
-				+ "INNER JOIN product_image ON promotion.product_id = product_image.product_id AND product_image.type=\"th\" "
-				+ "INNER JOIN file_info ON product_image.file_id = file_info.id ",
+						+ "from promotion JOIN product ON promotion.product_id = product.id "
+						+ "INNER JOIN product_image ON promotion.product_id = product_image.product_id AND product_image.type=\"th\" "
+						+ "INNER JOIN file_info ON product_image.file_id = file_info.id ",
 				new RowMapper<PromotionDto>() {
 					@Override
 					public PromotionDto mapRow(ResultSet rs, int rowNum) throws SQLException {
-						PromotionDto promotionDto = new PromotionDto(rs.getInt("id"), rs.getInt("productId"),rs.getString("productImageUrl"));
+						PromotionDto promotionDto = new PromotionDto(rs.getInt("id"), rs.getInt("productId"),
+								rs.getString("productImageUrl"));
 						return promotionDto;
 					}
 				});
-		
+
 		return promotionList.isEmpty() ? null : promotionList;
 	}
 }

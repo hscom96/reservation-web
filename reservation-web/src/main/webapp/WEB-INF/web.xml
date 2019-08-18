@@ -35,9 +35,9 @@
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
-				config.ControllerConfig
-				config.MvcConfig
-				config.AppConfig
+				or.connect.reservationweb.config.ControllerConfig
+				or.connect.reservationweb.config.MvcConfig
+				or.connect.reservationweb.config.AppConfig
 			</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>

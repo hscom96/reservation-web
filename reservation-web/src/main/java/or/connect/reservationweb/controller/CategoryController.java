@@ -1,21 +1,21 @@
-package controller;
+package or.connect.reservationweb.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dto.category.CategoryListDto;
-import service.CategoryService;
+import or.connect.reservationweb.dto.category.CategoryListDto;
+import or.connect.reservationweb.service.CategoryService;
 
 @RestController
 public class CategoryController {
-	
+
 	@Autowired
 	CategoryService categoryService;
-	
+
 	@GetMapping("/api/categories")
-	public CategoryListDto categories() {
+	public CategoryListDto getCategoryList() {
 		return categoryService.getCategoryList();
 	}
-	
+
 }

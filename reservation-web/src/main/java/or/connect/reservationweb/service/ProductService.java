@@ -1,37 +1,38 @@
-package service;
+package or.connect.reservationweb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import dao.ProductDao;
-import dto.product.ProductListDto;
+import or.connect.reservationweb.dao.ProductDao;
+import or.connect.reservationweb.dto.product.ProductListDto;
 
 @Service
 public class ProductService {
 	@Autowired
 	private ProductDao productDao;
 
-	//ÁöÁ¤ Ä«Å×°í¸®ÀÇ »óÇ° ¸ñ·Ï ¹İÈ¯
+	// ì§€ì •í•œ categoryIdì˜ ìƒí’ˆëª©ë¡ ë°˜í™˜
 	@Transactional
 	public ProductListDto getProductList(int categoryId, int start) {
 		ProductListDto productListDto = new ProductListDto();
-		
-		productListDto.setitems(productDao.getProductList(categoryId, start));
-		productListDto.setTotalCount(productDao.getTotalCount(categoryId));
-		
+		int totalCount = productDao.getTotalCount(categoryId);
+
+		productListDto.setItems(productDao.getProductList(categoryId, start));
+		productListDto.setTotalCount(totalCount);
+
 		return productListDto;
 	}
-	
-	//ÀüÃ¼ Ä«Å×°í¸®ÀÇ »óÇ° ¸ñ·Ï ¹İÈ¯
+
+	// ì „ì²´ ìƒí’ˆëª©ë¡ ë°˜í™˜
 	@Transactional
 	public ProductListDto getProductList(int start) {
 		ProductListDto productListDto = new ProductListDto();
-		
-		productListDto.setitems(productDao.getProductList(start));
+
+		productListDto.setItems(productDao.getProductList(start));
 		productListDto.setTotalCount(productDao.getTotalCount());
-		
+
 		return productListDto;
 	}
-	
+
 }
