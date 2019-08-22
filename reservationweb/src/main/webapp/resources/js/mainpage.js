@@ -37,7 +37,7 @@ function addNewItem() {
 
 			insertItemList = JSON.parse(httpRequest.responseText);
 			
-			UpdateCategoryItemSum(insertItemList.totalCount);
+			updateCategoryItemSum(insertItemList.totalCount);
 			
 			for ( var key in insertItemList.items) {
 				insertItem = itemTemplate
@@ -59,12 +59,12 @@ function addNewItem() {
 	};
 	
 	httpRequest.open("GET", 
-			"/reservation-web/api/products?categoryId=" 
+			"/reservationweb/api/products?categoryId=" 
 			+ categoryId + "&start=" + currentItemCount, true);
 	httpRequest.send();
 }
 
-function UpdateCategoryItemSum(totalCount){
+function updateCategoryItemSum(totalCount){
 	var categoryItemSum = document.querySelector("#categoryItemSum");
 	categoryItemSum.innerHTML = totalCount + "개";
 }
@@ -88,16 +88,8 @@ function goTop() {
 	var topIcon = document.querySelector(".lnk_top");
 
 	topIcon.addEventListener("click", function() {
-		requestAnimationFrame(goingTop);
-	})
-
-	function goingTop() {
-		var scroll = document.querySelector("html");
-		if (scroll.scrollTop === 0)
-			return;
-		scroll.scrollTop -= 70;
-		requestAnimationFrame(goingTop);
-	}
+		window.scrollTo({ top: 0, behavior: 'smooth' })
+	});
 }
 
 
