@@ -24,7 +24,7 @@ public class CategoryDao {
 
 	public List<CategoryDto> getCategoryList() {
 		List<CategoryDto> categoryList = jdbcTemplate.query("SELECT category.id, category.name ,COUNT(*) AS count "
-				+ "FROM category INNER JOIN product ON category.id = product.category_id "
+				+ "FROM category " + "INNER JOIN product ON category.id = product.category_id "
 				+ "INNER JOIN display_info ON product.id = display_info.product_id "
 				+ "group by category.id, category.name;", new RowMapper<CategoryDto>() {
 					@Override

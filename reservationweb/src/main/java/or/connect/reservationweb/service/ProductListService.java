@@ -8,7 +8,7 @@ import or.connect.reservationweb.dao.ProductDao;
 import or.connect.reservationweb.dto.product.ProductListDto;
 
 @Service
-public class ProductService {
+public class ProductListService {
 	@Autowired
 	private ProductDao productDao;
 

@@ -8,20 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 import or.connect.reservationweb.dto.product.ProductListDto;
 import or.connect.reservationweb.dto.productInfo.ProductDisplayDto;
 import or.connect.reservationweb.service.ProductDisplayService;
-import or.connect.reservationweb.service.ProductService;
+import or.connect.reservationweb.service.ProductListService;
 
 @RestController
 public class ProductController {
 
 	@Autowired
-	ProductService productService;
+	ProductListService productListService;
 	@Autowired
 	ProductDisplayService productDisplayService;
 	
 	@GetMapping("/api/products")
 	public ProductListDto getProductList(@RequestParam(value="categoryId", defaultValue="0") int categoryId, 
 			@RequestParam(value="start", defaultValue="0") int start) {
-		return productService.getProductList(categoryId,start);
+		return productListService.getProductList(categoryId,start);
 	}
 
 	@GetMapping("/api/products/{displayInfoId}")

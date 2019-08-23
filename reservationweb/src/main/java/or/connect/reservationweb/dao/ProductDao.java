@@ -26,14 +26,14 @@ public class ProductDao {
 
 	// 지정한 categoryId의 상품목록 반환
 	public List<ProductDto> getProductList(int categoryId, int start) {
-		List<ProductDto> productList = jdbcTemplate
-				.query("select display_info.id ,display_info.product_id, product.description, "
+		List<ProductDto> productList = jdbcTemplate.query(
+				"select display_info.id ,display_info.product_id, product.description, "
 						+ "display_info.place_name, product.content, file_info.file_name from product "
 						+ "INNER JOIN display_info ON product.id = display_info.product_id "
 						+ "INNER JOIN product_image ON product.id = product_image.product_id "
 						+ "INNER JOIN file_info ON product_image.file_id = file_info.id "
-						+ "WHERE type=\"th\" AND category_id=? "
-						+ "ORDER BY display_info.id LIMIT 4 OFFSET ?", new RowMapperProduct(), categoryId, start);
+						+ "WHERE type=\"th\" AND category_id=? " + "ORDER BY display_info.id LIMIT 4 OFFSET ?",
+				new RowMapperProduct(), categoryId, start);
 
 		return productList.isEmpty() ? null : productList;
 	}
@@ -45,8 +45,7 @@ public class ProductDao {
 						+ "display_info.place_name, product.content, file_info.file_name from product "
 						+ "INNER JOIN display_info ON product.id = display_info.product_id "
 						+ "INNER JOIN product_image ON product.id = product_image.product_id "
-						+ "INNER JOIN file_info ON product_image.file_id = file_info.id "
-						+ "WHERE type=\"th\" "
+						+ "INNER JOIN file_info ON product_image.file_id = file_info.id " + "WHERE type=\"th\" "
 						+ "ORDER BY display_info.id LIMIT 4 OFFSET ?", new RowMapperProduct(), start);
 
 		return productList.isEmpty() ? null : productList;
@@ -61,13 +60,12 @@ public class ProductDao {
 			return productDto;
 		}
 	}
-	
+
 	// 지정 categoryId의 상품 총개수 반환
 	public Integer getTotalCount(int categoryId) {
 		Integer count = jdbcTemplate.queryForObject(
 				"SELECT COUNT(*) FROM product INNER JOIN category ON  product.category_id = category.id "
-						+ "INNER JOIN  display_info ON product.id = display_info.product_id "
-						+ "WHERE category_id = ?",
+						+ "INNER JOIN  display_info ON product.id = display_info.product_id " + "WHERE category_id = ?",
 				Integer.class, categoryId);
 		return count;
 	}
@@ -80,6 +78,5 @@ public class ProductDao {
 				Integer.class);
 		return count;
 	}
-
 
 }
