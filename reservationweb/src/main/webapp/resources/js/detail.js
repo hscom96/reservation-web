@@ -16,7 +16,6 @@ function getDisplayInfo() {
 		if (httpRequest.readyState == XMLHttpRequest.DONE
 				&& httpRequest.status == 200) {
 			displayInfo = JSON.parse(httpRequest.responseText);
-
 		}
 	};
 
