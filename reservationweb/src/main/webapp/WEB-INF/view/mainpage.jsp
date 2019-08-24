@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>	
+<head>
 <meta charset="utf-8">
 <meta name="description"
 	content="네이버 예약, 네이버 예약이 연동된 곳 어디서나 바로 예약하고, 네이버 예약 홈(나의예약)에서 모두 관리할 수 있습니다.">
@@ -11,8 +11,10 @@
 	content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 <title>네이버 예약</title>
 <link href="resources/css/style.css" rel="stylesheet" />
-<script src="resources/js/mainpage.js" type="text/javascript" charset="UTF-8"></script>
-
+<script src="resources/js/mainpage.js" type="text/javascript"
+	charset="UTF-8"></script>
+<script src="resources/js/commonFunction.js" type="text/javascript"
+	charset="UTF-8"></script>
 </head>
 
 <body>
@@ -92,9 +94,9 @@
 
 	<script type="rv-template" id="itemList">
         <li class="item">
-            <a href="detail.html?id=${id}" class="item_book">
+            <a href="detail?id=${id}" class="item_book">
                 <div class="item_preview">
-                    <img alt="${description}" class="img_thumb" src="/reservationweb/resources/img/${imgUrl}">
+                    <img alt="${description}" class="img_thumb" src="resources/img/${imgUrl}">
                     <span class="img_border"></span>
                 </div>
                 <div class="event_txt">

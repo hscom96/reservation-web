@@ -3,7 +3,6 @@ document.addEventListener(
 		function(){
 			imageSlider();
 			addNewItem();
-			goTop();
 			changeCategory();
 			moreItem();
 		}
@@ -41,7 +40,7 @@ function addNewItem() {
 			
 			for ( var key in insertItemList.items) {
 				insertItem = itemTemplate
-				.replace("${id}", insertItemList.items[key].productId)
+				.replace("${id}", insertItemList.items[key].displayId)
 				.replace(/\$\{description\}/g, insertItemList.items[key].productDescription)
 				.replace("${placeName}",insertItemList.items[key].placeName)
 				.replace("${content}",insertItemList.items[key].productContent)
@@ -82,14 +81,6 @@ function moreItem(){
 	moreButton.addEventListener("click", function(){
 		addNewItem();
 	})
-}
-
-function goTop() {
-	var topIcon = document.querySelector(".lnk_top");
-
-	topIcon.addEventListener("click", function() {
-		window.scrollTo({ top: 0, behavior: 'smooth' })
-	});
 }
 
 
