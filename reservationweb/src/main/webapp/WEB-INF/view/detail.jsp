@@ -17,6 +17,7 @@
 }
 </style>
 <link href="resources/css/style.css" rel="stylesheet" />
+<link href="resources/css/detail.css" rel="stylesheet" />
 <script src="resources/js/handlebars-v4.1.2.js" type="text/javascript"
 	charset="UTF-8"></script>
 <script src="resources/js/detail.js" type="text/javascript"
@@ -29,13 +30,14 @@
 		<div class="header fade">
 			<header class="header_tit">
 				<h1 class="logo">
-					<a href="/reservation/mainpage" class="lnk_logo" title="네이버">
+					<a href="/reservationweb/mainpage" class="lnk_logo" title="네이버">
 						<span class="spr_bi ico_n_logo">네이버</span>
-					</a> <a href="mainpage" class="lnk_logo" title="예약">
+					</a> <a href="/reservationweb/mainpage" class="lnk_logo" title="예약">
 						<span class="spr_bi ico_bk_logo">예약</span>
 					</a>
 				</h1>
-				<a href="#" class="btn_my"> <span title="예약확인">예약확인</span>
+				<a href="/reservationweb/mainpage" class="btn_my"> <span
+					title="예약확인">예약확인</span>
 				</a>
 			</header>
 		</div>
@@ -44,38 +46,41 @@
 				<div class="section_visual">
 					<header>
 						<h1 class="logo">
-							<a href="./mainpage.html" class="lnk_logo" title="네이버"> <span
-								class="spr_bi ico_n_logo">네이버</span>
-							</a> <a href="./mainpage.html" class="lnk_logo" title="예약"> <span
-								class="spr_bi ico_bk_logo">예약</span>
+							<a href="/reservationweb/mainpage" class="lnk_logo" title="네이버">
+								<span class="spr_bi ico_n_logo">네이버</span>
+							</a> <a href="/reservationweb/mainpage" class="lnk_logo" title="예약">
+								<span class="spr_bi ico_bk_logo">예약</span>
 							</a>
 						</h1>
-						<a href="./myreservation.html" class="btn_my"> <span
+						<a href="/reservationweb/myreservation" class="btn_my"> <span
 							class="viewReservation" title="예약확인">예약확인</span>
 						</a>
 					</header>
 					<div class="pagination">
 						<div class="bg_pagination"></div>
 						<div class="figure_pagination">
-							<span id="current" class="num"></span> <span class="num off">/ <span id="total"></span></span>
+							<span id="current" class="num"></span> <span class="num off">/
+								<span id="total"></span>
+							</span>
 						</div>
 					</div>
 					<div class="group_visual">
 						<div>
-							<div id="sliderBox" class="container_visual" style="width: 414px;">
+							<div id="sliderBox" class="container_visual"
+								style="width: 414px;">
 								<ul class="visual_img detail_swipe">
 								</ul>
 							</div>
 							<div class="prev">
 								<div class="prev_inn">
-									<a href="#" class="btn_prev" title="이전"> <!-- [D] 첫 이미지 이면 off 클래스 추가 -->
+									<a class="btn_prev" title="이전"> <!-- [D] 첫 이미지 이면 off 클래스 추가 -->
 										<i class="spr_book2 ico_arr6_lt off"></i>
 									</a>
 								</div>
 							</div>
 							<div class="nxt">
 								<div class="nxt_inn">
-									<a href="#" class="btn_nxt" title="다음"> <i
+									<a class="btn_nxt" title="다음"> <i
 										class="spr_book2 ico_arr6_rt"></i>
 									</a>
 								</div>
@@ -208,10 +213,10 @@
 				<div class="section_info_tab">
 					<!-- [D] tab 선택 시 anchor에 active 추가 -->
 					<ul class="info_tab_lst">
-						<li class="item active _detail"><a href="#"
-							class="anchor active"> <span>상세정보</span>
+						<li class="item active _detail"><a class="anchor active">
+								<span>상세정보</span>
 						</a></li>
-						<li class="item _path"><a href="#" class="anchor"> <span>오시는길</span>
+						<li class="item _path"><a class="anchor"> <span>오시는길</span>
 						</a></li>
 					</ul>
 					<!-- [D] 상세정보 외 다른 탭 선택 시 detail_area_wrap에 hide 추가 -->
@@ -292,8 +297,8 @@
 		</div>
 	</footer>
 	<div id="photoviwer"></div>
-	
-	
+
+
 	<script type="dt-tepmlate" id="slideItemTemplate">
 	<li class="item" style="width: 414px;"><img alt=""
 		class="img_thumb" src="resources/{{saveFileName}}"> <span class="img_bg"></span>

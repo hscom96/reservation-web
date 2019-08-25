@@ -1,0 +1,4 @@
+.group_visual .detail_swipe{
+	left : 0px;
+	transition : all 0.6s ease;
+}
