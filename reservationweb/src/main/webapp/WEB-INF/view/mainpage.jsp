@@ -34,15 +34,33 @@
 			</header>
 		</div>
 		<hr>
+		
 		<div class="event">
-			<div id="promotion">
-				<div id="imageBox">
-					<img src="resources/img/2_th_3.png" class="image"> <img
-						src="resources/img/4_th_11.png" class="image"> <img
-						src="resources/img/20_th_50.png" class="image"> <img
-						src="resources/img/21_th_53.png" class="image">
-				</div>
-			</div>
+            <div class="section_visual">
+                <div class="group_visual">
+                    <div class="container_visual">
+                        <div class="prev_e" style="display:none;">
+                            <div class="prev_inn">
+                                <a href="#" class="btn_pre_e" title="이전"> <i class="spr_book_event spr_event_pre">이전</i> </a>
+                            </div>
+                        </div>
+                        <div class="nxt_e" style="display:none;">
+                            <div class="nxt_inn">
+                                <a href="#" class="btn_nxt_e" title="다음"> <i class="spr_book_event spr_event_nxt">다음</i> </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container_visual">
+                                <!-- 슬라이딩기능: 이미지 (type = 'th')를 순차적으로 노출 -->
+                                <ul id="slider" class="visual_img">
+                                	
+                                </ul>
+                            </div>
+                            <span class="nxt_fix" style="display:none;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 			<div class="section_event_tab">
 				<ul class="event_tab_lst tab_lst_min">
 					<li class="item" data-category="0"><a class="anchor active">
@@ -92,6 +110,17 @@
 		</div>
 	</footer>
 
+    <script type="rv-template" id="promotionItem">
+    <li class="item" style="background-image: url(/reservationweb/resources/${productImageUrl} );">
+        <a href="#"> <span class="img_btm_border"></span> <span class="img_right_border"></span> <span class="img_bg_gra"></span>
+            <div class="event_txt">
+                <h4 class="event_txt_tit"></h4>
+                <p class="event_txt_adr"></p>
+                <p class="event_txt_dsc"></p>
+            </div>
+        </a>
+    </li>
+    </script>
 	<script type="rv-template" id="itemList">
         <li class="item">
             <a href="detail?id=${id}" class="item_book">

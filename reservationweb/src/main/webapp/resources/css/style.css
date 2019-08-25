@@ -4151,18 +4151,7 @@ button {
 	font-size: 10px;
 }
 
-#promotion {
-	margin-top: 40px;
-	position: relative;
-	max-width: 414px;
-	height: 177px;
-	overflow: hidden;
-}
-
-#imageBox {
-	position: absolute;
-	height: 177px;
-	width: 5000px;
+#slider {
 	transition: transform 1s;
 }
 
