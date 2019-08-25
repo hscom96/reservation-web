@@ -1,26 +1,29 @@
 document.addEventListener("DOMContentLoaded", function() {
-	getDisplayInfo();
-	updateSliderImage();
-	runSlider();
-	changeInfoTab()
+	updateDisplayInfoSet();
 });
 
-var displayInfo;
 
-// displayId의 displayInfo 요청
-function getDisplayInfo() {
+function updateDisplayInfoSet() {
 	var httpRequest = new XMLHttpRequest();
+	var displayInfoSet;
 	var displayId = getParam("id");
 
 	httpRequest.onreadystatechange = function() {
 
 		if (httpRequest.readyState == XMLHttpRequest.DONE
 				&& httpRequest.status == 200) {
-			displayInfo = JSON.parse(httpRequest.responseText);
+			displayInfoSet = JSON.parse(httpRequest.responseText);
+			
+			updateSliderImage(displayInfoSet);
+			changeSlider();
+			updateProductContent(displayInfoSet);
+			changeProductContent();
+			updateInfoTab(displayInfoSet);
+			changeInfoTab();
 		}
 	};
 
-	httpRequest.open("GET", "/reservationweb/api/products/" + displayId, false);
+	httpRequest.open("GET", "/reservationweb/api/products/" + displayId, true);
 	httpRequest.send();
 }
 
@@ -39,19 +42,21 @@ function getParam(sname) {
 }
 
 // 슬라이더 이미지 등록
-function updateSliderImage() {
+function updateSliderImage(displayInfoSet) {
 	var slider = document.querySelector(".group_visual .detail_swipe");
 	var imageTemplate = document.querySelector("#slideItemTemplate").innerHTML;
 	var bindTemplate = Handlebars.compile(imageTemplate);
+	
+	
 	var innerHTML = "";
-	displayInfo.productImages.forEach(function(item, index) {
+	displayInfoSet.productImages.forEach(function(item, index) {
 		innerHTML += bindTemplate(item);
 	});
 	slider.innerHTML = innerHTML;
 }
 
-// 슬라이더 동작
-function runSlider() {
+//슬라이더 동작
+function changeSlider() {
 	var sliderBox = document.querySelector("#sliderWrap");
 	var slider = document.querySelector(".group_visual .detail_swipe");
 	var images = document.querySelectorAll(".group_visual .visual_img .item");
@@ -107,6 +112,30 @@ function runSlider() {
 	}
 }
 
+function updateProductContent(displayInfoSet){
+	$('.store_details .dsc').html(displayInfoSet.displayInfo.productContent);
+}
+
+function changeProductContent(){
+	$('a.bk_more._open').on('click', function(){
+		$('a.bk_more._open').css('display','none');
+		$('a.bk_more._close').css('display','block');
+		$('div.store_details').removeClass('close3');
+	});
+	$('a.bk_more._close').on('click', function(){
+		$('a.bk_more._open').css('display','block');
+		$('a.bk_more._close').css('display','none');
+		$('div.store_details').addClass('close3');
+	});
+}
+
+function updateInfoTab(displayInfoSet){
+	
+}
+
+
+
+//상세정보-오시는길 탭 변경
 function changeInfoTab() {
 	var infoTab = document.querySelector(".section_info_tab .info_tab_lst");
 

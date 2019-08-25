@@ -20,6 +20,8 @@
 <link href="resources/css/detail.css" rel="stylesheet" />
 <script src="resources/js/handlebars-v4.1.2.js" type="text/javascript"
 	charset="UTF-8"></script>
+<script src="resources/js/jquery-3.4.1.js" type="text/javascript"
+	charset="UTF-8"></script>
 <script src="resources/js/detail.js" type="text/javascript"
 	charset="UTF-8"></script>
 <script src="resources/js/commonFunction.js" type="text/javascript"
@@ -106,9 +108,9 @@
 						<p class="dsc"></p>
 					</div>
 					<!-- [D] 토글 상황에 따라 bk_more에 display:none 추가 -->
-					<a href="#" class="bk_more _open"> <span class="bk_more_txt">펼쳐보기</span>
+					<a class="bk_more _open"> <span class="bk_more_txt">펼쳐보기</span>
 						<i class="fn fn-down2"></i>
-					</a> <a href="#" class="bk_more _close" style="display: none;"> <span
+					</a> <a class="bk_more _close" style="display: none;"> <span
 						class="bk_more_txt">접기</span> <i class="fn fn-up2"></i>
 					</a>
 				</div>
