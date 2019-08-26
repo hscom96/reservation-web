@@ -19,7 +19,8 @@ function updateImageSlider() {
 			insertItemList = JSON.parse(httpRequest.responseText);
 
 			for ( var key in insertItemList.items) {
-				insertItem = promotionTemplate.replace("${productImageUrl}",insertItemList.items[key].productImageUrl);
+				insertItem = promotionTemplate.replace("${productImageUrl}",insertItemList.items[key].productImageUrl)
+				.replace("${description}",insertItemList.items[key].description);
 				promotionBox.innerHTML += insertItem;
 			}
 
