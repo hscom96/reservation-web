@@ -1403,7 +1403,9 @@ button {
 	vertical-align: middle;
 	-webkit-box-sizing: border-box;
 	moz-box-sizing: border-box;
-	box-sizing: border-box
+	box-sizing: border-box;
+	position:absolute; 
+	top: 43%;
 }
 
 .bottom_common_path {

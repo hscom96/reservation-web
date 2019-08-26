@@ -47,15 +47,16 @@ function updateSliderImage(displayInfoSet) {
 	var imageTemplate = document.querySelector("#slideItemTemplate").innerHTML;
 	var bindTemplate = Handlebars.compile(imageTemplate);
 	
+	var data = {
+			"productDescription":displayInfoSet.displayInfo.productDescription,
+			"productImages":displayInfoSet.productImages
+	};
 	
-	var innerHTML = "";
-	displayInfoSet.productImages.forEach(function(item, index) {
-		innerHTML += bindTemplate(item);
-	});
-	slider.innerHTML = innerHTML;
+	
+	slider.innerHTML =  bindTemplate(data);
 }
 
-//슬라이더 동작
+// 슬라이더 동작
 function changeSlider() {
 	var sliderBox = document.querySelector("#sliderWrap");
 	var slider = document.querySelector(".group_visual .detail_swipe");
@@ -135,7 +136,7 @@ function updateInfoTab(displayInfoSet){
 
 
 
-//상세정보-오시는길 탭 변경
+// 상세정보-오시는길 탭 변경
 function changeInfoTab() {
 	var infoTab = document.querySelector(".section_info_tab .info_tab_lst");
 
