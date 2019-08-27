@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	updateDisplayInfoSet();
 });
 
-
 function updateDisplayInfoSet() {
 	var httpRequest = new XMLHttpRequest();
 	var displayInfoSet;
@@ -15,11 +14,12 @@ function updateDisplayInfoSet() {
 			displayInfoSet = JSON.parse(httpRequest.responseText);
 			
 			updateSliderImage(displayInfoSet);
-			changeSlider();
+			runSlider();
 			updateProductContent(displayInfoSet);
 			changeProductContent();
-			updateInfoTab(displayInfoSet);
-			changeInfoTab();
+			updateEventInfo(displayInfoSet);
+			updateDetailTab(displayInfoSet);
+			changeDetailTab();
 		}
 	};
 
@@ -57,7 +57,7 @@ function updateSliderImage(displayInfoSet) {
 }
 
 // 슬라이더 동작
-function changeSlider() {
+function runSlider() {
 	var sliderBox = document.querySelector("#sliderWrap");
 	var slider = document.querySelector(".group_visual .detail_swipe");
 	var images = document.querySelectorAll(".group_visual .visual_img .item");
@@ -113,10 +113,23 @@ function changeSlider() {
 	}
 }
 
+function updateEventInfo(displayInfoSet){
+	var discountEvent = document.querySelector(".section_event .event_info_box .event_info .in_dsc");
+	var insertHTML = "[네이버예약 특별할인] <br>";
+	displayInfoSet.productPrices.forEach(value=>{
+		insertHTML += value.priceTypeName+"석 "
+			});
+	
+	discountEvent.innerHTML = insertHTML;
+}
+
+
+// 상품설명 저장
 function updateProductContent(displayInfoSet){
 	$('.store_details .dsc').html(displayInfoSet.displayInfo.productContent);
 }
 
+// 상품설명 펼치기-닫기
 function changeProductContent(){
 	$('a.bk_more._open').on('click', function(){
 		$('a.bk_more._open').css('display','none');
@@ -130,14 +143,29 @@ function changeProductContent(){
 	});
 }
 
-function updateInfoTab(displayInfoSet){
+// 카태고리탭 정보저장
+function updateDetailTab(displayInfoSet){
+	var content = document.querySelector(".detail_area .detail_info .detail_info_group .detail_info_lst .in_dsc");
+	var title = document.querySelector(".box_store_info .store_name");
+	var new_addr = document.querySelector(".store_addr_wrap .store_addr");
+	var old_addr = document.querySelector(".store_addr_wrap .store_addr .addr_old_detail");
+	var store_addr = document.querySelector("p.store_addr.addr_detail");
+	var store_tel= document.querySelector("a.store_tel");
+	var map = document.querySelector("img.store_map");
 	
+	content.innerHTML = displayInfoSet.displayInfo.productContent;
+	title.innerHTML = displayInfoSet.displayInfo.categoryName +" - " + displayInfoSet.displayInfo.productDescription
+	new_addr.innerHTML = displayInfoSet.displayInfo.placeStreet;
+	old_addr.innerHTML = displayInfoSet.displayInfo.placeLot;
+	store_addr.innerHTML = displayInfoSet.displayInfo.placeName;
+	store_tel.innerHTML = displayInfoSet.displayInfo.telephone;
+	map.src = "resources/" +  displayInfoSet.displayInfoImage.saveFileName;
 }
 
 
 
 // 상세정보-오시는길 탭 변경
-function changeInfoTab() {
+function changeDetailTab() {
 	var infoTab = document.querySelector(".section_info_tab .info_tab_lst");
 
 	infoTab.addEventListener('click', function(evt) {
@@ -147,6 +175,7 @@ function changeInfoTab() {
 		}
 	});
 
+	// 카테고리탭변경
 	function changeTab(evt) {
 		var detailTab = document
 				.querySelector(".info_tab_lst ._detail .anchor span");
@@ -168,6 +197,7 @@ function changeInfoTab() {
 		}
 	}
 	
+	// 카테고리탭 내용 전환
 	function showContent(){
 		var detailContent = document.querySelector("div.detail_area_wrap");
 		var locationContent = document.querySelector("div.detail_location");

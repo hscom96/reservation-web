@@ -20,7 +20,8 @@ function updateImageSlider() {
 
 			for ( var key in insertItemList.items) {
 				insertItem = promotionTemplate.replace("${productImageUrl}",insertItemList.items[key].productImageUrl)
-				.replace("${description}",insertItemList.items[key].description);
+				.replace("${description}",insertItemList.items[key].description)
+				.replace("${placeName}",insertItemList.items[key].placeName);
 				promotionBox.innerHTML += insertItem;
 			}
 

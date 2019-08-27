@@ -5,14 +5,24 @@ public class PromotionDto {
 	private int productId;
 	private String productImageUrl;
 	private String description;
-
-	public PromotionDto(int id, int productId, String productImageUrl, String description) {
+	private String placeName;
+	
+	public PromotionDto(int id, int productId, String productImageUrl, String description, String placeName) {
 		this.id = id;
 		this.productId = productId;
 		this.productImageUrl = productImageUrl;
 		this.description = description;
+		this.placeName = placeName;
 	}
 	
+	public String getPlaceName() {
+		return placeName;
+	}
+
+	public void setPlaceName(String placeName) {
+		this.placeName = placeName;
+	}
+
 	public String getDescription() {
 		return description;
 	}
