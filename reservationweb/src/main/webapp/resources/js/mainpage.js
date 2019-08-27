@@ -18,10 +18,10 @@ function updateImageSlider() {
 
 			insertItemList = JSON.parse(httpRequest.responseText);
 
-			for ( var key in insertItemList.items) {
-				insertItem = promotionTemplate.replace("${productImageUrl}",insertItemList.items[key].productImageUrl)
-				.replace("${description}",insertItemList.items[key].description)
-				.replace("${placeName}",insertItemList.items[key].placeName);
+			for ( var key in insertItemList) {
+				insertItem = promotionTemplate.replace("${productImageUrl}",insertItemList[key].productImageUrl)
+				.replace("${description}",insertItemList[key].description)
+				.replace("${placeName}",insertItemList[key].placeName);
 				promotionBox.innerHTML += insertItem;
 			}
 

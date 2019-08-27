@@ -11,7 +11,6 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import or.connect.reservationweb.dto.category.CategoryDto;
-import or.connect.reservationweb.dto.category.CategoryListDto;
 
 @Repository
 public class CategoryDao {

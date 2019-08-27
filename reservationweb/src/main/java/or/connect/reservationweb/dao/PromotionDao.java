@@ -11,7 +11,6 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import or.connect.reservationweb.dto.promotion.PromotionDto;
-import or.connect.reservationweb.dto.promotion.PromotionListDto;
 
 @Repository
 public class PromotionDao {
