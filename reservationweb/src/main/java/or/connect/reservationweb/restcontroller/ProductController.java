@@ -1,4 +1,5 @@
 package or.connect.reservationweb.restcontroller;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,11 +18,11 @@ public class ProductController {
 	ProductListService productListService;
 	@Autowired
 	ProductDisplayService productDisplayService;
-	
+
 	@GetMapping("/api/products")
-	public ProductListDto getProductList(@RequestParam(value="categoryId", defaultValue="0") int categoryId, 
-			@RequestParam(value="start", defaultValue="0") int start) {
-		return productListService.getProductList(categoryId,start);
+	public ProductListDto getProductList(@RequestParam(value = "categoryId", defaultValue = "0") int categoryId,
+			@RequestParam(value = "start", defaultValue = "0") int start) {
+		return productListService.getProductList(categoryId, start);
 	}
 
 	@GetMapping("/api/products/{displayInfoId}")

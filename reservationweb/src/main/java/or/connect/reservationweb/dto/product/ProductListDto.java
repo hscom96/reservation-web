@@ -26,10 +26,10 @@ public class ProductListDto {
 	}
 
 	public void setItems(List<ProductDto> items) {
-		if (items == null) {
+		if (items == null) 
 			this.items = null;
-		} else {
+		else 
 			this.items.addAll(items);
-		}
+		
 	}
 }

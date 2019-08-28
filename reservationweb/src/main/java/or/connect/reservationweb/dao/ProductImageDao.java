@@ -15,42 +15,40 @@ import or.connect.reservationweb.dto.productInfo.ProductImageDto;
 
 @Repository
 public class ProductImageDao {
-	
+
 	private JdbcTemplate jdbcTemplate;
 
 	@Autowired
 	public ProductImageDao(DataSource dataSource) {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
-	
 
 	public List<ProductImageDto> getProductImage(int displayInfoId) {
-		List<ProductImageDto> productImageList = jdbcTemplate
-				.query("SELECT product.id AS productId, product_image.id AS productImageId, product_image.type, "
+		List<ProductImageDto> productImageList = jdbcTemplate.query(
+				"SELECT product.id AS productId, product_image.id AS productImageId, product_image.type, "
 						+ "file_info.id AS fileInfoId, file_info.save_file_name, file_info.content_type, file_info.delete_flag, "
 						+ "file_info.create_date, file_info.modify_date, file_info.file_name "
 						+ "FROM product INNER JOIN product_image ON product.id = product_image.product_id "
 						+ "INNER JOIN file_info ON product_image.file_id = file_info.id "
 						+ "INNER JOIN display_info ON product.id = display_info.product_id "
-						+ "WHERE product_image.type IN ('ma','et') AND display_info.id = ?"
-						,
-						new RowMapper<ProductImageDto>(){
-							@Override
-							public ProductImageDto mapRow(ResultSet rs, int rowNum) throws SQLException {
-								ProductImageDto productImageDto = new ProductImageDto();
+						+ "WHERE product_image.type IN ('ma','et') AND display_info.id = ?",
+				new RowMapper<ProductImageDto>() {
+					@Override
+					public ProductImageDto mapRow(ResultSet rs, int rowNum) throws SQLException {
+						ProductImageDto productImageDto = new ProductImageDto();
 
-								productImageDto.setCreateDate(rs.getString("create_date"));
-								productImageDto.setDeleteFlag(rs.getString("delete_flag"));
-								productImageDto.setFileInfoId(rs.getInt("fileInfoId"));
-								productImageDto.setFileName(rs.getString("file_name"));
-								productImageDto.setModifyDate(rs.getString("modify_date"));
-								productImageDto.setProductId(rs.getInt("productId"));
-								productImageDto.setProductImageId(rs.getInt("productImageId"));
-								productImageDto.setSaveFileName(rs.getString("save_file_name"));
-								productImageDto.setType(rs.getString("type"));
-								return productImageDto;
-							}
-						}, displayInfoId);
+						productImageDto.setCreateDate(rs.getString("create_date"));
+						productImageDto.setDeleteFlag(rs.getString("delete_flag"));
+						productImageDto.setFileInfoId(rs.getInt("fileInfoId"));
+						productImageDto.setFileName(rs.getString("file_name"));
+						productImageDto.setModifyDate(rs.getString("modify_date"));
+						productImageDto.setProductId(rs.getInt("productId"));
+						productImageDto.setProductImageId(rs.getInt("productImageId"));
+						productImageDto.setSaveFileName(rs.getString("save_file_name"));
+						productImageDto.setType(rs.getString("type"));
+						return productImageDto;
+					}
+				}, displayInfoId);
 
 		return productImageList.isEmpty() ? null : productImageList;
 	}
@@ -63,9 +61,7 @@ public class ProductImageDao {
 						+ "FROM product INNER JOIN display_info ON product.id = display_info.product_id "
 						+ "INNER JOIN display_info_image ON display_info.id = display_info_image.display_info_id "
 						+ "INNER JOIN file_info ON display_info_image.file_id = file_info.id "
-						+ "WHERE display_info.id = ?"
-						,
-						new RowMapper<DisplayInfoImageDto>(){
+						+ "WHERE display_info.id = ?", new RowMapper<DisplayInfoImageDto>() {
 							@Override
 							public DisplayInfoImageDto mapRow(ResultSet rs, int rowNum) throws SQLException {
 								DisplayInfoImageDto displayInfoImageDto = new DisplayInfoImageDto();
@@ -86,5 +82,4 @@ public class ProductImageDao {
 
 		return displayInfoImageList.isEmpty() ? null : displayInfoImageList.get(0);
 	}
-	
 }

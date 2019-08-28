@@ -26,14 +26,15 @@ public class PromotionDao {
 		List<PromotionDto> promotionList = jdbcTemplate.query(
 				"SELECT promotion.id, promotion.product_id as productId, file_info.save_file_name as productImageUrl, product.description, display_info.place_name as placeName "
 						+ "from promotion JOIN product ON promotion.product_id = product.id "
-						+ "INNER JOIN display_info ON product.id = display_info.product_id "						
+						+ "INNER JOIN display_info ON product.id = display_info.product_id "
 						+ "INNER JOIN product_image ON promotion.product_id = product_image.product_id AND product_image.type=\"th\" "
 						+ "INNER JOIN file_info ON product_image.file_id = file_info.id ",
 				new RowMapper<PromotionDto>() {
 					@Override
 					public PromotionDto mapRow(ResultSet rs, int rowNum) throws SQLException {
 						PromotionDto promotionDto = new PromotionDto(rs.getInt("id"), rs.getInt("productId"),
-								rs.getString("productImageUrl"), rs.getString("description"), rs.getString("placeName"));
+								rs.getString("productImageUrl"), rs.getString("description"),
+								rs.getString("placeName"));
 						return promotionDto;
 					}
 				});

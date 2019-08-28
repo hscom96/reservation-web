@@ -1,95 +1,77 @@
-package or.connect.reservationweb.dto.productInfo;
+package or.connect.reservationweb.dto.comment;
 
-public class ProductImageDto {
-	private int productId;
-	private int productImageId;
-	private String type;
-	private int fileInfoId;
+public class CommentImageDto {
+	private int imageId;
+	private int reservationInfoId;
+	private int reservationUserCommentId;
+	private int fileId;
 	private String fileName;
 	private String saveFileName;
 	private String contentType;
-	private String deleteFlag;
+	private Boolean deleteFlag;
 	private String createDate;
 	private String modifyDate;
-
-	public int getProductId() {
-		return productId;
+	
+	public int getImageId() {
+		return imageId;
 	}
-
-	public void setProductId(int productId) {
-		this.productId = productId;
+	public void setImageId(int imageId) {
+		this.imageId = imageId;
 	}
-
-	public int getProductImageId() {
-		return productImageId;
+	public int getReservationInfoId() {
+		return reservationInfoId;
 	}
-
-	public void setProductImageId(int productImageId) {
-		this.productImageId = productImageId;
+	public void setReservationInfoId(int reservationInfoId) {
+		this.reservationInfoId = reservationInfoId;
 	}
-
-	public String getType() {
-		return type;
+	public int getReservationUserCommentId() {
+		return reservationUserCommentId;
 	}
-
-	public void setType(String type) {
-		this.type = type;
+	public void setReservationUserCommentId(int reservationUserCommentiD) {
+		this.reservationUserCommentId = reservationUserCommentiD;
 	}
-
-	public int getFileInfoId() {
-		return fileInfoId;
+	public int getFileId() {
+		return fileId;
 	}
-
-	public void setFileInfoId(int fileInfoId) {
-		this.fileInfoId = fileInfoId;
+	public void setFileId(int fileId) {
+		this.fileId = fileId;
 	}
-
 	public String getFileName() {
 		return fileName;
 	}
-
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
-
 	public String getSaveFileName() {
 		return saveFileName;
 	}
-
 	public void setSaveFileName(String saveFileName) {
 		this.saveFileName = saveFileName;
 	}
-
 	public String getContentType() {
 		return contentType;
 	}
-
 	public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
-
-	public String getDeleteFlag() {
+	public Boolean getDeleteFlag() {
 		return deleteFlag;
 	}
-
-	public void setDeleteFlag(String deleteFlag) {
+	public void setDeleteFlag(Boolean deleteFlag) {
 		this.deleteFlag = deleteFlag;
 	}
-
 	public String getCreateDate() {
 		return createDate;
 	}
-
 	public void setCreateDate(String createDate) {
 		this.createDate = createDate;
 	}
-
 	public String getModifyDate() {
 		return modifyDate;
 	}
-
 	public void setModifyDate(String modifyDate) {
 		this.modifyDate = modifyDate;
-
 	}
+	
+	
 }

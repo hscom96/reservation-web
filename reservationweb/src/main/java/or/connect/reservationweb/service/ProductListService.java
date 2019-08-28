@@ -16,15 +16,15 @@ public class ProductListService {
 		ProductListDto productListDto = new ProductListDto();
 		int totalCount = productDao.getTotalCount(categoryId);
 
-		if(categoryId == 0) {
+		if (categoryId == 0) {
 			productListDto.setItems(productDao.getProductList(start));
 			productListDto.setTotalCount(productDao.getTotalCount());
-		}else {
+		} else {
 			productListDto.setItems(productDao.getProductList(categoryId, start));
 			productListDto.setTotalCount(totalCount);
 		}
-		
+
 		return productListDto;
 	}
-	
+
 }

@@ -14,31 +14,20 @@ function updateDisplayInfoSet() {
 			displayInfoSet = JSON.parse(httpRequest.responseText);
 			
 			updateSliderImage(displayInfoSet);
-			runSlider();
 			updateProductContent(displayInfoSet);
-			changeProductContent();
 			updateEventInfo(displayInfoSet);
+			updateReviewHeader(displayInfoSet);
+			updateReview(displayInfoSet);
+			updateMoreReviewBtn(displayInfoSet);
 			updateDetailTab(displayInfoSet);
+			runSlider();
+			changeProductContent();
 			changeDetailTab();
 		}
 	};
 
 	httpRequest.open("GET", "/reservationweb/api/products/" + displayId, true);
 	httpRequest.send();
-}
-
-// 해당 name의 파라미터 값 반환
-function getParam(sname) {
-	var params = location.search.substr(location.search.indexOf("?") + 1);
-	var sval = "";
-	params = params.split("&");
-	for (var i = 0; i < params.length; i++) {
-		temp = params[i].split("=");
-		if ([ temp[0] ] == sname) {
-			sval = temp[1];
-		}
-	}
-	return sval;
 }
 
 // 슬라이더 이미지 등록
@@ -51,7 +40,6 @@ function updateSliderImage(displayInfoSet) {
 			"productDescription":displayInfoSet.displayInfo.productDescription,
 			"productImages":displayInfoSet.productImages
 	};
-	
 	
 	slider.innerHTML =  bindTemplate(data);
 }
@@ -123,6 +111,28 @@ function updateEventInfo(displayInfoSet){
 	discountEvent.innerHTML = insertHTML;
 }
 
+function updateReviewHeader(displayInfoSet){
+	var averageStar = document.querySelector(".grade_area .graph_mask .graph_value");
+	var averageScore = document.querySelector(".section_review_list .short_review_area .grade_area .text_value span"); 
+	var totalReviewCount = document.querySelector(".grade_area .join_count em");
+	
+	averageStar.style.width = 100*displayInfoSet.averageScore.toFixed(1)/5.0+"%"; 
+	averageScore.innerHTML = displayInfoSet.averageScore.toFixed(1);
+	totalReviewCount.innerHTML = displayInfoSet.comments.length +"건";
+}
+
+function updateReview(displayInfoSet){
+	var reviewBox = document.querySelector("ul.list_short_review");
+	var reviewTemplate = document.querySelector("#reviewTemplate").innerHTML;
+	var bindTemplate = Handlebars.compile(reviewTemplate);
+	
+	//reviewBox.innerHTML  = bindTemplate(displayInfoSet.comments);
+}
+
+function updateMoreReviewBtn(displayInfoSet){
+	var moreReviewBtn = document.querySelector("a.btn_review_more");
+	moreReviewBtn.setAttribute('href', "/reservationweb/review?id=" + displayInfoSet.displayInfo.displayInfoId);
+}
 
 // 상품설명 저장
 function updateProductContent(displayInfoSet){
