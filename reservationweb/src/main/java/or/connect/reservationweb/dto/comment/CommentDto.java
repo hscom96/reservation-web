@@ -115,7 +115,7 @@ public class CommentDto {
 
 	public void setCommentImages(List<CommentImageDto> commentImages) {
 		if(commentImages == null) 
-			commentImages=null;
+			this.commentImages=null;
 		else 
 			this.commentImages.addAll(commentImages);
 	}

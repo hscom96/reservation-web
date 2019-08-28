@@ -2,6 +2,7 @@ package or.connect.reservationweb.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
@@ -64,7 +65,7 @@ public class ReservationCommentDao {
 					}
 				}, displayInfoId);
 
-		return commentList.isEmpty() ? null : commentList;
+		return commentList.isEmpty() ? new ArrayList() : commentList;
 	}
 
 }

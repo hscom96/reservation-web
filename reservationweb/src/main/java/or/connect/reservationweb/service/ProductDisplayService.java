@@ -37,10 +37,13 @@ public class ProductDisplayService {
 		productDisplayDto.setDisplayInfoImage(productImageDao.getDisplayInfoImage(displayInfoId));
 		
 		List<CommentDto> commentList = reservationCommentDao.getComment(displayInfoId);
+		
+
 		commentList.forEach(item -> {
 			List<CommentImageDto> commentImageList = reservationCommentImageDao.getCommentImage(item.getCommentId());
 			item.setCommentImages(commentImageList);
 		});
+		
 		productDisplayDto.setComments(commentList);
 		return productDisplayDto;
 	}
