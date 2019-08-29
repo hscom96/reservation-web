@@ -11,6 +11,8 @@
 	content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 <title>네이버 예약</title>
 <link href="resources/css/style.css" rel="stylesheet" />
+<script src="resources/js/handlebars-v4.1.2.js" type="text/javascript"
+	charset="UTF-8"></script>
 <script src="resources/js/commonFunction.js" type="text/javascript"
 	charset="UTF-8"></script>
 <script src="resources/js/review.js" type="text/javascript"
@@ -57,41 +59,6 @@
 								</strong> <span class="join_count"><em class="green">20건</em> 등록</span>
 							</div>
 							<ul class="list_short_review">
-								<li class="list_item">
-									<div>
-										<div class="review_area">
-											<div class="thumb_area">
-												<a href="#" class="thumb" title="이미지 크게 보기"> <img
-													width="90" height="90" class="img_vertical_top"
-													src="https://ssl.phinf.net/naverbooking/20170410_7/1491785083711GqT4T_PNG/image.png?type=f300_300"
-													alt="리뷰이미지">
-												</a> <span class="img_count">1</span>
-											</div>
-											<h4 class="resoc_name">뮤지컬_드림걸즈(DREAMGIRLS)_최초_내한</h4>
-											<p class="review">넘넘 재밌었어요!!!에피랑 지미 짱!!!!!</p>
-										</div>
-										<div class="info_area">
-											<div class="review_info">
-												<span class="grade">5.0</span> <span class="name">tnql****</span>
-												<span class="date">2017.4.9. 방문</span>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="list_item">
-									<div>
-										<div class="review_area no_img">
-											<h4 class="resoc_name">뮤지컬_드림걸즈(DREAMGIRLS)_최초_내한</h4>
-											<p class="review">최고예요!! 기회가 된다면 내한 공연 중 한 번 더 보고싶어요...</p>
-										</div>
-										<div class="info_area">
-											<div class="review_info">
-												<span class="grade">5.0</span> <span class="name">dnql****</span>
-												<span class="date">2017.4.8. 방문</span>
-											</div>
-										</div>
-									</div>
-								</li>
 							</ul>
 						</div>
 						<p class="guide">
@@ -115,28 +82,36 @@
 			<span class="copyright">© NAVER Corp.</span>
 		</div>
 	</footer>
-	<script type="rv-template" id="itemList">
-		<li class="list_item">
-			<div>
-				<div class="review_area">
-					<div class="thumb_area">
-						<a href="#" class="thumb" title="이미지 크게 보기"> <img
-							width="90" height="90" class="img_vertical_top"
-							src="https://ssl.phinf.net/naverbooking/20170410_7/1491785083711GqT4T_PNG/image.png?type=f300_300"
-							alt="리뷰이미지">
-						</a> <span class="img_count">1</span>
-					</div>
-					<h4 class="resoc_name">뮤지컬_드림걸즈(DREAMGIRLS)_최초_내한</h4>
-					<p class="review">넘넘 재밌었어요!!!에피랑 지미 짱!!!!!</p>
-				</div>
-				<div class="info_area">
-					<div class="review_info">
-						<span class="grade">5.0</span> <span class="name">tnql****</span>
-						<span class="date">2017.4.9. 방문</span>
-					</div>
-				</div>
+	<script type="rv-template" id="reviewTemplate">
+{{#each comments}}
+<li class="list_item">
+	<div>
+		{{#if commentImages}}
+		<div class="review_area">
+			<div class="thumb_area">
+				<a href="#" class="thumb" title="이미지 크게 보기"> <img width="90"
+					height="90" class="img_vertical_top"
+					src="resources/{{filePath this}}" alt="리뷰이미지">
+				</a> <span class="img_count">{{commentImages.length}}</span>
 			</div>
-		</li>
+			<h4 class="resoc_name">{{../displayInfo/productDescription}}</h4>
+			<p class="review">{{this.comment}}</p>
+		</div>
+		{{else}}
+		<div class="review_area no_img">
+			<h4 class="resoc_name">{{../displayInfo/productDescription}}</h4>
+			<p class="review">{{this.comment}}</p>
+		</div>
+		{{/if}}
+		<div class="info_area">
+			<div class="review_info">
+				<span class="grade">{{this.score}}</span> <span class="name">{{this.reservationName}}</span>
+				<span class="date">{{this.reservationDate}} 방문</span>
+			</div>
+		</div>
+	</div>
+</li> 
+{{/each}}
 	</script>
 </body>
 

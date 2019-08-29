@@ -126,7 +126,21 @@ function updateReview(displayInfoSet){
 	var reviewTemplate = document.querySelector("#reviewTemplate").innerHTML;
 	var bindTemplate = Handlebars.compile(reviewTemplate);
 	
-	//reviewBox.innerHTML  = bindTemplate(displayInfoSet.comments);
+	var data = {
+			displayInfo : displayInfoSet.displayInfo,
+			comments :  displayInfoSet.comments.slice(0,3)
+	};
+	
+	Handlebars.registerHelper('filePath', function(item) {
+	    return item.commentImages.shift().saveFileName;
+	});
+	
+	Handlebars.registerHelper('countImg', function(item) {
+	    return item.commentImages.length;
+	});
+	
+	reviewBox.innerHTML  = bindTemplate(data);
+	
 }
 
 function updateMoreReviewBtn(displayInfoSet){

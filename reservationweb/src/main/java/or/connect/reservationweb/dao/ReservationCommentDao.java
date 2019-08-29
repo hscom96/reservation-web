@@ -53,7 +53,7 @@ public class ReservationCommentDao {
 						commentDto.setCommentId(rs.getInt("commentId"));
 						commentDto.setProductId(rs.getInt("productId"));
 						commentDto.setReservationInfoId(rs.getInt("reservationInfoId"));
-						commentDto.setScore(rs.getInt("score"));
+						commentDto.setScore(rs.getDouble("score"));
 						commentDto.setComment(rs.getString("comment"));
 						commentDto.setReservationName(rs.getString("reservation_name"));
 						commentDto.setReservationTelephone(rs.getString("reservation_tel"));

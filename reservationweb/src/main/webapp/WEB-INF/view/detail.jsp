@@ -153,7 +153,7 @@
 								이용자가 남긴 평가입니다.</span>
 						</p>
 					</div>
-					<a class="btn_review_more" href="/reservationweb/review"> <span>예매자
+					<a class="btn_review_more" href="reservationweb/review"> <span>예매자
 							한줄평 더보기</span> <i class="fn fn-forward1"></i>
 					</a>
 				</div>
@@ -262,29 +262,35 @@
 	</script>
 
 	<script type="dt-tepmlate" id="reviewTemplate">
-	{{#each this}}
-		<li class="list_item">
-			<div>
-				<div class="review_area">
-					<div class="thumb_area">
-						<a href="#" class="thumb" title="이미지 크게 보기"> <img
-							width="90" height="90" class="img_vertical_top"
-							src="resources/{{this.commentImages}}"
-							alt="리뷰이미지">
-						</a> <span class="img_count" style="display: none;">1</span>
-					</div>
-					<h4 class="resoc_name"></h4>
-					<p class="review">{{this.comment}}</p>
-				</div>
-				<div class="info_area">
-					<div class="review_info">
-						<span class="grade">{{this.score}}</span> <span class="name">{{this.reservationName}}</span>
-						<span class="date">{{this.reservationDate}} 방문</span>
-					</div>
-				</div>
+{{#each comments}} 
+<li class="list_item">
+	<div>
+		{{#if this.commentImages}}
+		<div class="review_area">
+			<div class="thumb_area">
+				<a href="#" class="thumb" title="이미지 크게 보기"> <img width="90"
+					height="90" class="img_vertical_top"
+					src="resources/{{filePath this}}" alt="리뷰이미지">
+				</a> <span class="img_count">{{countImg this}}</span>
 			</div>
-		</li>
-	{{/each}}
+			<h4 class="resoc_name">{{../displayInfo/productDescription}}</h4>
+			<p class="review">{{this.comment}}</p>
+		</div>
+		{{else}}
+		<div class="review_area no_img">
+			<h4 class="resoc_name">{{../displayInfo/productDescription}}</h4>
+			<p class="review">{{this.comment}}</p>
+		</div>
+		{{/if}}
+		<div class="info_area">
+			<div class="review_info">
+				<span class="grade">{{this.score}}</span> <span class="name">{{this.reservationName}}</span>
+				<span class="date">{{this.reservationDate}} 방문</span>
+			</div>
+		</div>
+	</div>
+</li> 
+{{/each}}
 	</script>
 
 </body>
