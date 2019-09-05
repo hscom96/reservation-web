@@ -26,3 +26,4 @@ function getParam(sname) {
 	}
 	return sval;
 }
+

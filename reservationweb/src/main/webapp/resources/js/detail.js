@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function updateDisplayInfoSet() {
-	var httpRequest = new XMLHttpRequest();
-	var displayInfoSet;
-	var displayId = getParam("id");
+	let httpRequest = new XMLHttpRequest();
+	let displayInfoSet;
+	let displayId = getParam("id");
 
 	httpRequest.onreadystatechange = function() {
 
@@ -32,13 +32,13 @@ function updateDisplayInfoSet() {
 
 // 슬라이더 이미지 등록
 function updateSliderImage(displayInfoSet) {
-	var slider = document.querySelector(".group_visual .detail_swipe");
-	var imageTemplate = document.querySelector("#slideItemTemplate").innerHTML;
-	var bindTemplate = Handlebars.compile(imageTemplate);
+	let slider = document.querySelector(".group_visual .detail_swipe");
+	let imageTemplate = document.querySelector("#slideItemTemplate").innerHTML;
+	let bindTemplate = Handlebars.compile(imageTemplate);
 	
-	var data = {
+	let data = {
 			"productDescription":displayInfoSet.displayInfo.productDescription,
-			"productImages":displayInfoSet.productImages
+			"productImages":displayInfoSet.productImages.slice(0,2)
 	};
 	
 	slider.innerHTML =  bindTemplate(data);
@@ -46,20 +46,20 @@ function updateSliderImage(displayInfoSet) {
 
 // 슬라이더 동작
 function runSlider() {
-	var sliderBox = document.querySelector("#sliderWrap");
-	var slider = document.querySelector(".group_visual .detail_swipe");
-	var images = document.querySelectorAll(".group_visual .visual_img .item");
-	var totalCount = images.length;
-	var sliderWidth = 414;
-	var sliderIndex = 0;
+	let sliderBox = document.querySelector("#sliderWrap");
+	let slider = document.querySelector(".group_visual .detail_swipe");
+	let images = document.querySelectorAll(".group_visual .visual_img .item");
+	let totalCount = images.length;
+	let sliderWidth = 414;
+	let sliderIndex = 0;
 
-	var paginition_current = document
+	let paginition_current = document
 			.querySelector(".figure_pagination #current");
-	var paginition_total = document
+	let paginition_total = document
 			.querySelector(".figure_pagination .off #total");
 
-	var nextBtn = document.querySelector("div.nxt");
-	var prevBtn = document.querySelector("div.prev");
+	let nextBtn = document.querySelector("div.nxt");
+	let prevBtn = document.querySelector("div.prev");
 
 	pagination();
 	removeSlideBtn();
@@ -78,14 +78,13 @@ function runSlider() {
 	}
 
 	function showSlides(n) {
-		slideIndex = n;
 		if (sliderIndex == -1) {
 			sliderIndex = totalCount - 1;
-		} else if (slideIndex === totalCount) {
+		} else if (sliderIndex === totalCount) {
 			sliderIndex = 0;
 		}
-
-		slider.style.left = -(sliderWidth * sliderIndex) + 'px';
+		
+		slider.style.transform = "translate(-" + (sliderWidth * sliderIndex) + "px,0)";
 	}
 
 	function pagination() {
@@ -101,32 +100,38 @@ function runSlider() {
 	}
 }
 
+//이벤트정보 업데이트
 function updateEventInfo(displayInfoSet){
-	var discountEvent = document.querySelector(".section_event .event_info_box .event_info .in_dsc");
-	var insertHTML = "[네이버예약 특별할인] <br>";
+	let discountEvent = document.querySelector(".section_event .event_info_box .event_info .in_dsc");
+	let insertHTML = "[네이버예약 특별할인] <br>";
+	let temp=[];
+	
 	displayInfoSet.productPrices.forEach(value=>{
-		insertHTML += value.priceTypeName+"석 "
+		temp.push( value.priceTypeName+"석 "+value.discountRate+"%");
 			});
 	
+	insertHTML += temp.join(', ') + " 할인";
 	discountEvent.innerHTML = insertHTML;
 }
 
+//예매자 한줄평 헤더부분 업데이트
 function updateReviewHeader(displayInfoSet){
-	var averageStar = document.querySelector(".grade_area .graph_mask .graph_value");
-	var averageScore = document.querySelector(".section_review_list .short_review_area .grade_area .text_value span"); 
-	var totalReviewCount = document.querySelector(".grade_area .join_count em");
+	let averageStar = document.querySelector(".grade_area .graph_mask .graph_value");
+	let averageScore = document.querySelector(".section_review_list .short_review_area .grade_area .text_value span"); 
+	let totalReviewCount = document.querySelector(".grade_area .join_count em");
 	
 	averageStar.style.width = 100*displayInfoSet.averageScore.toFixed(1)/5.0+"%"; 
 	averageScore.innerHTML = displayInfoSet.averageScore.toFixed(1);
 	totalReviewCount.innerHTML = displayInfoSet.comments.length +"건";
 }
 
+//예매자 한줄평 업데이트
 function updateReview(displayInfoSet){
-	var reviewBox = document.querySelector("ul.list_short_review");
-	var reviewTemplate = document.querySelector("#reviewTemplate").innerHTML;
-	var bindTemplate = Handlebars.compile(reviewTemplate);
+	let reviewBox = document.querySelector("ul.list_short_review");
+	let reviewTemplate = document.querySelector("#reviewTemplate").innerHTML;
+	let bindTemplate = Handlebars.compile(reviewTemplate);
 	
-	var data = {
+	let data = {
 			displayInfo : displayInfoSet.displayInfo,
 			comments :  displayInfoSet.comments.slice(0,3)
 	};
@@ -144,7 +149,7 @@ function updateReview(displayInfoSet){
 }
 
 function updateMoreReviewBtn(displayInfoSet){
-	var moreReviewBtn = document.querySelector("a.btn_review_more");
+	let moreReviewBtn = document.querySelector("a.btn_review_more");
 	moreReviewBtn.setAttribute('href', "/reservationweb/review?id=" + displayInfoSet.displayInfo.displayInfoId);
 }
 
@@ -169,20 +174,20 @@ function changeProductContent(){
 
 // 카태고리탭 정보저장
 function updateDetailTab(displayInfoSet){
-	var content = document.querySelector(".detail_area .detail_info .detail_info_group .detail_info_lst .in_dsc");
-	var title = document.querySelector(".box_store_info .store_name");
-	var new_addr = document.querySelector(".store_addr_wrap .store_addr");
-	var old_addr = document.querySelector(".store_addr_wrap .store_addr .addr_old_detail");
-	var store_addr = document.querySelector("p.store_addr.addr_detail");
-	var store_tel= document.querySelector("a.store_tel");
-	var map = document.querySelector("img.store_map");
+	let content = document.querySelector(".detail_area .detail_info .detail_info_group .detail_info_lst .in_dsc");
+	let title = document.querySelector(".box_store_info .store_name");
+	let newAddr = document.querySelector(".store_addr_wrap .store_addr");
+	let oldAddr = document.querySelector(".store_addr_wrap .store_addr .addr_old_detail");
+	let storeAddr = document.querySelector("p.store_addr.addr_detail");
+	let storeTel= document.querySelector("a.store_tel");
+	let map = document.querySelector("img.store_map");
 	
 	content.innerHTML = displayInfoSet.displayInfo.productContent;
 	title.innerHTML = displayInfoSet.displayInfo.categoryName +" - " + displayInfoSet.displayInfo.productDescription
-	new_addr.innerHTML = displayInfoSet.displayInfo.placeStreet;
-	old_addr.innerHTML = displayInfoSet.displayInfo.placeLot;
-	store_addr.innerHTML = displayInfoSet.displayInfo.placeName;
-	store_tel.innerHTML = displayInfoSet.displayInfo.telephone;
+	newAddr.innerHTML = displayInfoSet.displayInfo.placeStreet;
+	oldAddr.innerHTML = displayInfoSet.displayInfo.placeLot;
+	storeAddr.innerHTML = displayInfoSet.displayInfo.placeName;
+	storeTel.innerHTML = displayInfoSet.displayInfo.telephone;
 	map.src = "resources/" +  displayInfoSet.displayInfoImage.saveFileName;
 }
 
@@ -190,7 +195,7 @@ function updateDetailTab(displayInfoSet){
 
 // 상세정보-오시는길 탭 변경
 function changeDetailTab() {
-	var infoTab = document.querySelector(".section_info_tab .info_tab_lst");
+	let infoTab = document.querySelector(".section_info_tab .info_tab_lst");
 
 	infoTab.addEventListener('click', function(evt) {
 		if (evt.target.tagName === "SPAN" || evt.target.tagName === "A") {
@@ -201,11 +206,11 @@ function changeDetailTab() {
 
 	// 카테고리탭변경
 	function changeTab(evt) {
-		var detailTab = document
+		let detailTab = document
 				.querySelector(".info_tab_lst ._detail .anchor span");
-		var locationTab = document
+		let locationTab = document
 				.querySelector(".info_tab_lst ._path .anchor span");
-		var currentTab = document.querySelector("a.anchor.active span");
+		let currentTab = document.querySelector("a.anchor.active span");
 
 		if (evt.target === detailTab || evt.target === locationTab) {
 			if (!(evt.target === currentTab)) {
@@ -223,9 +228,9 @@ function changeDetailTab() {
 	
 	// 카테고리탭 내용 전환
 	function showContent(){
-		var detailContent = document.querySelector("div.detail_area_wrap");
-		var locationContent = document.querySelector("div.detail_location");
-		var currentTab = document.querySelector("a.anchor.active span").innerHTML;
+		let detailContent = document.querySelector("div.detail_area_wrap");
+		let locationContent = document.querySelector("div.detail_location");
+		let currentTab = document.querySelector("a.anchor.active span").innerHTML;
 		
 		if(currentTab === "상세정보"){
 			detailContent.classList.remove("hide");
@@ -235,4 +240,10 @@ function changeDetailTab() {
 			locationContent.classList.remove("hide");
 		}
 	}
+	
+}
+
+
+function pressRsvBtn(){
+	location.href = "/reservationweb/reserve?id=" + getParam("id");
 }

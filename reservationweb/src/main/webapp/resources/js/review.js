@@ -27,9 +27,9 @@ function updateDisplayInfoSet() {
 	httpRequest.send();
 }
 
-function updateBackBtn(displayInfoSet){
+function updateBackBtn(){
 	var backBtn = document.querySelector("a.btn_back");
-	backBtn.setAttribute('href', '/reservationweb/detail?id='+displayInfoSet.displayInfo.displayInfoId);
+	backBtn.setAttribute('href', '/reservationweb/detail?id='+getParam('id'));
 };
 
 function updateReviewHeader(displayInfoSet){

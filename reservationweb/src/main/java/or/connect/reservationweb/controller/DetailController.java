@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DetailController {
 
 	@GetMapping("/detail")
-	public String detailView(@RequestParam(value = "id", required = true) int displayId, Model model) {
+	public String ShowDetailView(@RequestParam(value = "id", required = true) int displayId, Model model) {
 		model.addAttribute("displayId", displayId);
 		return "detail";
 	}
