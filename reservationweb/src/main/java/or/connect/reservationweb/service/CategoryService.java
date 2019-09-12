@@ -11,7 +11,7 @@ import or.connect.reservationweb.dto.category.CategoryDto;
 @Service
 public class CategoryService {
 	@Autowired
-	CategoryDao categoryDao;
+	private CategoryDao categoryDao;
 
 	public List<CategoryDto> getCategoryList() {
 		return categoryDao.getCategoryList();

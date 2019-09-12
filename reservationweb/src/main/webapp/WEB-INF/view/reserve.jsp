@@ -31,7 +31,7 @@
 						class="spr_bi ico_bk_logo">예약</span>
 					</a>
 				</h1>
-				<a href="#" class="btn_my"> <span title="예약확인">예약확인</span>
+				<a class="btn_my"> <span title="예약확인">예약확인</span>
 				</a>
 			</header>
 		</div>
@@ -49,33 +49,16 @@
 					<div class="container_visual" style="width: 414px;">
 						<ul class="visual_img">
 							<li class="item" style="width: 414px;"><img alt=""
-								class="img_thumb">
-								<span class="img_bg"></span>
-								<div class="preview_txt">
-									<h2 class="preview_txt_tit"></h2>
-									<em class="preview_txt_dsc">₩12,000 ~ </em><em
-										class="preview_txt_dsc">2017.2.17.(금)~2017.4.18.(화), 잔여티켓
-										2769매</em>
-								</div></li>
+								class="img_thumb"> <span class="img_bg"></span></li>
 						</ul>
 					</div>
 				</div>
 				<div class="section_store_details">
 					<div class="store_details">
-						<h3 class="in_tit"></h3>
-						<p class="dsc">
-							장소 : <br> 기간 : 2017.2.17.(금)~2017.4.18.(화)
-						</p>
-						<h3 class="in_tit">관람시간</h3>
-						<p id="showTime" class="dsc">
-							화, 목, 금 일요일 10:00am~06:00pm(입장마감 05:30pm)<br> ‘문화가 있는 날’ 매월
-							마지막 주 수요일은 오후 8시까지 연장
-						</p>
-						<h3 class="in_tit">요금</h3>
-						<p class="dsc">
-							성인(만 19~64세) 5,000원 / 청소년(만 13~18세) 4,000원<br> 어린이(만 4~12세)
-							3,000원 / 20인 이상 단체 20% 할인<br> 국가유공자, 장애인, 65세 이상 4,000원
-						</p>
+						<h3 class="in_tit">제목</h3>
+						<p id="showTitle" class="dsc"></p>
+						<h3 class="in_tit">추가정보</h3>
+						<p id="showTime" class="dsc"></p>
 					</div>
 				</div>
 				<div class="section_booking_ticket">
@@ -118,7 +101,7 @@
 									</label>
 									<div class="inline_control">
 										<input type="text" name="name" id="name" class="text"
-											placeholder="네이버" maxlength="17">
+											placeholder="예) 홍길동" maxlength="17">
 									</div>
 								</div>
 								<div class="inline_form">
@@ -137,14 +120,15 @@
 									</label>
 									<div class="inline_control">
 										<input type="email" name="email" id="email" class="email"
-											value="" placeholder="crong@codesquad.kr" maxlength="50">
+											value="" placeholder="예) crong@codesquad.kr" maxlength="50">
 									</div>
 								</div>
 								<div class="inline_form last">
 									<label class="label" for="message">예매내용</label>
 									<div class="inline_control">
 										<p class="inline_txt selected">
-											2017.2.17, 총 <span id="totalCount">16</span>매
+											<span id="reservationDate"> 2017.2.17 </span>, 총 <span
+												id="totalCount">0</span>매
 										</p>
 									</div>
 								</div>
@@ -165,8 +149,8 @@
 						<div class="agreement">
 							<span class="chk_txt_span"> <i
 								class="spr_book ico_arr_ipc2"></i> <span>개인정보 수집 및 이용 동의</span>
-							</span> <a href="#" class="btn_agreement"> <span class="btn_text">보기</span>
-								<i class="fn fn-down2"></i>
+							</span> <a class="btn_agreement"> <span class="btn_text">보기</span> <i
+								class="fn fn-down2"></i>
 							</a>
 							<div class="useragreement_details">
 								&lt;개인정보 수집 및 이용 동의&gt;<br> <br> 1. 수집항목 : [필수] 이름,
@@ -183,8 +167,8 @@
 						<div class="agreement">
 							<span class="chk_txt_span"> <i
 								class="spr_book ico_arr_ipc2"></i> <span>개인정보 제3자 제공 동의</span>
-							</span> <a href="#" class="btn_agreement"> <span class="btn_text">보기</span>
-								<i class="fn fn-down2"></i>
+							</span> <a class="btn_agreement"> <span class="btn_text">보기</span> <i
+								class="fn fn-down2"></i>
 							</a>
 							<div class="useragreement_details custom_details_wrap">
 								<div class="custom_details">
@@ -226,7 +210,7 @@
 
 	<script type="rv-template" id="reserveTemplate">
 	{{#each this}}
-	<div class="qty">
+	<div class="qty" data-productPriceId="{{productPriceId}}">
 		<div class="count_control">
 			<!-- [D] 수량이 최소 값이 일때 ico_minus3, count_control_input에 disabled 각각 추가, 수량이 최대 값일 때는 ico_plus3에 disabled 추가 -->
 			<div class="clearfix">

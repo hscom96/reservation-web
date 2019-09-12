@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 	pageUpdateUnit.updateDisplayInfoSet();
+	buttonUnit.loadBtn();
 });
 
 var pageUpdateUnit = {
@@ -15,16 +16,11 @@ var pageUpdateUnit = {
 						&& httpRequest.status == 200) {
 					displayInfoSet = JSON.parse(httpRequest.responseText);
 
-					sliderUnit.updateSliderImage(displayInfoSet);
-					productContentUnit.updateProductContent(displayInfoSet);
+					sliderUnit.loadSlider(displayInfoSet);
+					productContentUnit.loadProductContent(displayInfoSet);
+					reviewUnit.loadReview(displayInfoSet);
+					detailTabUnit.loadDetailTab(displayInfoSet);
 					eventUnit.updateEventInfo(displayInfoSet);
-					reviewUnit.updateReviewHeader(displayInfoSet);
-					reviewUnit.updateReview(displayInfoSet);
-					reviewUnit.updateMoreReviewBtn(displayInfoSet);
-					detailTabUnit.updateDetailTab(displayInfoSet);
-					sliderUnit.runSlider();
-					productContentUnit.changeProductContent();
-					detailTabUnit.changeDetailTab();
 				}
 			};
 
@@ -34,6 +30,11 @@ var pageUpdateUnit = {
 }
 
 var sliderUnit = {
+		loadSlider :
+			function(displayInfoSet){
+			this.updateSliderImage(displayInfoSet);
+			this.runSlider();
+		},
 		updateSliderImage : // 슬라이더 이미지 등록
 			function(displayInfoSet) {
 			let slider = document.querySelector(".group_visual .detail_swipe");
@@ -110,20 +111,25 @@ var eventUnit = {
 		updateEventInfo : 
 			function(displayInfoSet){
 			let discountEvent = document.querySelector(".section_event .event_info_box .event_info .in_dsc");
-			let insertHTML = "[네이버예약 특별할인] <br>";
+			let insertHTML="";
 			let temp=[];
 
 			displayInfoSet.productPrices.forEach(value=>{
-				temp.push( value.priceTypeName+"석 "+value.discountRate+"%");
+				if(value.discountRate != 0)
+					temp.push( value.priceTypeName+"석 "+value.discountRate+"%");
 			});
-
-			insertHTML += temp.join(', ') + " 할인";
+			if(temp.length>0) insertHTML += "[네이버예약 특별할인] <br>" + temp.join(', ') + " 할인";
 			discountEvent.innerHTML = insertHTML;
 		}	
 }
 
 
 var reviewUnit = {
+		loadReview :
+			function(displayInfoSet){
+			this.updateReviewHeader(displayInfoSet);
+			this.updateReview(displayInfoSet);
+		},
 		// 예매자 한줄평 헤더부분 업데이트
 		updateReviewHeader: 
 			function(displayInfoSet){
@@ -159,16 +165,14 @@ var reviewUnit = {
 			reviewBox.innerHTML  = bindTemplate(data);
 
 		},
-
-		updateMoreReviewBtn:
-			function(displayInfoSet){
-			let moreReviewBtn = document.querySelector("a.btn_review_more");
-			moreReviewBtn.setAttribute('href', "/reservationweb/review?id=" + displayInfoSet.displayInfo.displayInfoId);
-		}
-
 }
 
 var productContentUnit = {
+		loadProductContent:
+			function(displayInfoSet){
+			this.updateProductContent(displayInfoSet);
+			this.changeProductContent();
+		},
 		// 상품설명 저장
 		updateProductContent:
 			function(displayInfoSet){
@@ -193,7 +197,11 @@ var productContentUnit = {
 }
 
 var detailTabUnit = {
-
+		loadDetailTab :
+			function(displayInfoSet){
+			this.updateDetailTab(displayInfoSet);
+			this.changeDetailTab();
+		},
 		// 카태고리탭 정보저장
 		updateDetailTab:
 			function(displayInfoSet){
@@ -226,11 +234,10 @@ var detailTabUnit = {
 					changeTab(evt);
 					showContent();
 				}
-			})},
+			})
 
 			// 카테고리탭변경
-			changeTab:
-				function(evt) {
+			function changeTab(evt) {
 				let detailTab = document
 				.querySelector(".info_tab_lst ._detail .anchor span");
 				let locationTab = document
@@ -249,26 +256,42 @@ var detailTabUnit = {
 						evt.target.classList.add('active');
 					}
 				}
-			},
+			}
 
 			// 카테고리탭 내용 전환
-			showContent :
-				function(){
+			function showContent(){
 				let detailContent = document.querySelector("div.detail_area_wrap");
 				let locationContent = document.querySelector("div.detail_location");
-				let currentTab = document.querySelector("a.anchor.active span").innerHTML;
+				let currentTab = document.querySelector("a.anchor.active span").dataset.tab;
 
-				if(currentTab === "상세정보"){
+				if(currentTab === "1"){
 					detailContent.classList.remove("hide");
 					locationContent.classList.add("hide");
-				}else if(currentTab === "오시는길"){
+				}else if(currentTab === "2"){
 					detailContent.classList.add("hide");
 					locationContent.classList.remove("hide");
 				}
 			}
-
+		}
 }
 
-function pressRsvBtn(){
-	location.href = "/reservationweb/reserve?id=" + getParam("id");
+var buttonUnit= {
+		loadBtn:
+			function(){
+			this.updateMoreReviewBtn();
+			this.updateRsvBtn();
+		},
+		updateMoreReviewBtn:
+			function(){
+			let moreReviewBtn = document.querySelector("a.btn_review_more");
+			moreReviewBtn.setAttribute('href', "/reservationweb/review?id=" + getParam("id"));
+		},
+		updateRsvBtn:
+			function(){
+			let pressRsvBtn = document.querySelector("button.bk_btn");
+			pressRsvBtn.addEventListener('click',
+					function(){
+				location.href="/reservationweb/reserve?id=" + getParam("id");
+			})
+		}
 }
