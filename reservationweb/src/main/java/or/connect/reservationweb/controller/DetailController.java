@@ -10,7 +10,6 @@ public class DetailController {
 
 	@GetMapping("/detail")
 	public String ShowDetailView(@RequestParam(value = "id", required = true) int displayId, Model model) {
-		model.addAttribute("displayId", displayId);
 		return "detail";
 	}
 }
