@@ -5,6 +5,12 @@
 <html lang="ko" class="no-js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="resources/css/bookinglogin.css" rel="stylesheet" />
+<link href="resources/css/style.css" rel="stylesheet" />
+<script src="resources/js/bookinglogin.js" type="text/javascript"
+	charset="UTF-8"></script>
+<script src="resources/js/commonFunction.js" type="text/javascript"
+	charset="UTF-8"></script>
 <style type="text/css">
 @charset "UTF-8"; 
 
@@ -47,7 +53,6 @@ ng\:form {
 <meta name="format-detection"
 	content="telephone=no, address=no, email=no">
 <title translate="CM-NBOOKING">네이버 예약</title>
-<link rel="stylesheet" href="../css/bookinglogin.css">
 </head>
 <body class="biz  ko">
 
@@ -56,7 +61,7 @@ ng\:form {
 		<i class="fn fn-info1" aria-hidden="true"></i> <span
 			class="_toast_alert_text"></span>
 	</p>
-	<a href="./mainpage.html" class="top_info_close" data-tst_alt_close="0">
+	<a href="/reservationweb/mainpage" class="top_info_close" data-tst_alt_close="0">
 		<i class="fn fn-close" aria-hidden="true"></i> <span class="sr_only"
 		translate="CM-CLOSE">닫기</span>
 	</a> </toast-alert> <!---->
@@ -64,14 +69,14 @@ ng\:form {
 		<booked-confirm>
 		<div class="booking_login">
 			<h1 class="login_header">
-				<a href="./mainpage.html" class="nbooking_logo spr_bi txt_logo">
+				<a href="/reservationweb/mainpage" class="nbooking_logo spr_bi txt_logo">
 					<span translate="CM-NBOOKING">네이버 예약</span>
 				</a>
 			</h1>
 			<!---->
 			<div>
 				<form name="confirm_form" class="ng-pristine ng-valid" id="form1"
-					action="./myreservation.html">
+					action="/reservationweb/bookinglogin" method="post">
 					<h2 class="login_header_sub border_bottom">
 						<span translate="CM-NON_MEMBER_BK_CONFIRMATION">비회원 예약확인</span>
 					</h2>
@@ -80,7 +85,7 @@ ng\:form {
 							translate="CM-BOOKING_NUMBER">예약자 이메일 입력</label> <input
 							type="text"
 							class="login_input ng-pristine ng-untouched ng-valid ng-empty"
-							id="resrv_id" name="resrv_email" aria-invalid="false"
+							id="resrv_id" name="resrvEmail" aria-invalid="false"
 							placeholder="crong@naver.com" title="예매자이메일">
 					</div>
 					<button type="submit" form="form1" class="login_btn confirm">
@@ -101,7 +106,7 @@ ng\:form {
 		<!---->
 		<go-to-top>
 		<div class="gototop" aria-hidden="false">
-			<a href="https://m.booking.naver.com/#" class="lnk_top"> <span
+			<a class="lnk_top"> <span
 				class="lnk_top_text" translate="CM-TOP">TOP</span>
 			</a>
 		</div>

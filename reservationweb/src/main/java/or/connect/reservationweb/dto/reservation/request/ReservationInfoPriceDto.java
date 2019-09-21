@@ -4,7 +4,9 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReservationRequest {
+import or.connect.reservationweb.dto.reservation.ReservationInfoDto;
+
+public class ReservationInfoPriceDto {
 	private int reservationInfoId;
 	private int productId;
 	private int displayInfoId;
@@ -17,7 +19,7 @@ public class ReservationRequest {
 	private LocalDateTime modifyDate;
 	private List<ReservationPriceDto> prices;
 	
-	public ReservationRequest() {
+	public ReservationInfoPriceDto() {
 		prices = new ArrayList<>();
 		cancelYn = false;
 		createDate = LocalDateTime.now();
@@ -25,6 +27,27 @@ public class ReservationRequest {
 		prices = null;
 	}
 
+	public void setReservationInfo(ReservationInfoDto reservationInfo) {
+		reservationInfoId = reservationInfo.getReservationInfoId();
+		productId = reservationInfo.getProductId();
+		displayInfoId = reservationInfo.getDisplayInfoId();
+		reservationName = reservationInfo.getReservationName();
+		reservationTelephone = reservationInfo.getReservationTelephone();
+		cancelYn = reservationInfo.getCancelYn();
+		reservationYearMonthDay = reservationInfo.getReservationDate();
+		createDate = reservationInfo.getCreateDate();
+		modifyDate = reservationInfo.getModifyDate();
+		reservationEmail = reservationInfo.getReservationEmail();
+	}
+	
+	public void setReservationInfoIdAll(int reservationInfoId) {
+		this.reservationInfoId = reservationInfoId;
+		for (ReservationPriceDto price : this.prices) {
+			price.setReservationInfoId(reservationInfoId);;
+		}
+		
+	}
+	
 	public int getReservationInfoId() {
 		return reservationInfoId;
 	}

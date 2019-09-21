@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -16,51 +18,63 @@
 <script src="resources/js/commonFunction.js" type="text/javascript"
 	charset="UTF-8"></script>
 </head>
-
 <body>
 	<div id="container">
 		<div class="header">
 			<header class="header_tit">
 				<h1 class="logo">
-					<a href="https://m.naver.com/" class="lnk_logo" title="네이버"> <span
-						class="spr_bi ico_n_logo">네이버</span>
-					</a> <a href="./myreservation.html" class="lnk_logo" title="예약"> <span
-						class="spr_bi ico_bk_logo">예약</span>
+					<a href="/reservationweb/mainpage" class="lnk_logo" title="네이버">
+						<span class="spr_bi ico_n_logo">네이버</span>
+					</a> <a href="/reservationweb/mainpage" class="lnk_logo" title="예약">
+						<span class="spr_bi ico_bk_logo">예약</span>
 					</a>
 				</h1>
-				<a href="./bookinglogin.html" class="btn_my"> <span
-					class="viewReservation" title="예약확인">예약확인</span>
-				</a>
+				<c:choose>
+					<c:when test="${empty login}">
+						<a href="/reservationweb/bookinglogin" class="btn_my"> <span
+							class="viewReservation" title="예약확인">예약확인</span>
+						</a>
+					</c:when>
+					<c:otherwise>
+						<a href="/reservationweb/myreservation?resrvEmail=${login}" class="btn_my"> <span
+							class="viewReservation" title="예약확인" style="font-size: 18px">${login}</span>
+						</a>
+					</c:otherwise>
+				</c:choose>
 			</header>
 		</div>
 		<hr>
-		
+
 		<div class="event">
-            <div class="section_visual">
-                <div class="group_visual">
-                    <div class="container_visual">
-                        <div class="prev_e" style="display:none;">
-                            <div class="prev_inn">
-                                <a href="#" class="btn_pre_e" title="이전"> <i class="spr_book_event spr_event_pre">이전</i> </a>
-                            </div>
-                        </div>
-                        <div class="nxt_e" style="display:none;">
-                            <div class="nxt_inn">
-                                <a href="#" class="btn_nxt_e" title="다음"> <i class="spr_book_event spr_event_nxt">다음</i> </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="container_visual">
-                                <!-- 슬라이딩기능: 이미지 (type = 'th')를 순차적으로 노출 -->
-                                <ul id="slider" class="visual_img">
-                                	
-                                </ul>
-                            </div>
-                            <span class="nxt_fix" style="display:none;"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<div class="section_visual">
+				<div class="group_visual">
+					<div class="container_visual">
+						<div class="prev_e" style="display: none;">
+							<div class="prev_inn">
+								<a href="#" class="btn_pre_e" title="이전"> <i
+									class="spr_book_event spr_event_pre">이전</i>
+								</a>
+							</div>
+						</div>
+						<div class="nxt_e" style="display: none;">
+							<div class="nxt_inn">
+								<a href="#" class="btn_nxt_e" title="다음"> <i
+									class="spr_book_event spr_event_nxt">다음</i>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="container_visual">
+								<!-- 슬라이딩기능: 이미지 (type = 'th')를 순차적으로 노출 -->
+								<ul id="slider" class="visual_img">
+
+								</ul>
+							</div>
+							<span class="nxt_fix" style="display: none;"></span>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="section_event_tab">
 				<ul class="event_tab_lst tab_lst_min">
 					<li class="item" data-category="0"><a class="anchor active">
@@ -110,12 +124,12 @@
 		</div>
 	</footer>
 
-    <script type="rv-template" id="promotionItem">
-    <li class="item" style="background-image: url(/reservationweb/resources/${productImageUrl} );">
+	<script type="rv-template" id="promotionItem">
+    <li class="item" style="background-image: url(/reservationweb/resources/{productImageUrl} );">
         <a href="#"> <span class="img_btm_border"></span> <span class="img_right_border"></span> <span class="img_bg_gra"></span>
             <div class="event_txt">
-                <h4 class="event_txt_tit">${description}</h4>
-                <p class="event_txt_adr">${placeName}</p>
+                <h4 class="event_txt_tit">{description}</h4>
+                <p class="event_txt_adr">{placeName}</p>
                 <p class="event_txt_dsc"></p>
             </div>
         </a>
@@ -123,14 +137,14 @@
     </script>
 	<script type="rv-template" id="itemList">
         <li class="item">
-            <a href="detail?id=${id}" class="item_book">
+            <a href="detail?id={id}" class="item_book">
                 <div class="item_preview">
-                    <img alt="${description}" class="img_thumb" src="resources/img/${imgUrl}">
+                    <img alt={description} class="img_thumb" src="resources/img/{imgUrl}">
                     <span class="img_border"></span>
                 </div>
                 <div class="event_txt">
-                    <h4 class="event_txt_tit"> <span>${description}</span> <small class="sm">${placeName}</small> </h4>
-                    <p class="event_txt_dsc">${content}</p>
+                    <h4 class="event_txt_tit"> <span>{description}</span> <small class="sm">{placeName}</small> </h4>
+                    <p class="event_txt_dsc">{content}</p>
                 </div>
             </a>
         </li>

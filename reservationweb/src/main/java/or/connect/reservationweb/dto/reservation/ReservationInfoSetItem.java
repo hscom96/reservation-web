@@ -1,8 +1,10 @@
 package or.connect.reservationweb.dto.reservation;
 
+import java.time.LocalDateTime;
+
 import or.connect.reservationweb.dto.productInfo.DisplayInfoDto;
 
-public class ReservationItem {
+public class ReservationInfoSetItem {
 	public int reservationInfoId;
 	public int productId;
 	public int displayInfoId;
@@ -10,8 +12,9 @@ public class ReservationItem {
 	public String reservationTelephone;
 	public Boolean cancelYn;
 	public String reservationDate;
-	public String createDate;
-	public String modifyDate;
+	public LocalDateTime createDate;
+	public LocalDateTime modifyDate;
+	public String reservationEmail;
 	
 	public DisplayInfoDto displayInfo;
 	
@@ -27,6 +30,7 @@ public class ReservationItem {
 		reservationDate = reservationInfo.getReservationDate();
 		createDate = reservationInfo.getCreateDate();
 		modifyDate = reservationInfo.getModifyDate();
+		reservationEmail = reservationInfo.getReservationEmail();
 	}
 	
 	public int getReservationInfoId() {
@@ -85,19 +89,19 @@ public class ReservationItem {
 		this.reservationDate = reservationDate;
 	}
 
-	public String getCreateDate() {
+	public LocalDateTime getCreateDate() {
 		return createDate;
 	}
 
-	public void setCreateDate(String createDate) {
+	public void setCreateDate(LocalDateTime createDate) {
 		this.createDate = createDate;
 	}
 
-	public String getModifyDate() {
+	public LocalDateTime getModifyDate() {
 		return modifyDate;
 	}
 
-	public void setModifyDate(String modifyDate) {
+	public void setModifyDate(LocalDateTime modifyDate) {
 		this.modifyDate = modifyDate;
 	}
 

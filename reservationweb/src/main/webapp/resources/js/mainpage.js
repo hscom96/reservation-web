@@ -11,7 +11,7 @@ function updateImageSlider() {
 	var promotionTemplate = document.querySelector('#promotionItem').innerHTML;
 	var insertItem = "";
 	var promotionBox = document.querySelector('#slider');
-	
+
 	httpRequest.onreadystatechange = function() {
 		if (httpRequest.readyState == XMLHttpRequest.DONE
 				&& httpRequest.status == 200) {
@@ -19,9 +19,10 @@ function updateImageSlider() {
 			insertItemList = JSON.parse(httpRequest.responseText);
 
 			for ( var key in insertItemList) {
-				insertItem = promotionTemplate.replace("${productImageUrl}",insertItemList[key].productImageUrl)
-				.replace("${description}",insertItemList[key].description)
-				.replace("${placeName}",insertItemList[key].placeName);
+				insertItem = promotionTemplate.replace("{productImageUrl}",
+						insertItemList[key].productImageUrl).replace(
+						"{description}", insertItemList[key].description)
+						.replace("{placeName}", insertItemList[key].placeName);
 				promotionBox.innerHTML += insertItem;
 			}
 
@@ -67,12 +68,15 @@ function addNewItem() {
 			updateCategoryItemSum(insertItemList.totalCount);
 
 			for ( var key in insertItemList.items) {
-				insertItem = itemTemplate
-					.replace("${id}",insertItemList.items[key].displayId)
-					.replace(/\$\{description\}/g, insertItemList.items[key].productDescription)
-					.replace("${placeName}", insertItemList.items[key].placeName)
-					.replace("${content}",insertItemList.items[key].productContent)
-					.replace("${imgUrl}", insertItemList.items[key].productImgUrl);
+				insertItem = itemTemplate.replace("{id}",
+						insertItemList.items[key].displayId).replace(
+						/\{description\}/g,
+						insertItemList.items[key].productDescription).replace(
+						"{placeName}", insertItemList.items[key].placeName)
+						.replace("{content}",
+								insertItemList.items[key].productContent)
+						.replace("{imgUrl}",
+								insertItemList.items[key].productImgUrl);
 
 				if (key % 2 == 0) {
 					itemBox[0].innerHTML += insertItem;

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	buttonUnit.loadBtn();
 });
 
-var pageUpdateUnit = {
+const pageUpdateUnit = {
 		updateDisplayInfoSet : 
 			function() {
 			let httpRequest = new XMLHttpRequest();
@@ -29,7 +29,7 @@ var pageUpdateUnit = {
 		}
 }
 
-var sliderUnit = {
+const sliderUnit = {
 		loadSlider :
 			function(displayInfoSet){
 			this.updateSliderImage(displayInfoSet);
@@ -106,7 +106,7 @@ var sliderUnit = {
 		}
 } 
 
-var eventUnit = {
+const eventUnit = {
 		// 이벤트정보 업데이트
 		updateEventInfo : 
 			function(displayInfoSet){
@@ -114,7 +114,7 @@ var eventUnit = {
 			let insertHTML="";
 			let temp=[];
 
-			displayInfoSet.productPrices.forEach(value=>{
+			displayInfoSet.productPrices.forEach(function(value){
 				if(value.discountRate != 0)
 					temp.push( value.priceTypeName+"석 "+value.discountRate+"%");
 			});
@@ -124,7 +124,7 @@ var eventUnit = {
 }
 
 
-var reviewUnit = {
+const reviewUnit = {
 		loadReview :
 			function(displayInfoSet){
 			this.updateReviewHeader(displayInfoSet);
@@ -167,7 +167,7 @@ var reviewUnit = {
 		},
 }
 
-var productContentUnit = {
+const productContentUnit = {
 		loadProductContent:
 			function(displayInfoSet){
 			this.updateProductContent(displayInfoSet);
@@ -196,7 +196,7 @@ var productContentUnit = {
 
 }
 
-var detailTabUnit = {
+const detailTabUnit = {
 		loadDetailTab :
 			function(displayInfoSet){
 			this.updateDetailTab(displayInfoSet);
@@ -275,7 +275,7 @@ var detailTabUnit = {
 		}
 }
 
-var buttonUnit= {
+const buttonUnit= {
 		loadBtn:
 			function(){
 			this.updateMoreReviewBtn();

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -39,7 +40,7 @@
 					</a>
 				</h1>
 				<a href="/reservationweb/mainpage" class="btn_my"> <span
-					title="예약확인">예약확인</span>
+					title="예약확인" >예약확인</span>
 				</a>
 			</header>
 		</div>
@@ -54,9 +55,18 @@
 								<span class="spr_bi ico_bk_logo">예약</span>
 							</a>
 						</h1>
-						<a href="/reservationweb/myreservation" class="btn_my"> <span
-							class="viewReservation" title="예약확인">예약확인</span>
-						</a>
+						<c:choose>
+							<c:when test="${empty login}">
+								<a href="/reservationweb/bookinglogin" class="btn_my"> <span
+									class="viewReservation" title="예약확인">예약확인</span>
+								</a>
+							</c:when>
+							<c:otherwise>
+								<a href="/reservationweb/myreservation?resrvEmail=${login}" class="btn_my"> <span
+									class="viewReservation" title="예약확인" style="font-size: 18px">${login}</span>
+								</a>
+							</c:otherwise>
+						</c:choose>
 					</header>
 					<div class="pagination">
 						<div class="bg_pagination"></div>
@@ -163,7 +173,8 @@
 						<li class="item active _detail"><a class="anchor active">
 								<span data-tab="1">상세정보</span>
 						</a></li>
-						<li class="item _path"><a class="anchor"> <span data-tab="2">오시는길</span>
+						<li class="item _path"><a class="anchor"> <span
+								data-tab="2">오시는길</span>
 						</a></li>
 					</ul>
 					<!-- [D] 상세정보 외 다른 탭 선택 시 detail_area_wrap에 hide 추가 -->

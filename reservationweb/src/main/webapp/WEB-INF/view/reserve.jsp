@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -63,28 +64,6 @@
 				</div>
 				<div class="section_booking_ticket">
 					<div class="ticket_body">
-						<%-- 
-						
-	<div class="qty">
-		<div class="count_control">
-			<div class="clearfix">
-				<a class="btn_plus_minus spr_book2 ico_minus3" title="빼기"> </a> 
-				<input type="tel" class="count_control_input" value="10" readonly title="수량"> 
-				<a class="btn_plus_minus spr_book2 ico_plus3" title="더하기"> </a>
-			</div>
-			<div class="individual_price on_color">
-				<span class="total_price">68,000</span><span class="price_type">원</span>
-			</div>
-		</div>
-		<div class="qty_info_icon">
-			<strong class="product_amount"> <span>유아</span>
-			</strong> <strong class="product_price"> <span class="price">6,800</span>
-				<span class="price_type">원</span>
-			</strong> <em class="product_dsc">6,800원 (15% 할인가)</em>
-		</div>
-	</div>
-						--%>
-
 					</div>
 				</div>
 				<div class="section_booking_form">
@@ -120,14 +99,14 @@
 									</label>
 									<div class="inline_control">
 										<input type="email" name="email" id="email" class="email"
-											value="" placeholder="예) crong@codesquad.kr" maxlength="50">
+											value="${login}" placeholder="예) crong@codesquad.kr" maxlength="50">
 									</div>
 								</div>
 								<div class="inline_form last">
 									<label class="label" for="message">예매내용</label>
 									<div class="inline_control">
 										<p class="inline_txt selected">
-											<span id="reservationDate"> 2017.2.17 </span>, 총 <span
+											<span id="reservationDate">${dateTime}</span>, 총 <span
 												id="totalCount">0</span>매
 										</p>
 									</div>

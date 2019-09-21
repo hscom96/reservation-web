@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
 import java.util.List;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
@@ -43,7 +41,27 @@ public class ReservationPriceDao {
 
 		return totalPrice.isEmpty() ? null : totalPrice.get(0);
 	}
-	 
+	
+	public List<ReservationPriceDto> getPriceList(int reservationInfoId){
+		List<ReservationPriceDto> priceList = jdbcTemplate.query(
+				"SELECT id as reservationInfoPriceId, reservation_info_id, product_price_id, count "
+				+ "FROM reservation_info_price "
+				+ "where reservation_info_id=?",
+				new RowMapper<ReservationPriceDto>() {
+					@Override
+					public ReservationPriceDto mapRow(ResultSet rs, int rowNum) throws SQLException {
+						ReservationPriceDto reservationPriceDto = new ReservationPriceDto();
+						reservationPriceDto.setCount(rs.getInt("count"));
+						reservationPriceDto.setProductPriceId(rs.getInt("product_price_id"));
+						reservationPriceDto.setReservationInfoId(rs.getInt("reservation_info_id"));
+						reservationPriceDto.setReservationInfoPriceId(rs.getInt("reservationInfoPriceId"));
+						return reservationPriceDto;
+					}
+				}, reservationInfoId);
+
+		return priceList.isEmpty() ? null : priceList;
+	}
+	
 	public int registerPrice(ReservationPriceDto reservationPrice) {
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		jdbcTemplate.update(new PreparedStatementCreator() {

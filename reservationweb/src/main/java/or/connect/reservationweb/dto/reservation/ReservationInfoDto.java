@@ -1,16 +1,27 @@
 package or.connect.reservationweb.dto.reservation;
 
+import java.time.LocalDateTime;
+
 public class ReservationInfoDto {
 	public int reservationInfoId;
 	public int productId;
 	public int displayInfoId;
 	public String reservationName;
 	public String reservationTelephone;
+	public String reservationEmail;
 	public Boolean cancelYn;
 	public String reservationDate;
-	public String createDate;
-	public String modifyDate;
+	public LocalDateTime createDate;
+	public LocalDateTime modifyDate;
 	
+
+	public String getReservationEmail() {
+		return reservationEmail;
+	}
+	public void setReservationEmail(String reservationEmail) {
+		this.reservationEmail = reservationEmail;
+	}
+
 	public int getReservationInfoId() {
 		return reservationInfoId;
 	}
@@ -53,23 +64,18 @@ public class ReservationInfoDto {
 	public void setReservationDate(String reservationDate) {
 		this.reservationDate = reservationDate;
 	}
-	public String getCreateDate() {
+	public LocalDateTime getCreateDate() {
 		return createDate;
 	}
-	public void setCreateDate(String createDate) {
+	public void setCreateDate(LocalDateTime createDate) {
 		this.createDate = createDate;
 	}
-	public String getModifyDate() {
+	public LocalDateTime getModifyDate() {
 		return modifyDate;
 	}
-	public void setModifyDate(String modifyDate) {
+	public void setModifyDate(LocalDateTime modifyDate) {
 		this.modifyDate = modifyDate;
 	}
 	
 	
 }
-/*
-SELECT reservation_info.id AS reservationInfoId, product_id AS productId, display_info_id AS displayInfoId,
-reservation_name, reservation_tel, reservation_email, cancel_flag, reservation_date, create_date, modify_date
-FROM reservation_info 
-WHERE reservation_email = "carami@connect.co.kr" */

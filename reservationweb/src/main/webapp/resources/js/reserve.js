@@ -106,7 +106,7 @@ TicketSelectUnit.prototype = {
 		changeTicketPriceSum : function(evt) {
 			let priceBox = evt.target.parentElement.nextSibling.nextSibling.nextSibling.nextSibling;
 			let priceSum = priceBox.childNodes[1];
-			let ticketPrice = parseInt(evt.target.closest("div.qty").childNodes[3].childNodes[3].childNodes[1].innerHTML);
+			let ticketPrice = parseInt(evt.target.parentNode.parentNode.parentNode.childNodes[3].childNodes[3].childNodes[1].innerHTML);
 			let currentCount;
 
 			if (evt.target.title === "빼기") {
@@ -135,9 +135,9 @@ TicketSelectUnit.prototype = {
 		countTicketCount : function() {
 			let countBoxList = document.querySelectorAll('.count_control_input');
 			let totalCount = 0;
-			countBoxList.forEach(function(item) {
-				totalCount += parseInt(item.getAttribute('value'));
-			})
+			for(let i=0; i<countBoxList.length;i++){
+				totalCount += parseInt(countBoxList[i].getAttribute('value'));
+			}
 			return totalCount;
 		},
 
@@ -202,24 +202,7 @@ AgreementUnit.prototype = {
 		}
 }
 
-function SubmitUnit() {
-}
-SubmitUnit.prototype = {
-		submitForm : function(displayInfoSet) {
-			let submitBtn = document.querySelector('button.bk_btn');
-			submitBtn.addEventListener('click', function() {
-				let form = document.querySelector('.form_horizontal');
-				let validUnit = new ValidUnit();
-				let valid = validUnit.loadValidate();
-				if (valid) {
-					let requestDataUnit = new RequestDataUnit();
-					let requestData = requestDataUnit.createRequestData(displayInfoSet);
-					let g = requestData;
-					// form.submit();
-				}
-			});
-		}
-}
+
 
 function ValidUnit() {
 }
@@ -303,7 +286,7 @@ ValidUnit.prototype = {
 		validEmail : function() {
 			var emailBox = document.querySelector("[name='email']");
 			var emailValue = emailBox.value;
-			var valid = (/^[\w+_]\w+@\w+\.\w+$/).test(emailValue);
+			var valid = (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/).test(emailValue);
 
 			if (!emailValue) {
 				emailBox.placeholder = "이메일을 채워주세요";
@@ -375,6 +358,34 @@ RequestDataUnit.prototype = {
 		}
 }
 
+function SubmitUnit() {
+}
+SubmitUnit.prototype = {
+		submitForm : function(displayInfoSet) {
+			let submitBtn = document.querySelector('button.bk_btn');
+			submitBtn.addEventListener('click', function() {
+				let validUnit = new ValidUnit();
+				let valid = validUnit.loadValidate();
+				if (valid) {
+					let requestDataUnit = new RequestDataUnit();
+					let requestData = requestDataUnit.createRequestData(displayInfoSet);
+
+					var httpRequest = new XMLHttpRequest();
+					
+					httpRequest.onreadystatechange = function() {
+						if (httpRequest.readyState == XMLHttpRequest.DONE && httpRequest.status == 200 ) {
+							alert("예매성공");
+							window.location.href="/reservationweb/mainpage";
+						}
+					};
+					
+					httpRequest.open("POST", "/reservationweb/api/reservations", true);
+					httpRequest.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+					httpRequest.send(JSON.stringify(requestData));
+				}
+			});
+		}
+}
 function changeProductTypeName(name) {
 	switch (name) {
 	case 'A':

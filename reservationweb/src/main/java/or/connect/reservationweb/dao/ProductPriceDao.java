@@ -26,9 +26,9 @@ public class ProductPriceDao {
 		List<ProductPriceDto> productPriceList = jdbcTemplate.query(
 				"SELECT product_price.id AS productPriceId, product.id AS productId, product_price.price_type_name, "
 						+ "product_price.price, product_price.discount_rate, product_price.create_date, product_price.modify_date "
-						+ "FROM product " + "INNER JOIN display_info ON product.id = display_info.product_id "
+						+ "FROM product INNER JOIN display_info ON product.id = display_info.product_id "
 						+ "INNER JOIN product_price ON product.id = product_price.product_id "
-						+ "WHERE display_info.id = ? " + "ORDER BY productPriceId desc",
+						+ "WHERE display_info.id = ? ORDER BY productPriceId desc",
 				new RowMapper<ProductPriceDto>() {
 					@Override
 					public ProductPriceDto mapRow(ResultSet rs, int rowNum) throws SQLException {
