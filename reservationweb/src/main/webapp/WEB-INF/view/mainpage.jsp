@@ -30,14 +30,14 @@
 					</a>
 				</h1>
 				<c:choose>
-					<c:when test="${empty login}">
+					<c:when test="${empty loginInfo}">
 						<a href="/reservationweb/bookinglogin" class="btn_my"> <span
 							class="viewReservation" title="예약확인">예약확인</span>
 						</a>
 					</c:when>
 					<c:otherwise>
-						<a href="/reservationweb/myreservation?resrvEmail=${login}" class="btn_my"> <span
-							class="viewReservation" title="예약확인" style="font-size: 18px">${login}</span>
+						<a href="/reservationweb/myreservation" class="btn_my"> <span
+							class="viewReservation" title="예약확인" style="font-size: 18px">${loginInfo.email}</span>
 						</a>
 					</c:otherwise>
 				</c:choose>

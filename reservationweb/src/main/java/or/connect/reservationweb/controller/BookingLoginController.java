@@ -1,5 +1,8 @@
 package or.connect.reservationweb.controller;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -29,7 +32,8 @@ public class BookingLoginController {
 	public String submit(@RequestParam(value = "resrvEmail", required = true) String resrvEmail, HttpSession session, HttpServletResponse response) {
 		boolean exitFlag = reservationService.existReservation(resrvEmail);
 		Cookie loginCookie;
-		int maxTime = 60;
+		PrintWriter out;
+		int maxInactiveTime = 1800;
 		
 		 if ( session.getAttribute("login") !=null ){
 	            session.removeAttribute("login");
@@ -37,12 +41,20 @@ public class BookingLoginController {
 		
 		if (exitFlag) {
 			session.setAttribute("loginInfo", new LoginInfo(resrvEmail));
-			session.setMaxInactiveInterval(maxTime);
-			loginCookie = new Cookie("login", resrvEmail);
-			loginCookie.setMaxAge(maxTime);
+			session.setMaxInactiveInterval(maxInactiveTime);
+			loginCookie = new Cookie("loginCookie", resrvEmail);
 			response.addCookie(loginCookie);
 			return "redirect:myreservation";
 		}else{
+			
+			try {
+				out = response.getWriter();
+				response.setContentType("text/html; charset=UTF-8");
+				out.println("<script>alert('로그인 정보를 확인해주세요.'); </script>");
+				out.flush(); 
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 			return "bookinglogin";
 		}
 	}

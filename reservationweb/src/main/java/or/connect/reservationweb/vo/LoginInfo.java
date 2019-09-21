@@ -3,20 +3,20 @@ package or.connect.reservationweb.vo;
 import java.time.LocalDateTime;
 
 public class LoginInfo {
-	private String Email;
+	private String email;
 	private LocalDateTime createTime;
 	
 	public LoginInfo(String email) {
-		this.Email = email;
+		this.email = email;
 		createTime = LocalDateTime.now();
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
 	public LocalDateTime getCreateTime() {
