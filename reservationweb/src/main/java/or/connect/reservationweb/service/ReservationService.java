@@ -28,13 +28,13 @@ public class ReservationService {
 	public ReservationInfoSetDto getReservationInfoSet(String reservationEmail) {
 		ReservationInfoSetDto reservationInfoSet = new ReservationInfoSetDto();
 
-		List<ReservationInfoDto> reservationInfoList = reservationDao.getResrvationInfoList(reservationEmail);
-
+		List<ReservationInfoDto> reservationInfoList = reservationDao.getReservationInfoList(reservationEmail);
+		int totalPrice;
 		for (ReservationInfoDto reservationInfo : reservationInfoList) {
 			ReservationInfoSetItem reservationItem = new ReservationInfoSetItem();
-			int totalPrice = reservationPriceDao.getTotalPrice(reservationInfo.getReservationInfoId());
+			totalPrice = reservationPriceDao.getTotalPrice(reservationInfo.getReservationInfoId());
 			DisplayInfoDto displayInfo = productDisplayDao.getDisplayInfo(reservationInfo.getDisplayInfoId());
-
+			
 			reservationItem.setReservationInfo(reservationInfo);
 			reservationItem.setDisplayInfo(displayInfo);
 			reservationItem.setTotalPrice(totalPrice);
@@ -72,7 +72,7 @@ public class ReservationService {
 
 	public ReservationInfoPriceDto getReservationinfo(int reservationId) {
 		ReservationInfoPriceDto reservationInfoPriceDto = new ReservationInfoPriceDto();
-		ReservationInfoDto reservationInfoDto = reservationDao.getResrvationInfo(reservationId);
+		ReservationInfoDto reservationInfoDto = reservationDao.getReservationInfo(reservationId);
 		List<ReservationPriceDto> prices = reservationPriceDao.getPriceList(reservationId);
 
 		reservationInfoPriceDto.setReservationInfo(reservationInfoDto);
@@ -83,7 +83,7 @@ public class ReservationService {
 
 	public boolean existReservation(String reservationEmail) {
 		ReservationInfoSetDto reservationInfoSet = new ReservationInfoSetDto();
-		List<ReservationInfoDto> reservationInfoList = reservationDao.getResrvationInfoList(reservationEmail);
+		List<ReservationInfoDto> reservationInfoList = reservationDao.getReservationInfoList(reservationEmail);
 
 		if (reservationInfoList == null) {
 			return false;
