@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
@@ -83,15 +84,15 @@ public class ReservationDao {
 		public ReservationInfoDto mapRow(ResultSet rs, int rowNum) throws SQLException {
 			ReservationInfoDto reservationInfoDto = new ReservationInfoDto();
 			reservationInfoDto.setCancelYn(rs.getBoolean("cancel_flag"));
-			reservationInfoDto.setCreateDate(rs.getTimestamp("create_date").toLocalDateTime());
+			reservationInfoDto.setCreateDate(rs.getTimestamp("create_date").toLocalDateTime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
 			reservationInfoDto.setDisplayInfoId(rs.getInt("displayInfoId"));
 			reservationInfoDto.setProductId(rs.getInt("productId"));
-			reservationInfoDto.setReservationDate(rs.getString("reservation_date"));
+			reservationInfoDto.setReservationDate(rs.getTimestamp("reservation_date").toLocalDateTime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
 			reservationInfoDto.setReservationInfoId(rs.getInt("reservationInfoId"));
 			reservationInfoDto.setReservationName(rs.getString("reservation_name"));
 			reservationInfoDto.setReservationTelephone(rs.getString("reservation_tel"));
 			reservationInfoDto.setReservationEmail(rs.getString("reservation_email"));
-			reservationInfoDto.setModifyDate(rs.getTimestamp("modify_date").toLocalDateTime());
+			reservationInfoDto.setModifyDate(rs.getTimestamp("modify_date").toLocalDateTime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
 			return reservationInfoDto;
 		}
 	}

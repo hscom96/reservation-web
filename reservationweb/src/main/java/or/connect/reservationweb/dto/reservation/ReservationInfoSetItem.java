@@ -12,8 +12,8 @@ public class ReservationInfoSetItem {
 	public String reservationTelephone;
 	public Boolean cancelYn;
 	public String reservationDate;
-	public LocalDateTime createDate;
-	public LocalDateTime modifyDate;
+	public String createDate;
+	public String modifyDate;
 	public String reservationEmail;
 	
 	public DisplayInfoDto displayInfo;
@@ -89,19 +89,19 @@ public class ReservationInfoSetItem {
 		this.reservationDate = reservationDate;
 	}
 
-	public LocalDateTime getCreateDate() {
+	public String String() {
 		return createDate;
 	}
 
-	public void setCreateDate(LocalDateTime createDate) {
+	public void setCreateDate(String createDate) {
 		this.createDate = createDate;
 	}
 
-	public LocalDateTime getModifyDate() {
+	public String getModifyDate() {
 		return modifyDate;
 	}
 
-	public void setModifyDate(LocalDateTime modifyDate) {
+	public void setModifyDate(String modifyDate) {
 		this.modifyDate = modifyDate;
 	}
 

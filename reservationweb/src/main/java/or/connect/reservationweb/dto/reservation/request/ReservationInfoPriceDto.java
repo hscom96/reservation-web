@@ -1,6 +1,7 @@
 package or.connect.reservationweb.dto.reservation.request;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,14 +16,14 @@ public class ReservationInfoPriceDto {
 	private String reservationEmail;
 	private String reservationYearMonthDay;
 	private Boolean cancelYn;
-	private LocalDateTime createDate;
-	private LocalDateTime modifyDate;
+	private String createDate;
+	private String modifyDate;
 	private List<ReservationPriceDto> prices;
 	
 	public ReservationInfoPriceDto() {
 		prices = new ArrayList<>();
 		cancelYn = false;
-		createDate = LocalDateTime.now();
+		createDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		modifyDate = createDate;
 		prices = null;
 	}
@@ -112,19 +113,19 @@ public class ReservationInfoPriceDto {
 		this.cancelYn = cancelYn;
 	}
 
-	public LocalDateTime getCreateDate() {
+	public String getCreateDate() {
 		return createDate;
 	}
 
-	public void setCreateDate(LocalDateTime LocalDateTime) {
+	public void setCreateDate(String LocalDateTime) {
 		this.createDate = createDate;
 	}
 
-	public LocalDateTime getModifyDate() {
+	public String getModifyDate() {
 		return modifyDate;
 	}
 
-	public void setModifyDate(LocalDateTime modifyDate) {
+	public void setModifyDate(String modifyDate) {
 		this.modifyDate = modifyDate;
 	}
 
