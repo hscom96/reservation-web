@@ -40,11 +40,11 @@ public class ProductDisplayDao {
 						DisplayInfoDto displayInfoDto = new DisplayInfoDto();
 						displayInfoDto.setCategoryId(rs.getInt("categoryId"));
 						displayInfoDto.setCategoryName(rs.getString("categoryName"));
-						displayInfoDto.setCreateDate(rs.getString("create_date"));
+						displayInfoDto.setCreateDate(rs.getTimestamp("create_date").toLocalDateTime());
 						displayInfoDto.setDisplayInfoId(rs.getInt("displayInfoId"));
 						displayInfoDto.setEmail(rs.getString("email"));
 						displayInfoDto.setHomepage(rs.getString("homepage"));
-						displayInfoDto.setModifyDate(rs.getString("modify_date"));
+						displayInfoDto.setModifyDate(rs.getTimestamp("modify_date").toLocalDateTime());
 						displayInfoDto.setOpeningHours(rs.getString("opening_hours"));
 						displayInfoDto.setPlaceLot(rs.getString("place_lot"));
 						displayInfoDto.setPlaceName(rs.getString("place_name"));

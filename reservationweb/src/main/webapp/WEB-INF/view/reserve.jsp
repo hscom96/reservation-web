@@ -99,7 +99,7 @@
 									</label>
 									<div class="inline_control">
 										<input type="email" name="email" id="email" class="email"
-											value="${login}" placeholder="예) crong@codesquad.kr" maxlength="50">
+											value="${loginInfo.email}" placeholder="예) crong@codesquad.kr" maxlength="50">
 									</div>
 								</div>
 								<div class="inline_form last">

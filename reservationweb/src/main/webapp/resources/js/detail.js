@@ -82,7 +82,7 @@ const sliderUnit = {
 				showSlides(sliderIndex += n);
 			}
 
-			function showSlides(n) {
+			function showSlides() {
 				if (sliderIndex == -1) {
 					sliderIndex = totalCount - 1;
 				} else if (sliderIndex === totalCount) {

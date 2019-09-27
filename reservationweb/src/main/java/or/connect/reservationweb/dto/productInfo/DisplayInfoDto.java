@@ -1,5 +1,7 @@
 package or.connect.reservationweb.dto.productInfo;
 
+import java.time.LocalDateTime;
+
 public class DisplayInfoDto {
 	private int productId;
 	private int categoryId;
@@ -15,8 +17,8 @@ public class DisplayInfoDto {
 	private String telephone;
 	private String homepage;
 	private String email;
-	private String createDate;
-	private String modifyDate;
+	private LocalDateTime createDate;
+	private LocalDateTime modifyDate;
 
 	public int getProductId() {
 		return productId;
@@ -130,19 +132,19 @@ public class DisplayInfoDto {
 		this.email = email;
 	}
 
-	public String getCreateDate() {
+	public LocalDateTime getCreateDate() {
 		return createDate;
 	}
 
-	public void setCreateDate(String createDate) {
+	public void setCreateDate(LocalDateTime createDate) {
 		this.createDate = createDate;
 	}
 
-	public String getModifyDate() {
+	public LocalDateTime getModifyDate() {
 		return modifyDate;
 	}
 
-	public void setModifyDate(String modifyDate) {
+	public void setModifyDate(LocalDateTime modifyDate) {
 		this.modifyDate = modifyDate;
 	}
 }
