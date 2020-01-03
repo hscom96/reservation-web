@@ -1,5 +1,10 @@
 package or.connect.reservationweb.dto.product;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class ProductDto {
 	private int displayId;
 	private int productId;
@@ -17,53 +22,5 @@ public class ProductDto {
 		this.placeName = placeName;
 		this.productContent = productContent;
 		this.productImgUrl = productImgUrl;
-	}
-
-	public int getDisplayId() {
-		return displayId;
-	}
-
-	public void setDisplayId(int displayId) {
-		this.displayId = displayId;
-	}
-
-	public int getProductId() {
-		return productId;
-	}
-
-	public void setProductId(int productId) {
-		this.productId = productId;
-	}
-
-	public String getProductImgUrl() {
-		return productImgUrl;
-	}
-
-	public void setProductImgUrl(String productImgUrl) {
-		this.productImgUrl = productImgUrl;
-	}
-
-	public String getProductDescription() {
-		return productDescription;
-	}
-
-	public void setProductDescription(String productDescription) {
-		this.productDescription = productDescription;
-	}
-
-	public String getPlaceName() {
-		return placeName;
-	}
-
-	public void setPlaceName(String placeName) {
-		this.placeName = placeName;
-	}
-
-	public String getProductContent() {
-		return productContent;
-	}
-
-	public void setProductContent(String productContent) {
-		this.productContent = productContent;
 	}
 }

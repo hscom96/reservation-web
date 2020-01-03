@@ -1,5 +1,10 @@
 package or.connect.reservationweb.dto.category;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class CategoryDto {
 	private int id;
 	private String name;
@@ -11,29 +16,4 @@ public class CategoryDto {
 		this.name = name;
 		this.count = count;
 	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getCount() {
-		return count;
-	}
-
-	public void setCount(int count) {
-		this.count = count;
-	}
-
 }

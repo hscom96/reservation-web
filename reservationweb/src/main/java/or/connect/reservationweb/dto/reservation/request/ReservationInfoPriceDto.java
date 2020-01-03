@@ -5,8 +5,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.Getter;
+import lombok.Setter;
 import or.connect.reservationweb.dto.reservation.ReservationInfoDto;
 
+@Getter
+@Setter
 public class ReservationInfoPriceDto {
 	private int reservationInfoId;
 	private int productId;
@@ -48,94 +52,4 @@ public class ReservationInfoPriceDto {
 		}
 		
 	}
-	
-	public int getReservationInfoId() {
-		return reservationInfoId;
-	}
-
-	public void setReservationInfoId(int reservationInfoId) {
-		this.reservationInfoId = reservationInfoId;
-	}
-
-	public int getProductId() {
-		return productId;
-	}
-
-	public void setProductId(int productId) {
-		this.productId = productId;
-	}
-
-	public int getDisplayInfoId() {
-		return displayInfoId;
-	}
-
-	public void setDisplayInfoId(int displayInfoId) {
-		this.displayInfoId = displayInfoId;
-	}
-
-	public String getReservationName() {
-		return reservationName;
-	}
-
-	public void setReservationName(String reservationName) {
-		this.reservationName = reservationName;
-	}
-
-	public String getReservationTelephone() {
-		return reservationTelephone;
-	}
-
-	public void setReservationTelephone(String reservationTelephone) {
-		this.reservationTelephone = reservationTelephone;
-	}
-
-	public String getReservationEmail() {
-		return reservationEmail;
-	}
-
-	public void setReservationEmail(String reservationEmail) {
-		this.reservationEmail = reservationEmail;
-	}
-
-	public String getReservationYearMonthDay() {
-		return reservationYearMonthDay;
-	}
-
-	public void setReservationYearMonthDay(String reservationYearMonthDay) {
-		this.reservationYearMonthDay = reservationYearMonthDay;
-	}
-
-	public Boolean getCancelYn() {
-		return cancelYn;
-	}
-
-	public void setCancelYn(Boolean cancelYn) {
-		this.cancelYn = cancelYn;
-	}
-
-	public String getCreateDate() {
-		return createDate;
-	}
-
-	public void setCreateDate(String LocalDateTime) {
-		this.createDate = createDate;
-	}
-
-	public String getModifyDate() {
-		return modifyDate;
-	}
-
-	public void setModifyDate(String modifyDate) {
-		this.modifyDate = modifyDate;
-	}
-
-	public List<ReservationPriceDto> getPrices() {
-		return prices;
-	}
-
-	public void setPrices(List<ReservationPriceDto> prices) {
-		this.prices = prices;
-	}
-	
-	
 }
