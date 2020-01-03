@@ -41,7 +41,14 @@ RsrvIOUnit.prototype = {
 			
 			for(var rsrvInfo of rsrvInfoSet.reservations){
 				if(rsrvInfo.cancelYn === false){
-					this.insertConfirmRsrv(rsrvInfo, bindTemplate);
+					var currentDate = new Date();
+					var reservDate = new Date(rsrvInfo.reservationDate);
+					if(currentDate<=reservDate){
+						this.insertConfirmRsrv(rsrvInfo, bindTemplate);}
+					else{
+						this.insertUsedRsrv(rsrvInfo,bindTemplate);
+					}
+						
 				}else{
 					this.insertCancelRsrv(rsrvInfo, bindTemplate);
 				}
@@ -53,9 +60,14 @@ RsrvIOUnit.prototype = {
 			var rsrvConfirmBox = document.querySelector("li.card.confirmed");
 			var cancelBtn = document.querySelector("#rsrvCancelBtnTemplate").innerHTML;
 			rsrvConfirmBox.innerHTML += bindTemplate(rsrvInfo);
-			rsrvConfirmBox.lastChild.previousSibling.childNodes[1].childNodes[1].childNodes[3].childNodes[1].innerHTML += cancelBtn;
+			rsrvConfirmBox.lastChild.previousSibling.querySelector("div.card_detail").innerHTML += cancelBtn;
 		},
-		
+		insertUsedRsrv : function(rsrvInfo, bindTemplate){
+			var rsrvUsedBox = document.querySelector("li.card.used");
+			var usedBtn = document.querySelector("#rsrvReviewBtnTemplate").innerHTML;
+			rsrvUsedBox.innerHTML += bindTemplate(rsrvInfo);
+			rsrvUsedBox.lastChild.previousSibling.querySelector("div.card_detail").innerHTML += usedBtn;
+		},
 		insertCancelRsrv : function(rsrvInfo, bindTemplate){
 			var rsrvCancelBox = document.querySelector("li.card.cancel");
 			rsrvCancelBox.innerHTML += bindTemplate(rsrvInfo);
@@ -149,7 +161,8 @@ RsrvEventUnit.prototype = {
 					var httpRequest = new XMLHttpRequest();
 					var resrevationItem;
 					var reservationId;
-				
+					var result = confirm("정말로 예약을 취소하시겠습니까?");
+					if(result){
 					if(evt.target.tagName === "BUTTON"){
 						resrevationItem = evt.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 					}else{
@@ -169,9 +182,10 @@ RsrvEventUnit.prototype = {
 					};
 					httpRequest.open("PUT", "/reservationweb/api/reservations/" + reservationId, true);
 					httpRequest.send();
-				}
+				}}
 			})
 		}
+			
 }
 
 

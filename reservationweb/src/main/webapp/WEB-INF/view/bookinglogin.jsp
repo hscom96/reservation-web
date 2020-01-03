@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <!-- saved from url=(0042)https://m.booking.naver.com/booked/confirm -->
 <html lang="ko" class="no-js">
@@ -11,6 +13,12 @@
 	charset="UTF-8"></script>
 <script src="resources/js/commonFunction.js" type="text/javascript"
 	charset="UTF-8"></script>
+<script>
+var error = ${rsrvNotExistError};
+if(error){
+	alert("존재하지않는 예약자 이메일입니다.");
+}
+</script>
 <style type="text/css">
 @charset "UTF-8"; 
 

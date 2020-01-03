@@ -6,16 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
 function ValidUnit() {
 }
 ValidUnit.prototype = {
-		loadValidate : function() {
-			let valid = this.validEmail();
-
-			if (!valid) {
-				alert('잘못 입력하였습니다. 다시한번확인해주세요.');
-			}
-
-			return valid;
-		},
-
 		validEmail : function() {
 			var emailBox = document.querySelector("input#resrv_id");
 			var emailValue = emailBox.value;
@@ -24,11 +14,13 @@ ValidUnit.prototype = {
 			if (!emailValue) {
 				emailBox.placeholder = "이메일을 채워주세요";
 				emailBox.classList.add('cautionInput');
+				alert('잘못 입력하였습니다. 다시한번확인해주세요.');
 				return false;
 			} else if (!valid) {
 				emailBox.value = "";
 				emailBox.placeholder = "이메일 형식이 올바르지 않습니다";
 				emailBox.classList.add('cautionInput');
+				alert('잘못 입력하였습니다. 다시한번확인해주세요.');
 				return false;
 			}
 
@@ -48,7 +40,7 @@ SubmitUnit.prototype = {
 			submitBtn.addEventListener('click', function(evt) {
 				evt.preventDefault();
 				let validUnit = new ValidUnit();
-				let valid = validUnit.loadValidate();
+				let valid = validUnit.validEmail();
 				if (valid) {
 					document.querySelector("#form1").submit();
 				}

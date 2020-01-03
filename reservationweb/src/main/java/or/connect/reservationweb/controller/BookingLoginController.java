@@ -1,6 +1,5 @@
 package or.connect.reservationweb.controller;
 
-import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.http.Cookie;
@@ -9,6 +8,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,10 +29,9 @@ public class BookingLoginController {
 	}
 
 	@PostMapping
-	public String submit(@RequestParam(value = "resrvEmail", required = true) String resrvEmail, HttpSession session, HttpServletResponse response) {
+	public String submit(@RequestParam(value = "resrvEmail", required = true) String resrvEmail, HttpSession session, HttpServletResponse response, Model model) {
 		boolean exitFlag = reservationService.existReservation(resrvEmail);
 		Cookie loginCookie;
-		PrintWriter out;
 		int maxInactiveTime = 1800;
 		
 		 if ( session.getAttribute("login") !=null ){
@@ -45,16 +44,8 @@ public class BookingLoginController {
 			loginCookie = new Cookie("loginCookie", resrvEmail);
 			response.addCookie(loginCookie);
 			return "redirect:myreservation";
-		}else{
-			
-			try {
-				out = response.getWriter();
-				response.setContentType("text/html; charset=UTF-8");
-				out.println("<script>alert('로그인 정보를 확인해주세요.'); </script>");
-				out.flush(); 
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+		}else {
+			model.addAttribute("rsrvNotExistError","true");
 			return "bookinglogin";
 		}
 	}
