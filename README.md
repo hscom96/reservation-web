@@ -38,28 +38,28 @@
 </br>
 
 ## 📸 ScreenShots
-#### - 메인
+#### :heavy_check_mark: 메인
 <p align="center">
 <img src="https://user-images.githubusercontent.com/46397442/92991020-a2a70b80-f51b-11ea-97e0-675f2fa6ef7a.png" width="44%"></img>
 <img src="https://user-images.githubusercontent.com/46397442/92991048-c9654200-f51b-11ea-8204-bf371dcf5935.png" width="44%"></img>
 </p>
 
-#### - 상세
+#### :heavy_check_mark: 상세
 <p align="center">
 <img src="https://user-images.githubusercontent.com/46397442/92990447-9f118580-f517-11ea-8638-2d7df07e847c.png" width="56%"></img>
 </p>6
 
-#### - 예약진행
+#### :heavy_check_mark: 예약진행
 <p align="center">
 <img src="https://user-images.githubusercontent.com/46397442/92990507-03344980-f518-11ea-91a6-68e7a193ea8d.png" width="56%"></img>
 </p>
 
-#### - 예약확인
+#### :heavy_check_mark: 예약확인
 <p align="center">
 <img src="https://user-images.githubusercontent.com/46397442/92990900-de8da100-f51a-11ea-80ec-fe292b796b86.png" width="56%"></img>
 </p>
 
-#### 로그인 (전,후)
+#### :heavy_check_mark: 로그인 (전,후)
 <p align="center">
 <img src="https://user-images.githubusercontent.com/46397442/92991076-fca7d100-f51b-11ea-8971-4fedd71be38b.png" width="67%"></img>
 </p>
