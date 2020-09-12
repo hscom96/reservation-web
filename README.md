@@ -40,8 +40,8 @@
 ## 📸 ScreenShots
 #### - 메인
 <p align="center">
-<img src="https://user-images.githubusercontent.com/46397442/92991020-a2a70b80-f51b-11ea-97e0-675f2fa6ef7a.png" width="35%"></img>
-<img src="https://user-images.githubusercontent.com/46397442/92991048-c9654200-f51b-11ea-8204-bf371dcf5935.png" width="35%"></img>
+<img src="https://user-images.githubusercontent.com/46397442/92991020-a2a70b80-f51b-11ea-97e0-675f2fa6ef7a.png" width="44%"></img>
+<img src="https://user-images.githubusercontent.com/46397442/92991048-c9654200-f51b-11ea-8204-bf371dcf5935.png" width="44%"></img>
 </p>
 
 #### - 상세
