@@ -47,7 +47,7 @@
 #### :heavy_check_mark: 상세
 <p align="center">
 <img src="https://user-images.githubusercontent.com/46397442/92990447-9f118580-f517-11ea-8638-2d7df07e847c.png" width="56%"></img>
-</p>6
+</p>
 
 #### :heavy_check_mark: 예약진행
 <p align="center">
