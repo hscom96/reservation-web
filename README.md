@@ -1,6 +1,6 @@
 <h1 align="center" style="color:red"> 예약관리 시스템 :calendar:</h1>
 
-</br>
+</br></br>
 
 ## :hourglass: Dev Preiod 
 - 2019.08 ~ 09
@@ -13,12 +13,15 @@
 * 본 서비스를 이용하여 뮤지컬/콘서트/공연을 조회, 예약하기, 예약확인, 리뷰등록을 할 수 있다. 
 * Mobile에 최적화된 Web Service
 
+</br>
+
 ## 👨‍ Part
 총 1인
 -  김현수 : 프론트, 백엔드 
-</br> 
 
 :exclamation: html, css was supported by [boostcourse](https://www.edwith.org/boostcourse-web/joinLectures/12943)
+
+</br>
 
 ## :closed_book: 기술
 
@@ -30,6 +33,9 @@
 - HTML
 - CSS
 - JavaScript
+
+</br>
+</br>
 
 ## 📸 ScreenShots
 #### - 메인
