@@ -20,7 +20,7 @@ public class AppConfig {
 		ds.setUrl(
 				"jdbc:mysql://localhost:3306/reservation?serverTimezone=UTC&verifyServerCertificate=false&useSSL=false");
 		ds.setUsername("root");
-		ds.setPassword("alex0823");
+		ds.setPassword(""); // fill password
 		ds.setInitialSize(2);
 		ds.setMaxActive(10);
 		ds.setTestWhileIdle(true);
